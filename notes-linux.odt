@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rpt="http://openoffice.org/2005/report" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2023-03-13T19:26:39.414570327</dc:date><meta:editing-duration>PT1H4M40S</meta:editing-duration><meta:editing-cycles>17</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="1" meta:object-count="0" meta:page-count="8" meta:paragraph-count="166" meta:word-count="894" meta:character-count="5215" meta:non-whitespace-character-count="4218"/></office:meta>
+ <office:meta><dc:date>2023-03-13T20:23:34.503235578</dc:date><meta:editing-duration>PT1H50M36S</meta:editing-duration><meta:editing-cycles>57</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="1" meta:object-count="0" meta:page-count="27" meta:paragraph-count="554" meta:word-count="3318" meta:character-count="20378" meta:non-whitespace-character-count="16287"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">201796</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">731382</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">24952</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">25508</config:config-item>
@@ -13,12 +13,12 @@
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">3681</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">220879</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">8938</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">750450</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">201796</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">731382</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">24950</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">227302</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">756888</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -88,7 +88,7 @@
    <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1753702</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1813266</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
@@ -142,6 +142,7 @@
   </office:script>
  </office:scripts>
  <office:font-face-decls>
+  <style:font-face style:name="Arial" svg:font-family="Arial"/>
   <style:font-face style:name="Lohit Devanagari" svg:font-family="&apos;Lohit Devanagari&apos;"/>
   <style:font-face style:name="Lohit Devanagari1" svg:font-family="&apos;Lohit Devanagari&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="Nimbus Mono PS" svg:font-family="&apos;Nimbus Mono PS&apos;" style:font-pitch="fixed"/>
@@ -382,49 +383,64 @@
    <style:text-properties fo:language="en" fo:country="PH" officeooo:rsid="0019583b" officeooo:paragraph-rsid="0019583b"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="001ac266" officeooo:paragraph-rsid="001ac266"/>
+   <style:text-properties officeooo:rsid="001b8f87" officeooo:paragraph-rsid="001b8f87"/>
   </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Horizontal_20_Line">
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="001bab12" officeooo:paragraph-rsid="001bab12"/>
+  </style:style>
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Horizontal_20_Line">
    <style:paragraph-properties fo:line-height="100%"/>
    <style:text-properties style:font-name="Nimbus Mono PS" fo:language="en" fo:country="PH"/>
   </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" loext:opacity="100%" style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="none" officeooo:rsid="001ac266" officeooo:paragraph-rsid="001ac266" style:text-blinking="false" fo:background-color="transparent" loext:padding="0cm" loext:border="none"/>
   </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0019583b" officeooo:paragraph-rsid="0019583b"/>
-  </style:style>
   <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:paragraph-properties fo:line-height="100%"/>
-   <style:text-properties style:font-name="Nimbus Mono PS" fo:language="en" fo:country="PH" officeooo:rsid="0019583b" officeooo:paragraph-rsid="0019583b"/>
+   <style:text-properties officeooo:rsid="0019583b" officeooo:paragraph-rsid="0019583b"/>
   </style:style>
   <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:line-height="100%"/>
-   <style:text-properties style:font-name="Nimbus Mono PS" fo:language="en" fo:country="PH" officeooo:paragraph-rsid="0019583b"/>
+   <style:text-properties style:font-name="Nimbus Mono PS" fo:language="en" fo:country="PH" officeooo:rsid="0019583b" officeooo:paragraph-rsid="0019583b"/>
   </style:style>
   <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:line-height="100%"/>
-   <style:text-properties fo:language="en" fo:country="PH"/>
+   <style:text-properties style:font-name="Nimbus Mono PS" fo:language="en" fo:country="PH" officeooo:paragraph-rsid="0019583b"/>
   </style:style>
   <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:paragraph-properties fo:line-height="100%"/>
+   <style:text-properties fo:language="en" fo:country="PH"/>
+  </style:style>
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="100%" fo:text-indent="0cm" style:auto-text-indent="false"/>
    <style:text-properties fo:language="en" fo:country="PH" officeooo:rsid="0019583b" officeooo:paragraph-rsid="0019583b"/>
   </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties fo:language="en" fo:country="PH" officeooo:rsid="0019583b" officeooo:paragraph-rsid="0019583b"/>
   </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Text_20_body">
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="001ac266" officeooo:paragraph-rsid="001ac266"/>
   </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:paragraph-rsid="001ac266"/>
+  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="001b8f87" officeooo:paragraph-rsid="001b8f87"/>
   </style:style>
-  <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Title">
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="001b8f87"/>
+  </style:style>
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="001bab12" officeooo:paragraph-rsid="001bab12"/>
+  </style:style>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="001bab12"/>
+  </style:style>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Title">
    <style:paragraph-properties fo:line-height="100%"/>
    <style:text-properties style:font-name="Nimbus Mono PS" fo:language="en" fo:country="PH" fo:font-weight="normal" officeooo:rsid="0019583b" officeooo:paragraph-rsid="0019583b" style:font-weight-asian="normal" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="0019583b"/>
+  </style:style>
+  <style:style style:name="T2" style:family="text">
+   <style:text-properties officeooo:rsid="001bab12"/>
   </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
    <style:graphic-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:vertical-pos="top" style:vertical-rel="baseline" fo:padding="0cm" fo:border="none" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
@@ -447,7 +463,7 @@
  <office:master-styles>
   <style:master-page style:name="Standard" style:page-layout-name="pm1">
    <style:header>
-    <text:p text:style-name="P1"><text:page-number text:select-page="current">8</text:page-number></text:p>
+    <text:p text:style-name="P1"><text:page-number text:select-page="current">27</text:page-number></text:p>
    </style:header>
   </style:master-page>
  </office:master-styles>
@@ -461,10 +477,10 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:p text:style-name="P18">Linux Notes</text:p>
-   <text:p text:style-name="P8"/>
-   <text:p text:style-name="P11">Sources:</text:p>
-   <text:p text:style-name="P12"><text:span text:style-name="T1">LFS101x – Introduction to Linux (Linux Foundation, edx.org)</text:span></text:p>
+   <text:p text:style-name="P22">Linux Notes</text:p>
+   <text:p text:style-name="P9"/>
+   <text:p text:style-name="P12">Sources:</text:p>
+   <text:p text:style-name="P13"><text:span text:style-name="T1">LFS101x – Introduction to Linux (Linux Foundation, edx.org)</text:span></text:p>
    <text:table-of-content text:style-name="Sect1" text:protected="true" text:name="Table of Contents1">
     <text:table-of-content-source text:outline-level="10">
      <text:index-title-template text:style-name="Contents_20_Heading">Table of Contents</text:index-title-template>
@@ -578,163 +594,171 @@
      <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc378_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">TERMINATING A PROCESS<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc378_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">6</text:span></text:a></text:p>
      <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc380_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">PROCESS PRIORITY<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc380_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">6</text:span></text:a></text:p>
      <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc382_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">LOAD AVERAGES<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc382_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">7</text:span></text:a></text:p>
+     <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1003_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">BACKGROUND AND FOREGROUND<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1003_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">8</text:span></text:a></text:p>
+     <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1005_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">FUTURE PROCESSES<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1005_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">9</text:span></text:a></text:p>
+     <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1007_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">FILES<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1007_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">9</text:span></text:a></text:p>
+     <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1009_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">NETWORK FILESYSTEM(NFS)<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1009_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">10</text:span></text:a></text:p>
+     <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1011_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">NFS ON SERVERS<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1011_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">10</text:span></text:a></text:p>
+     <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1013_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">NFS ON CLIENT<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1013_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">10</text:span></text:a></text:p>
+     <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1015_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">FILESYSTEM ARCHITECTURES<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1015_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">11</text:span></text:a></text:p>
+     <text:p text:style-name="P2"><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1017_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link">REMOVABLE MEDIA<text:tab/></text:a><text:a xlink:type="simple" xlink:href="#__RefHeading___Toc1017_2331868161" text:style-name="Index_20_Link" text:visited-style-name="Index_20_Link"><text:span text:style-name="Index_20_Link">13</text:span></text:a></text:p>
     </text:index-body>
    </text:table-of-content>
-   <text:p text:style-name="P13"/>
+   <text:p text:style-name="P14"/>
    <text:h text:style-name="P5" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc313_2331868161"/>NAVIGATION<text:bookmark-end text:name="__RefHeading___Toc313_2331868161"/></text:h>
-   <text:p text:style-name="P14">cd<text:tab/><text:tab/><text:tab/>: change to home directory</text:p>
-   <text:p text:style-name="P14">pushd<text:tab/><text:tab/>: go to specified directory regardless of</text:p>
-   <text:p text:style-name="P14"><text:tab/><text:tab/><text:tab/><text:tab/>current working directory</text:p>
-   <text:p text:style-name="P14">popd<text:tab/><text:tab/><text:tab/>: go back through directories passed</text:p>
-   <text:p text:style-name="P14">pwd<text:tab/><text:tab/><text:tab/>: display present working directory</text:p>
-   <text:p text:style-name="P14">tree<text:tab/><text:tab/><text:tab/>: view filesystem tree</text:p>
-   <text:p text:style-name="P14">ls<text:tab/><text:tab/><text:tab/>: list files in directory</text:p>
+   <text:p text:style-name="P15">cd<text:tab/><text:tab/><text:tab/>: change to home directory</text:p>
+   <text:p text:style-name="P15">pushd<text:tab/><text:tab/>: go to specified directory regardless of</text:p>
+   <text:p text:style-name="P15"><text:tab/><text:tab/><text:tab/><text:tab/>current working directory</text:p>
+   <text:p text:style-name="P15">popd<text:tab/><text:tab/><text:tab/>: go back through directories passed</text:p>
+   <text:p text:style-name="P15">pwd<text:tab/><text:tab/><text:tab/>: display present working directory</text:p>
+   <text:p text:style-name="P15">tree<text:tab/><text:tab/><text:tab/>: view filesystem tree</text:p>
+   <text:p text:style-name="P15">ls<text:tab/><text:tab/><text:tab/>: list files in directory</text:p>
    <text:h text:style-name="P6" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc362_2331868161"/>FILE OPERATION<text:bookmark-end text:name="__RefHeading___Toc362_2331868161"/></text:h>
-   <text:p text:style-name="P15">wc<text:tab/><text:tab/><text:tab/>: word count</text:p>
-   <text:p text:style-name="P15">touch<text:tab/><text:tab/>: create/change/modify files</text:p>
-   <text:p text:style-name="P15">mv<text:tab/><text:tab/><text:tab/>: move or rename file</text:p>
-   <text:p text:style-name="P15">cp<text:tab/><text:tab/><text:tab/>: copy file</text:p>
-   <text:p text:style-name="P15">rm<text:tab/><text:tab/><text:tab/>: remove file</text:p>
-   <text:p text:style-name="P15">mkdir<text:tab/><text:tab/>: make directory</text:p>
-   <text:p text:style-name="P15">rmdir<text:tab/><text:tab/>: remove directory</text:p>
-   <text:p text:style-name="P15">systemctl<text:tab/><text:tab/>: query or command system manager</text:p>
-   <text:p text:style-name="P15">ln<text:tab/><text:tab/><text:tab/>: create hard link (not applicable to directories</text:p>
-   <text:p text:style-name="P15"><text:tab/><text:tab/><text:tab/><text:tab/>or special files)</text:p>
-   <text:p text:style-name="P15">ln -s<text:tab/><text:tab/>: create soft (symbolic) link</text:p>
-   <text:p text:style-name="P15">du<text:tab/><text:tab/><text:tab/>: disk usage</text:p>
+   <text:p text:style-name="P16">wc<text:tab/><text:tab/><text:tab/>: word count</text:p>
+   <text:p text:style-name="P16">touch<text:tab/><text:tab/>: create/change/modify files</text:p>
+   <text:p text:style-name="P16">mv<text:tab/><text:tab/><text:tab/>: move or rename file</text:p>
+   <text:p text:style-name="P16">cp<text:tab/><text:tab/><text:tab/>: copy file</text:p>
+   <text:p text:style-name="P16">rm<text:tab/><text:tab/><text:tab/>: remove file</text:p>
+   <text:p text:style-name="P16">mkdir<text:tab/><text:tab/>: make directory</text:p>
+   <text:p text:style-name="P16">rmdir<text:tab/><text:tab/>: remove directory</text:p>
+   <text:p text:style-name="P16">systemctl<text:tab/><text:tab/>: query or command system manager</text:p>
+   <text:p text:style-name="P16">ln<text:tab/><text:tab/><text:tab/>: create hard link (not applicable to directories</text:p>
+   <text:p text:style-name="P16"><text:tab/><text:tab/><text:tab/><text:tab/>or special files)</text:p>
+   <text:p text:style-name="P16">ln -s<text:tab/><text:tab/>: create soft (symbolic) link</text:p>
+   <text:p text:style-name="P16">du<text:tab/><text:tab/><text:tab/>: disk usage</text:p>
    <text:h text:style-name="P6" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc364_2331868161"/>KEYBOARD SHORTCUTS<text:bookmark-end text:name="__RefHeading___Toc364_2331868161"/></text:h>
-   <text:p text:style-name="P15">Combine all with Ctrl</text:p>
-   <text:p text:style-name="P15">L<text:tab/><text:tab/><text:tab/>: clear screen</text:p>
-   <text:p text:style-name="P15">D<text:tab/><text:tab/><text:tab/>: exit current shell</text:p>
-   <text:p text:style-name="P15">Z<text:tab/><text:tab/><text:tab/>: suspend current process to bg</text:p>
-   <text:p text:style-name="P15"><text:soft-page-break/>C<text:tab/><text:tab/><text:tab/>: kill current process</text:p>
-   <text:p text:style-name="P15">H<text:tab/><text:tab/><text:tab/>: same as backspace</text:p>
-   <text:p text:style-name="P15">A<text:tab/><text:tab/><text:tab/>: go to start of line</text:p>
-   <text:p text:style-name="P15">W<text:tab/><text:tab/><text:tab/>: delete word before cursor</text:p>
-   <text:p text:style-name="P15">U<text:tab/><text:tab/><text:tab/>: delete from beginning of line to cursor</text:p>
-   <text:p text:style-name="P15">E<text:tab/><text:tab/><text:tab/>: go to end of line</text:p>
+   <text:p text:style-name="P16">Combine all with Ctrl</text:p>
+   <text:p text:style-name="P16">L<text:tab/><text:tab/><text:tab/>: clear screen</text:p>
+   <text:p text:style-name="P16">D<text:tab/><text:tab/><text:tab/>: exit current shell</text:p>
+   <text:p text:style-name="P16">Z<text:tab/><text:tab/><text:tab/>: suspend current process to bg</text:p>
+   <text:p text:style-name="P16"><text:soft-page-break/>C<text:tab/><text:tab/><text:tab/>: kill current process</text:p>
+   <text:p text:style-name="P16">H<text:tab/><text:tab/><text:tab/>: same as backspace</text:p>
+   <text:p text:style-name="P16">A<text:tab/><text:tab/><text:tab/>: go to start of line</text:p>
+   <text:p text:style-name="P16">W<text:tab/><text:tab/><text:tab/>: delete before cursor</text:p>
+   <text:p text:style-name="P16">U<text:tab/><text:tab/><text:tab/>: delete from beginning of line to cursor</text:p>
+   <text:p text:style-name="P16">E<text:tab/><text:tab/><text:tab/>: go to end of line</text:p>
    <text:h text:style-name="P6" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc366_2331868161"/>VIRTUAL TERMINALS<text:bookmark-end text:name="__RefHeading___Toc366_2331868161"/></text:h>
-   <text:p text:style-name="P15">Ctrl + Alt + Function key</text:p>
-   <text:p text:style-name="P15"><text:tab/>// enable virtual terminal when in graphical environemnt</text:p>
-   <text:p text:style-name="P15"/>
-   <text:p text:style-name="P15">Alt + Function key</text:p>
-   <text:p text:style-name="P15"><text:tab/>// swap virtual terminal</text:p>
-   <text:p text:style-name="P15"/>
-   <text:p text:style-name="P15">sudo systemctl stop gdm</text:p>
-   <text:p text:style-name="P15"><text:tab/>// stop graphical desktop</text:p>
-   <text:p text:style-name="P15"/>
-   <text:p text:style-name="P15">sudo systemctl start gdm</text:p>
-   <text:p text:style-name="P15"><text:tab/>// start graphical desktop</text:p>
-   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc368_2331868161"/>I/O REDIRECTION<text:bookmark-end text:name="__RefHeading___Toc368_2331868161"/></text:h>
-   <text:p text:style-name="P10">Standard file streams: standard input, standard output, standard error</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">File descriptor</text:p>
-   <text:p text:style-name="P10"><text:tab/>Standard input<text:tab/><text:tab/>: 0</text:p>
-   <text:p text:style-name="P10"><text:tab/>Standard output<text:tab/>: 1</text:p>
-   <text:p text:style-name="P10"><text:tab/>Standard error<text:tab/><text:tab/>: 2</text:p>
-   <text:p text:style-name="P10"><text:soft-page-break/><text:tab/>Other files<text:tab/><text:tab/>: 3 onwards</text:p>
-   <text:p text:style-name="P10">sampleprogram &lt; input-file</text:p>
-   <text:p text:style-name="P10"><text:tab/>// input source has been changed to input-file</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">sampleprogram &gt; output-file</text:p>
-   <text:p text:style-name="P10"><text:tab/>// redirect output to output-file</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">sampleprogram 2 &gt; error-file</text:p>
-   <text:p text:style-name="P10"><text:tab/>// 2 is the file descriptor for standard error</text:p>
-   <text:p text:style-name="P10"><text:tab/>// redirecto error to error-file</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">sampleprogram &gt; all-output-file 2&gt;&amp;1</text:p>
-   <text:p text:style-name="P10">or</text:p>
-   <text:p text:style-name="P10">sampleprogram &gt; all-output-file</text:p>
-   <text:p text:style-name="P10"><text:tab/>// reidrect both output and error to all-output-file</text:p>
-   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc370_2331868161"/>PIPES<text:bookmark-end text:name="__RefHeading___Toc370_2331868161"/></text:h>
-   <text:p text:style-name="P10">Take output from one command or program as input for another</text:p>
-   <text:p text:style-name="P10"><text:tab/>command1 | command2 | command3</text:p>
-   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc372_2331868161"/>SEARCHING<text:bookmark-end text:name="__RefHeading___Toc372_2331868161"/></text:h>
-   <text:p text:style-name="P10">which<text:tab/><text:tab/><text:tab/>: locate where programs are installed</text:p>
-   <text:p text:style-name="P10">whereis<text:tab/><text:tab/><text:tab/>: locate source and man files</text:p>
-   <text:p text:style-name="P10">locate<text:tab/><text:tab/><text:tab/>: search for all files matching the argument</text:p>
-   <text:p text:style-name="P10">find<text:tab/><text:tab/><text:tab/><text:tab/>: search down file tree recursively</text:p>
-   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc374_2331868161"/>WILDCARDS<text:bookmark-end text:name="__RefHeading___Toc374_2331868161"/></text:h>
-   <text:p text:style-name="P10">Can be used when substituting for arguments</text:p>
-   <text:p text:style-name="P10"><text:soft-page-break/></text:p>
-   <text:p text:style-name="P10">?<text:tab/><text:tab/><text:tab/>: match any single character</text:p>
-   <text:p text:style-name="P10">*<text:tab/><text:tab/><text:tab/>: match any string of characters</text:p>
-   <text:p text:style-name="P10">[set]<text:tab/><text:tab/>: match any character in provided set</text:p>
-   <text:p text:style-name="P10">[!set]<text:tab/><text:tab/>: match any character not in provided set</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">Search will not be restricted to the working directory if arguments are enclosed in double quotes</text:p>
-   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc376_2331868161"/>PROCESSES<text:bookmark-end text:name="__RefHeading___Toc376_2331868161"/></text:h>
-   <text:p text:style-name="P10">The kernel is in charge of allocating resources to processes in an optimal manner</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">Process<text:tab/><text:tab/><text:tab/>- instance of one or more related tasks (threads)</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>executing in the computer</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- not to be confused with program or command</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- a command can start multiple processes</text:p>
-   <text:p text:style-name="P10">Scheduler<text:tab/><text:tab/><text:tab/>- done by the kernel</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- shift processes on and off the CPU</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">Running state<text:tab/><text:tab/>- process is waiting for its time slice</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>or</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- currently executing instructions on the CPU</text:p>
-   <text:p text:style-name="P10">Sleep state<text:tab/><text:tab/>- process is waiting for something to happen</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>before it resumes</text:p>
-   <text:p text:style-name="P10">Zombie state<text:tab/><text:tab/>- child process completes but parent process</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>hasn&apos;t asked about its status</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- a process that isn&apos;t &apos;alive&apos; but still</text:p>
-   <text:p text:style-name="P10"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>shows up in the system process list</text:p>
-   <text:p text:style-name="P10">Run queue<text:tab/><text:tab/><text:tab/>- queue of processes in running state</text:p>
-   <text:p text:style-name="P10">Wait queue<text:tab/><text:tab/>- queue of processes in sleep state</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">Process ID<text:tab/><text:tab/>- aka PID</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- unique to each process, assigned by the kernel</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>to track process state, CPU usage, memory</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>use, etc.</text:p>
-   <text:p text:style-name="P10">Parent Process</text:p>
-   <text:p text:style-name="P10">ID<text:tab/><text:tab/><text:tab/><text:tab/>- aka PPID</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- process that started child process</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- if this dies, child process gets assigned a</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>new adoptive parent</text:p>
-   <text:p text:style-name="P10">Thread ID<text:tab/><text:tab/><text:tab/>- aka TID</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- same as PID for single-threaded processes</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- threads in multi-threaded processes share</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>the same PID but have different TIDs</text:p>
-   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc378_2331868161"/>TERMINATING A PROCESS<text:bookmark-end text:name="__RefHeading___Toc378_2331868161"/></text:h>
-   <text:p text:style-name="P10">kill -SIGKILL &lt;pid&gt;</text:p>
-   <text:p text:style-name="P10">or</text:p>
-   <text:p text:style-name="P10">kill -9 &lt;pid&gt;</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">A user can only kill their own process unless user is root</text:p>
-   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc380_2331868161"/>PROCESS PRIORITY<text:bookmark-end text:name="__RefHeading___Toc380_2331868161"/></text:h>
-   <text:p text:style-name="P10">Each CPU can only accommodate one task at a time</text:p>
-   <text:p text:style-name="P10">Priority can be manipulated</text:p>
-   <text:p text:style-name="P10"><text:soft-page-break/></text:p>
-   <text:p text:style-name="P10">Nice value<text:tab/><text:tab/>- aka niceness, &quot;The niceness of a process&quot;</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- &quot;The nicer the process, the lower the</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>priority&quot;</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- can be modified to set priority</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- -20 is the highest priority</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- +19 is the lowest priority</text:p>
-   <text:p text:style-name="P10">Real-time</text:p>
-   <text:p text:style-name="P10">priority<text:tab/><text:tab/><text:tab/>- can be assigned to time-sensitive tasks</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/>- not to be confused with hard real-time</text:p>
-   <text:p text:style-name="P10">Hard</text:p>
-   <text:p text:style-name="P10">real-time<text:tab/><text:tab/><text:tab/>- process has to be completed within a</text:p>
-   <text:p text:style-name="P10"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>well-defined window of time</text:p>
-   <text:p text:style-name="P10"/>
-   <text:p text:style-name="P10">Commands:</text:p>
-   <text:p text:style-name="P10">ps<text:tab/><text:tab/><text:tab/><text:tab/>: show processes</text:p>
-   <text:p text:style-name="P10">pstree<text:tab/><text:tab/><text:tab/>: show processes in tree form</text:p>
-   <text:p text:style-name="P10">rnice<text:tab/><text:tab/><text:tab/>: change priority of processes</text:p>
-   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc382_2331868161"/>LOAD AVERAGES<text:bookmark-end text:name="__RefHeading___Toc382_2331868161"/></text:h>
-   <text:p text:style-name="P10">Average of the load number for a given period of time</text:p>
-   <text:p text:style-name="P16">Processes in running and sleeping (uninterruptible sleepers) state are included</text:p>
+   <text:p text:style-name="P16">Ctrl + Alt + Function key</text:p>
+   <text:p text:style-name="P16"><text:tab/>// enable virtual terminal when in graphical environemnt</text:p>
    <text:p text:style-name="P16"/>
-   <text:p text:style-name="P16">w<text:tab/><text:tab/><text:tab/><text:tab/>: </text:p>
-   <text:p text:style-name="P16">top<text:tab/><text:tab/><text:tab/><text:tab/>: provide real-time updates about what the system</text:p>
-   <text:p text:style-name="P16"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>is doing</text:p>
-   <text:p text:style-name="P16">uptime<text:tab/><text:tab/><text:tab/>: show uptime &amp; load average</text:p>
-   <text:p text:style-name="P9"><text:bookmark text:name="docs-internal-guid-adb9ad0b-7fff-8097-2248-e4ca2f223acc"/><text:soft-page-break/><draw:frame draw:style-name="fr1" draw:name="Image1" text:anchor-type="as-char" svg:width="16.51cm" svg:height="5.503cm" draw:z-index="0"><draw:image draw:mime-type="image/png">
+   <text:p text:style-name="P16">Alt + Function key</text:p>
+   <text:p text:style-name="P16"><text:tab/>// swap virtual terminal</text:p>
+   <text:p text:style-name="P16"/>
+   <text:p text:style-name="P16">sudo systemctl stop gdm</text:p>
+   <text:p text:style-name="P16"><text:tab/>// stop graphical desktop</text:p>
+   <text:p text:style-name="P16"/>
+   <text:p text:style-name="P16">sudo systemctl start gdm</text:p>
+   <text:p text:style-name="P16"><text:tab/>// start graphical desktop</text:p>
+   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc368_2331868161"/>I/O REDIRECTION<text:bookmark-end text:name="__RefHeading___Toc368_2331868161"/></text:h>
+   <text:p text:style-name="P11">Standard file streams: standard input, standard output, standard error</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">File descriptor</text:p>
+   <text:p text:style-name="P11"><text:tab/>Standard input<text:tab/><text:tab/>: 0</text:p>
+   <text:p text:style-name="P11"><text:tab/>Standard output<text:tab/>: 1</text:p>
+   <text:p text:style-name="P11"><text:tab/>Standard error<text:tab/><text:tab/>: 2</text:p>
+   <text:p text:style-name="P11"><text:soft-page-break/><text:tab/>Other files<text:tab/><text:tab/>: 3 onwards</text:p>
+   <text:p text:style-name="P11">sampleprogram &lt; input-file</text:p>
+   <text:p text:style-name="P11"><text:tab/>// input source has been changed to input-file</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">sampleprogram &gt; output-file</text:p>
+   <text:p text:style-name="P11"><text:tab/>// redirect output to output-file</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">sampleprogram 2 &gt; error-file</text:p>
+   <text:p text:style-name="P11"><text:tab/>// 2 is the file descriptor for standard error</text:p>
+   <text:p text:style-name="P11"><text:tab/>// redirecto error to error-file</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">sampleprogram &gt; all-output-file 2&gt;&amp;1</text:p>
+   <text:p text:style-name="P11">or</text:p>
+   <text:p text:style-name="P11">sampleprogram &gt; all-output-file</text:p>
+   <text:p text:style-name="P11"><text:tab/>// reidrect both output and error to all-output-file</text:p>
+   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc370_2331868161"/>PIPES<text:bookmark-end text:name="__RefHeading___Toc370_2331868161"/></text:h>
+   <text:p text:style-name="P11">Take output from one command or program as input for another</text:p>
+   <text:p text:style-name="P11"><text:tab/>command1 | command2 | command3</text:p>
+   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc372_2331868161"/>SEARCHING<text:bookmark-end text:name="__RefHeading___Toc372_2331868161"/></text:h>
+   <text:p text:style-name="P11">which<text:tab/><text:tab/><text:tab/>: locate where programs are installed</text:p>
+   <text:p text:style-name="P11">whereis<text:tab/><text:tab/><text:tab/>: locate source and man files</text:p>
+   <text:p text:style-name="P11">locate<text:tab/><text:tab/><text:tab/>: search for all files matching the argument</text:p>
+   <text:p text:style-name="P11">find<text:tab/><text:tab/><text:tab/><text:tab/>: search down file tree recursively</text:p>
+   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc374_2331868161"/>WILDCARDS<text:bookmark-end text:name="__RefHeading___Toc374_2331868161"/></text:h>
+   <text:p text:style-name="P11">Can be used when substituting for arguments</text:p>
+   <text:p text:style-name="P11"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P11">?<text:tab/><text:tab/><text:tab/>: match any single character</text:p>
+   <text:p text:style-name="P11">*<text:tab/><text:tab/><text:tab/>: match any string of characters</text:p>
+   <text:p text:style-name="P11">[set]<text:tab/><text:tab/>: match any character in provided set</text:p>
+   <text:p text:style-name="P11">[!set]<text:tab/><text:tab/>: match any character not in provided set</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Search will not be restricted to the working directory if arguments are enclosed in double quotes</text:p>
+   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc376_2331868161"/>PROCESSES<text:bookmark-end text:name="__RefHeading___Toc376_2331868161"/></text:h>
+   <text:p text:style-name="P11">The kernel is in charge of allocating resources to processes in an optimal manner</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Process<text:tab/><text:tab/><text:tab/>- instance of one or more related tasks (threads)</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>executing in the computer</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- not to be confused with program or command</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- a command can start multiple processes</text:p>
+   <text:p text:style-name="P11">Scheduler<text:tab/><text:tab/><text:tab/>- done by the kernel</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- shift processes on and off the CPU</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Running state<text:tab/><text:tab/>- process is waiting for its time slice</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>or</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- currently executing instructions on the CPU</text:p>
+   <text:p text:style-name="P11">Sleep state<text:tab/><text:tab/>- process is waiting for something to happen</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>before it resumes</text:p>
+   <text:p text:style-name="P11">Zombie state<text:tab/><text:tab/>- child process completes but parent process</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>hasn&apos;t asked about its status</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- a process that isn&apos;t &apos;alive&apos; but still</text:p>
+   <text:p text:style-name="P11"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>shows up in the system process list</text:p>
+   <text:p text:style-name="P11">Run queue<text:tab/><text:tab/><text:tab/>- queue of processes in running state</text:p>
+   <text:p text:style-name="P11">Wait queue<text:tab/><text:tab/>- queue of processes in sleep state</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Process ID<text:tab/><text:tab/>- aka PID</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- unique to each process, assigned by the kernel</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>to track process state, CPU usage, memory</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>use, etc.</text:p>
+   <text:p text:style-name="P11">Parent Process</text:p>
+   <text:p text:style-name="P11">ID<text:tab/><text:tab/><text:tab/><text:tab/>- aka PPID</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- process that started child process</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- if this dies, child process gets assigned a</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>new adoptive parent</text:p>
+   <text:p text:style-name="P11">Thread ID<text:tab/><text:tab/><text:tab/>- aka TID</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- same as PID for single-threaded processes</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- threads in multi-threaded processes share</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>the same PID but have different TIDs</text:p>
+   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc378_2331868161"/>TERMINATING A PROCESS<text:bookmark-end text:name="__RefHeading___Toc378_2331868161"/></text:h>
+   <text:p text:style-name="P11">kill -SIGKILL &lt;pid&gt;</text:p>
+   <text:p text:style-name="P11">or</text:p>
+   <text:p text:style-name="P11">kill -9 &lt;pid&gt;</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">A user can only kill their own process unless user is root</text:p>
+   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc380_2331868161"/>PROCESS PRIORITY<text:bookmark-end text:name="__RefHeading___Toc380_2331868161"/></text:h>
+   <text:p text:style-name="P11">Each CPU can only accommodate one task at a time</text:p>
+   <text:p text:style-name="P11">Priority can be manipulated</text:p>
+   <text:p text:style-name="P11"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P11">Nice value<text:tab/><text:tab/>- aka niceness, &quot;The niceness of a process&quot;</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- &quot;The nicer the process, the lower the</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>priority&quot;</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- can be modified to set priority</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- -20 is the highest priority</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- +19 is the lowest priority</text:p>
+   <text:p text:style-name="P11">Real-time</text:p>
+   <text:p text:style-name="P11">priority<text:tab/><text:tab/><text:tab/>- can be assigned to time-sensitive tasks</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/>- not to be confused with hard real-time</text:p>
+   <text:p text:style-name="P11">Hard</text:p>
+   <text:p text:style-name="P11">real-time<text:tab/><text:tab/><text:tab/>- process has to be completed within a</text:p>
+   <text:p text:style-name="P11"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>well-defined window of time</text:p>
+   <text:p text:style-name="P11"/>
+   <text:p text:style-name="P11">Commands:</text:p>
+   <text:p text:style-name="P11">ps<text:tab/><text:tab/><text:tab/><text:tab/>: show processes</text:p>
+   <text:p text:style-name="P11">pstree<text:tab/><text:tab/><text:tab/>: show processes in tree form</text:p>
+   <text:p text:style-name="P11">rnice<text:tab/><text:tab/><text:tab/>: change priority of processes</text:p>
+   <text:h text:style-name="P4" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc382_2331868161"/>LOAD AVERAGES<text:bookmark-end text:name="__RefHeading___Toc382_2331868161"/></text:h>
+   <text:p text:style-name="P11">Average of the load number for a given period of time</text:p>
+   <text:p text:style-name="P17">Processes in running and sleeping (uninterruptible sleepers) state are included</text:p>
+   <text:p text:style-name="P17"/>
+   <text:p text:style-name="P17">w<text:tab/><text:tab/><text:tab/><text:tab/>: </text:p>
+   <text:p text:style-name="P17">top<text:tab/><text:tab/><text:tab/><text:tab/>: provide real-time updates about what the system</text:p>
+   <text:p text:style-name="P17"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>is doing</text:p>
+   <text:p text:style-name="P17">uptime<text:tab/><text:tab/><text:tab/>: show uptime &amp; load average</text:p>
+   <text:p text:style-name="P10"><text:bookmark text:name="docs-internal-guid-adb9ad0b-7fff-8097-2248-e4ca2f223acc"/><text:soft-page-break/><draw:frame draw:style-name="fr1" draw:name="Image1" text:anchor-type="as-char" svg:width="16.51cm" svg:height="5.503cm" draw:z-index="0"><draw:image draw:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAssAAADuCAYAAADP9kp3AAAABHNCSVQICAgIfAhkiAAAABl0
        RVh0U29mdHdhcmUAZ25vbWUtc2NyZWVuc2hvdO8Dvz4AACAASURBVHic7N13VFTH28Dx79IR
        EEWQSFGDGrGhiaKJBVvsvfdoNGpsiaImGlNsUWPvSYxJ/CXGFo2KBYPG3rvYjRgVO4gFUKS4
@@ -1333,21 +1357,483 @@
       </office:binary-data>
      </draw:image>
     </draw:frame></text:p>
-   <text:p text:style-name="P16"/>
-   <text:p text:style-name="P16">Assume single CPU in the image above. The load average is shown with three numbers</text:p>
-   <text:p text:style-name="P16">0.45<text:tab/><text:tab/><text:tab/><text:tab/>: in the last minute, the system has been</text:p>
-   <text:p text:style-name="P16"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>utilized 45%</text:p>
-   <text:p text:style-name="P16">0.17<text:tab/><text:tab/><text:tab/><text:tab/>: in the last 5 minutes, the system has been</text:p>
-   <text:p text:style-name="P16"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>utilized 17%</text:p>
-   <text:p text:style-name="P16">0.12<text:tab/><text:tab/><text:tab/><text:tab/>: in the last 15 minutes, the system has been</text:p>
-   <text:p text:style-name="P16"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>utilized 12%</text:p>
-   <text:p text:style-name="P16"/>
-   <text:p text:style-name="P16">If value = 1.00, system is fully utilized</text:p>
-   <text:p text:style-name="P16">If value &gt; 1.00, system is overutilized</text:p>
-   <text:p text:style-name="P16"/>
-   <text:p text:style-name="P16">If multiple CPUs, divide load average by number of CPUs</text:p>
-   <text:h text:style-name="P7" text:outline-level="1">Background and Foreground</text:h>
    <text:p text:style-name="P17"/>
+   <text:p text:style-name="P17">Assume single CPU in the image above. The load average is shown with three numbers</text:p>
+   <text:p text:style-name="P17">0.45<text:tab/><text:tab/><text:tab/><text:tab/>: in the last minute, the system has been</text:p>
+   <text:p text:style-name="P17"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>utilized 45%</text:p>
+   <text:p text:style-name="P17">0.17<text:tab/><text:tab/><text:tab/><text:tab/>: in the last 5 minutes, the system has been</text:p>
+   <text:p text:style-name="P17"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>utilized 17%</text:p>
+   <text:p text:style-name="P17">0.12<text:tab/><text:tab/><text:tab/><text:tab/>: in the last 15 minutes, the system has been</text:p>
+   <text:p text:style-name="P17"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>utilized 12%</text:p>
+   <text:p text:style-name="P17"/>
+   <text:p text:style-name="P17">If value = 1.00, system is fully utilized</text:p>
+   <text:p text:style-name="P17">If value &gt; 1.00, system is overutilized</text:p>
+   <text:p text:style-name="P17"/>
+   <text:p text:style-name="P17">If multiple CPUs, divide load average by number of CPUs</text:p>
+   <text:h text:style-name="P7" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc1003_2331868161"/>BACKGROUND AND FOREGROUND<text:bookmark-end text:name="__RefHeading___Toc1003_2331868161"/></text:h>
+   <text:p text:style-name="P18">Commands executed from a terminal window become foreground jobs by default</text:p>
+   <text:p text:style-name="P18">Foreground jobs need to finish before the shell is free again</text:p>
+   <text:p text:style-name="P18">To assign big foreground jobs to the background, use &amp;</text:p>
+   <text:p text:style-name="P18">Example:</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18"><text:soft-page-break/><text:tab/>updatedb &amp;</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">Ctrl + c<text:tab/><text:tab/><text:tab/>: terminate foreground job</text:p>
+   <text:p text:style-name="P18">Ctrl + z<text:tab/><text:tab/><text:tab/>: suspend foreground job to background</text:p>
+   <text:p text:style-name="P18">bg<text:tab/><text:tab/><text:tab/><text:tab/>: put job in background</text:p>
+   <text:p text:style-name="P18">fg<text:tab/><text:tab/><text:tab/><text:tab/>: put job in foreground</text:p>
+   <text:p text:style-name="P18">jobs<text:tab/><text:tab/><text:tab/><text:tab/>: display all jobs running in bg</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">Background jobs are connected to the terminal window used. Executing the jobs command in another terminal window will not show the previous ones</text:p>
+   <text:h text:style-name="P7" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc1005_2331868161"/>FUTURE PROCESSES<text:bookmark-end text:name="__RefHeading___Toc1005_2331868161"/></text:h>
+   <text:p text:style-name="P18">at<text:tab/><text:tab/><text:tab/><text:tab/>: execute non-interactive command at specified</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>time</text:p>
+   <text:p text:style-name="P18">cron<text:tab/><text:tab/><text:tab/><text:tab/>: time based scheduling utility, config at</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>/etc/crontab</text:p>
+   <text:p text:style-name="P18">sleep<text:tab/><text:tab/><text:tab/>: suspend execution for given amount of time</text:p>
+   <text:h text:style-name="P7" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc1007_2331868161"/>FILES<text:bookmark-end text:name="__RefHeading___Toc1007_2331868161"/></text:h>
+   <text:p text:style-name="P18">root (directory) is not the same as root user</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">gparted<text:tab/><text:tab/><text:tab/>: display partition layout</text:p>
+   <text:p text:style-name="P18">mount<text:tab/><text:tab/><text:tab/>: attach new filesystem to filesystem tree</text:p>
+   <text:p text:style-name="P18">unmount<text:tab/><text:tab/><text:tab/>: unmount, needs sudo</text:p>
+   <text:p text:style-name="P18">df-Th<text:tab/><text:tab/><text:tab/>: display info about mounted systems</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">Mount points<text:tab/><text:tab/>- a dir (empty or not) where new filesystem can</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>be grafted on</text:p>
+   <text:p text:style-name="P18"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/>- contents of non-empty dir will be inaccessible</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>until new filesystem is unmounted</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- better to make sure that directory is empty</text:p>
+   <text:h text:style-name="P7" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc1009_2331868161"/>NETWORK FILESYSTEM(NFS)<text:bookmark-end text:name="__RefHeading___Toc1009_2331868161"/></text:h>
+   <text:p text:style-name="P18">aka distributed filesystem</text:p>
+   <text:h text:style-name="P7" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc1011_2331868161"/>NFS ON SERVERS<text:bookmark-end text:name="__RefHeading___Toc1011_2331868161"/></text:h>
+   <text:p text:style-name="P18">Daemons<text:tab/><text:tab/><text:tab/>- built-in networking and service processes</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">sudo systemctl start nfs</text:p>
+   <text:p text:style-name="P18"><text:tab/>// starts daemons and other system servers</text:p>
+   <text:p text:style-name="P19"/>
+   <text:p text:style-name="P18">sudo systemctl restart nfs</text:p>
+   <text:p text:style-name="P18"><text:tab/>// restart entire NFS, halts it for a short while</text:p>
+   <text:p text:style-name="P18"><text:tab/>// can serve as heavier alternative to exportfs -av</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">sudo systemctl enable nfs</text:p>
+   <text:p text:style-name="P18"><text:tab/>// ensures that services start when the system is booted</text:p>
+   <text:p text:style-name="P19"/>
+   <text:p text:style-name="P18">/etc/exports<text:tab/><text:tab/>- text file containing directories and</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>permissions</text:p>
+   <text:p text:style-name="P18">exportfs -av<text:tab/><text:tab/>: notify Linux about directories allowed</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>to be mounted remotely using<text:tab/>NFS</text:p>
+   <text:h text:style-name="P7" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc1013_2331868161"/>NFS ON CLIENT<text:bookmark-end text:name="__RefHeading___Toc1013_2331868161"/></text:h>
+   <text:p text:style-name="P18">/etc/fstab<text:tab/><text:tab/>- can be modified to enable automatic mounting</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>on startup</text:p>
+   <text:p text:style-name="P18"><text:soft-page-break/>nofail<text:tab/><text:tab/><text:tab/>: can be added in fstab in case NFS server</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>is not live at boot</text:p>
+   <text:h text:style-name="P7" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc1015_2331868161"/>FILESYSTEM ARCHITECTURES<text:bookmark-end text:name="__RefHeading___Toc1015_2331868161"/></text:h>
+   <text:p text:style-name="P18">/home<text:tab/><text:tab/><text:tab/>- each user has a home directory</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- contains user-specific config</text:p>
+   <text:p text:style-name="P18">/root<text:tab/><text:tab/><text:tab/>- home dir of the root user</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">On multi-user systems, the /home directory infrastructure is often mounted as a separate filesystem on its own partition, or even exported (shared) remotely on a network through NFS</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">Grouping users based on department or function:</text:p>
+   <text:p text:style-name="P18"><text:tab/>/home/faculty/</text:p>
+   <text:p text:style-name="P18"><text:tab/>/home/staff/</text:p>
+   <text:p text:style-name="P18"><text:tab/>/home/students/</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">/bin<text:tab/><text:tab/><text:tab/><text:tab/>- contains executable binaries, essential</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>commands</text:p>
+   <text:p text:style-name="P18">/sbin<text:tab/><text:tab/><text:tab/>- contains essential binaries related to</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>system administration</text:p>
+   <text:p text:style-name="P18">/usr/bin</text:p>
+   <text:p text:style-name="P18">/usr/sbin<text:tab/><text:tab/><text:tab/>- contains commands that are not essential for</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>system boot</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- original purpose of separation is obsolete</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- /usr/bin and bin, and /usr/sbin and /sbin are</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>symbolically linked</text:p>
+   <text:p text:style-name="P18">/proc<text:tab/><text:tab/><text:tab/>- filesystems mounted here are pseudo-filesystems</text:p>
+   <text:p text:style-name="P18"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>(no permanent presence on disk)</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- permit viewing of constantly changing kernel</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>data</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- has files that mimic kernel structures and</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>config info</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>-no real files, just virtual files that exist</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>in memory</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- has runtime system info like system memory,</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>devices mounted, hardware configuration,</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>etc.</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>-/proc/&lt;Process-ID#&gt; shows that there is a</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>directory for every running process in</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>the system</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- /proc/sys contains info about the entire system</text:p>
+   <text:p text:style-name="P18">/dev<text:tab/><text:tab/><text:tab/><text:tab/>- has device nodes (pseudo-files)</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- has entries created by udev system</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- udev creates and manages nodes on Linux</text:p>
+   <text:p text:style-name="P18">/var<text:tab/><text:tab/><text:tab/><text:tab/>- has files that are expected to change in size</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>as the system continues to run</text:p>
+   <text:p text:style-name="P18">/etc<text:tab/><text:tab/><text:tab/><text:tab/>- has system configuration files</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- no binary programs</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- has some executable scripts</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- files like passwd, shadow, group can be found</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- for system-wide config files, only the</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>superuser can modify</text:p>
+   <text:p text:style-name="P18">/boot<text:tab/><text:tab/><text:tab/>- contains essential files needed to boot</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>system</text:p>
+   <text:p text:style-name="P18"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:tab/>- has vmlinuz, the compressed Linux kernel</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- also has Grand Unified Bootloader (GRUB) files</text:p>
+   <text:p text:style-name="P18">/lib and /lib64<text:tab/>- has libraries for essential programs in /bin</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>and /sbin</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- file names may start with ld or lib</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- lib for 32-bit libraries</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>-lib64 for 64-bit libraries</text:p>
+   <text:h text:style-name="P7" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc1017_2331868161"/>REMOVABLE MEDIA<text:bookmark-end text:name="__RefHeading___Toc1017_2331868161"/></text:h>
+   <text:p text:style-name="P18">/media<text:tab/><text:tab/><text:tab/>- historically used as mount point for removable</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>media </text:p>
+   <text:p text:style-name="P18">/run<text:tab/><text:tab/><text:tab/><text:tab/>- used by modern Linux distros instead of /media</text:p>
+   <text:p text:style-name="P18">/mnt<text:tab/><text:tab/><text:tab/><text:tab/>- used for temporarily mounting filesystems</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- can be removable media but also used for <text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>network filesystems</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- also used for loopback filesystems (files that <text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>pretend to be partitions)</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">Additional directories under /</text:p>
+   <text:p text:style-name="P18">/opt<text:tab/><text:tab/><text:tab/><text:tab/>- optional application software packages</text:p>
+   <text:p text:style-name="P18">/sys<text:tab/><text:tab/><text:tab/><text:tab/>- virtual pseudo-filesystem</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- has info about system and hardware</text:p>
+   <text:p text:style-name="P18"><text:tab/><text:tab/><text:tab/><text:tab/>- can be used to alter system parameters when <text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>debugging</text:p>
+   <text:p text:style-name="P18">/srv<text:tab/><text:tab/><text:tab/><text:tab/>- site-specific data served up by the system</text:p>
+   <text:p text:style-name="P18">/tmp<text:tab/><text:tab/><text:tab/><text:tab/>- temporary files, might be erased upon reboot</text:p>
+   <text:p text:style-name="P18">/usr<text:tab/><text:tab/><text:tab/><text:tab/>- multi-user applications, utilities, data</text:p>
+   <text:p text:style-name="P18"/>
+   <text:p text:style-name="P18">/usr directory tree</text:p>
+   <text:p text:style-name="P18"><text:soft-page-break/>/usr/include<text:tab/><text:tab/>- header files used to compile apps</text:p>
+   <text:p text:style-name="P18">/usr/lib<text:tab/><text:tab/><text:tab/>- libraries for programs in /usr/bin and <text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/>/usr/sbin</text:p>
+   <text:p text:style-name="P18">/usr/lib64<text:tab/><text:tab/>- 64-bit libraries for the same above</text:p>
+   <text:p text:style-name="P18">/usr/sbin<text:tab/><text:tab/><text:tab/>- non-essential system binaries</text:p>
+   <text:p text:style-name="P18">/usr/share<text:tab/><text:tab/>- shared data used by apps</text:p>
+   <text:p text:style-name="P18">/usr/src<text:tab/><text:tab/><text:tab/>- source code, usually for the kernel</text:p>
+   <text:p text:style-name="P18">/usr/local<text:tab/><text:tab/>- data and programs specific to the local machine</text:p>
+   <text:p text:style-name="P18">/usr/bin<text:tab/><text:tab/><text:tab/>- primary directory of executable commands</text:p>
+   <text:h text:style-name="P7" text:outline-level="1">COMPARING FILES</text:h>
+   <text:p text:style-name="P19">diff<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: compare files (text) and directories</text:p>
+   <text:p text:style-name="P20">Example:</text:p>
+   <text:p text:style-name="P19"><text:tab/>diff (options) (filename1) (filename2)</text:p>
+   <text:p text:style-name="P19"/>
+   <text:p text:style-name="P19">cmp<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: compare binaries</text:p>
+   <text:p text:style-name="P19">diff3<text:tab/><text:tab/><text:tab/>: compare 3 files at once</text:p>
+   <text:p text:style-name="P19"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: compare file1 to file2 and file3</text:p>
+   <text:p text:style-name="P19">patch<text:tab/><text:tab/><text:tab/>: apply modifications to source code</text:p>
+   <text:p text:style-name="P19"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: patch files contain the deltas (changes), not <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>the entire file</text:p>
+   <text:p text:style-name="P19">file<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: check actual nature of file because</text:p>
+   <text:p text:style-name="P19"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>a file named file.txt may actually be <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>executable</text:p>
+   <text:p text:style-name="P19"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: extensions are more useful to the user <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>than to the computer</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">BACKUP</text:h>
+   <text:p text:style-name="P21">cp<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: copy files to and from local machine (or NFS)</text:p>
+   <text:p text:style-name="P21"><text:soft-page-break/>rsync<text:tab/><text:tab/><text:tab/>: more efficient than cp</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: checks modification time and file size</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: if no difference, will avoid copy and save</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: only copies parts that have changed</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: can copy from one machine to another</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: can be done recursively through directory tree <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>with -r</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: rsync (source file) (destination file)</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">COMPRESSION</text:h>
+   <text:p text:style-name="P21">gzip<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: compression utility</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: most used, compresses well and fast</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: gzip * will compress all files in a directory, <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>each file renamed with .gz</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: gzip -r (dir) will compress everything in <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>directory, along with all files in all <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>directories</text:p>
+   <text:p text:style-name="P21">gunzip<text:tab/><text:tab/><text:tab/>: same as gzip -d</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: decompress</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">bzip2<text:tab/><text:tab/><text:tab/>: produce smaller files than gzip, but takes <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>longer</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: deprecated due to superior xz</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">xz<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: slower speed for higher compression ratio</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">zip<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: often required if using compressed files from other OSs</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/></text:span><text:tab/><text:tab/><text:tab/>: legacy program</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:soft-page-break/>tar<text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/><text:tab/>: “tape archive”</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: create and extract files (tarballs) from <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>archive</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/></text:span>: group files in archive and then compress</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/></text:span>: can optionally compress while creating archive</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/></text:span>: can optionally decompress while extracting <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>contents</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">DISK-TO-DISK COPYING</text:h>
+   <text:p text:style-name="P21">dd<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: make exact copy of disk</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">dd if=/dev/sda of=/dev/sdb will erase all the content in the second disk</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">USER ENVIRONMENT</text:h>
+   <text:p text:style-name="P21">whoami<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: identify current user</text:p>
+   <text:p text:style-name="P21">who<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: list logged-on users</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">ORDER OF STARTUP</text:h>
+   <text:p text:style-name="P21">Upon logging into Linux, the following are evaluated in order:</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">/etc/profile</text:p>
+   <text:p text:style-name="P21">Evaluate whichever comes first, then ignore the rest:</text:p>
+   <text:p text:style-name="P21">~/.bash_profile</text:p>
+   <text:p text:style-name="P21">~/.bash_login</text:p>
+   <text:p text:style-name="P21">~/.profile</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">Upon creating a new shell (or terminal window), only ~/.bashrc is evaluated</text:p>
+   <text:h text:style-name="P8" text:outline-level="1"><text:soft-page-break/>ALIASES</text:h>
+   <text:p text:style-name="P21">Used to customize commands</text:p>
+   <text:p text:style-name="P21">Usually placed in ~/.bashrc</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">alias<text:tab/><text:tab/><text:tab/>: list currently defined aliases</text:p>
+   <text:p text:style-name="P21">unalias<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: remove alias</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">USERS</text:h>
+   <text:p text:style-name="P21">Real User ID<text:tab/><text:tab/><text:span text:style-name="T2">-</text:span> aka RUID</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/>-</text:span> assigned to a user who starts a process</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">Real Group ID<text:tab/><text:tab/><text:span text:style-name="T2">-</text:span> aka RGID</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/>-</text:span> users are categorized into different groups <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>using this</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/>-</text:span> a user can be a member of more than one group</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">Effective Group ID<text:tab/><text:span text:style-name="T2">-</text:span> aka EGID</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/>-</text:span> used to determine a group’s access rights</text:p>
+   <text:p text:style-name="P20"/>
+   <text:p text:style-name="P20">More commonly used:</text:p>
+   <text:p text:style-name="P20">User ID<text:tab/><text:tab/><text:tab/>- UID</text:p>
+   <text:p text:style-name="P20"><text:tab/><text:tab/><text:tab/><text:tab/>- starts at 1000 for normal users</text:p>
+   <text:p text:style-name="P20"/>
+   <text:p text:style-name="P20">Group ID<text:tab/><text:tab/><text:tab/>- GID</text:p>
+   <text:p text:style-name="P20"/>
+   <text:p text:style-name="P20">Groups are used to organize users based on permissions</text:p>
+   <text:p text:style-name="P20">Controlled through /etc/group (shows list of groups and members) and /etc/passwd</text:p>
+   <text:h text:style-name="P8" text:outline-level="1"><text:soft-page-break/>ADDING OR REMOVING USERS</text:h>
+   <text:p text:style-name="P21">Can only be done by root user</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">useradd<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: add new user</text:p>
+   <text:p text:style-name="P21">userdel<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: remove user</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">doing sudo useradd newusername will result in the following:</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/></text:span>/home/newusername will be created</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/></text:span>files from /etc/skel will be copied to the directory above</text:p>
+   <text:p text:style-name="P21"><text:tab/>/etc/passwd will be updated with details</text:p>
+   <text:p text:style-name="P21"><text:tab/>/bin/bash is set as default shell</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">userdel newusername will remove newusername but leave<text:span text:style-name="T2"> </text:span>/home/newusername</text:p>
+   <text:p text:style-name="P21">userdel -r newusername will remove newusername and /home/newusername</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">id<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: give info about current user</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: can take existing username as argument</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">groupadd<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: add new group</text:p>
+   <text:p text:style-name="P21">groupdel<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: delete group</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">groups<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: check which groups user belongs to</text:p>
+   <text:p text:style-name="P21">usermod<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: add existing user to group</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>make sure to add -a to append instead of overwrite</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:soft-page-break/>groupmod<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: change group properties</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">THE ROOT ACCOUNT</text:h>
+   <text:p text:style-name="P21">In other systems, aka the administrator account</text:p>
+   <text:p text:style-name="P21">In Linux, aka the superuser account</text:p>
+   <text:p text:style-name="P21">Has full access to system</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">su<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: switch/substitute user</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: launch new shell as another user</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: dangerous, can cause deletion of vital files</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">sudo<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: preferred over su</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: config files in /etc/sudoers and /etc/sudoers.d <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>(empty by default)</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">ENVIRONMENT VARIABLES</text:h>
+   <text:p text:style-name="P21">set<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: </text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">env<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: </text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">export<text:tab/><text:tab/><text:tab/>: lets child processes/subshells use variables <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>that have been set</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">echo $SHELL<text:tab/><text:tab/>: show value of specific variable</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">To add a variable permanently, edit ~/.bashrc and add export VARIABLE=value</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">HOME<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: an environment variable that represents home <text:span text:style-name="T2"><text:tab/></text:span><text:soft-page-break/><text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>(login)</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: $HOME is often abbreviated as ~</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">PATH<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: ordered list of directories</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: scanned when command is given to find <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>program/script</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: null dir name or ./ means current directory</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>:path1:path2 // null directory before first : </text:p>
+   <text:p text:style-name="P21"><text:tab/>path1::path2 // null directory between path1 and path2</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>To prefix a private bin directory in your path:</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>export PATH=$HOME/bin:$PATH</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">SHELL<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: point to user’s default command shell</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: echo $SHELL shows full pathname to shell</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">PS<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: prompt statement</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: customize prompt string in terminal window</text:p>
+   <text:p text:style-name="P20"/>
+   <text:p text:style-name="P21">PS1<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: primary prompt variable</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: controls what command line prompt looks like</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: can include the following:</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>\u - user name</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>\h - host name</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>\w - current working directory</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>\! - history number of command</text:p>
+   <text:p text:style-name="P21"><text:soft-page-break/><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>\d - date</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: the special characters above must be enclosed <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>in single quotes</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">RECALLING PREVIOUS COMMANDS</text:h>
+   <text:p text:style-name="P21">In the terminal window, press up or down to show previously entered commands</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">history<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: prints list of previously entered commands</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">History is stored in ~/.bash_history upon termination of session</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">HISTFILE<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: location of history file</text:p>
+   <text:p text:style-name="P21">HISTFILESIZE<text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: max number of lines in history file (500 by <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>default)</text:p>
+   <text:p text:style-name="P21">HISTSIZE<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: max number of commands in history file</text:p>
+   <text:p text:style-name="P21">HISTCONTROL<text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: how commands are stored</text:p>
+   <text:p text:style-name="P21">HISTIGNORE<text:tab/><text:tab/>: which commands don’t need to be saved</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">man bash has more instructions for history</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">!!<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: execute previous command</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">Ctrl+R<text:tab/><text:tab/><text:tab/>: search previously used commands</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">!<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: start history substitution</text:p>
+   <text:p text:style-name="P21">!$<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: refer to last argument in a line</text:p>
+   <text:p text:style-name="P21">!n<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: refer to nth command line</text:p>
+   <text:p text:style-name="P21">!string<text:tab/><text:tab/><text:tab/>: refer to the most recent command starting with <text:span text:style-name="T2"><text:tab/></text:span><text:soft-page-break/><text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>string</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">FILE OWNERSHIP</text:h>
+   <text:p text:style-name="P21">chown<text:tab/><text:tab/><text:tab/>: change user ownership of file or dir</text:p>
+   <text:p text:style-name="P21">chgrp<text:tab/><text:tab/><text:tab/>: change group ownership</text:p>
+   <text:p text:style-name="P21">chmod<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: change permissions on file\</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">Possible permissions are read, write, and execute (r, w, x or rwx)</text:p>
+   <text:p text:style-name="P21">Affects the users, groups, and others/world (u, g, o)</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">TEXT MANIPULATION</text:h>
+   <text:p text:style-name="P21">cat<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: short for concatenate</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: view, read, and print files</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>cat file1 </text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// display combined output of file1 and file2</text:p>
+   <text:p text:style-name="P21"><text:tab/>cat file1 file2 &gt; newfile</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// combine file1 and file2, output to newfil<text:span text:style-name="T2">e</text:span></text:p>
+   <text:p text:style-name="P21"><text:tab/>cat file &gt;&gt; existingfile</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// append file to existingfile</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/></text:span>cat &gt; file</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// input lines to file until Ctrl+D (save and exit)</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/></text:span>cat &gt;&gt; file</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// append lines to file until Ctrl+D (save and exit)</text:p>
+   <text:p text:style-name="P21"><text:tab/>cat &gt; file &lt;&lt; EOF</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// input lines to file until EOF is written in the<text:span text:style-name="T2"> <text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>beginning of a line</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>// EOF is case sensitive</text:p>
+   <text:p text:style-name="P21"><text:soft-page-break/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>// EOF can be another word such as STOP</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">tac<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: print lines in reverse</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">echo<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: display text</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: display string on stdout</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>echo string &gt; newfile</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// place string in newfile</text:p>
+   <text:p text:style-name="P21"><text:tab/>echo string &gt;&gt; existing</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// append string to existing file</text:p>
+   <text:p text:style-name="P21"><text:tab/>echo $variable<text:tab/></text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// display environment variable content</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">less<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: view content without loading entire file</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: useful for viewing very large files</text:p>
+   <text:p text:style-name="P21">head<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: read first few lines of file to stdout</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: 10 lines by default<text:tab/></text:p>
+   <text:p text:style-name="P21">tail<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: print last few lines of file to stdout</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: 10 lines by default</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: useful for troubleshooting using log files</text:p>
+   <text:p text:style-name="P21">zcat<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: view compressed file</text:p>
+   <text:p text:style-name="P21">zless<text:tab/><text:tab/><text:tab/>: page through compressed file</text:p>
+   <text:p text:style-name="P21">zgrep<text:tab/><text:tab/><text:tab/>: search in compressed file</text:p>
+   <text:p text:style-name="P21">zdiff<text:tab/><text:tab/><text:tab/>: compare compressed files</text:p>
+   <text:p text:style-name="P21">sed<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: abbreviation for stream editor</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: modify (filter, substitute) contents of file <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>and place in new<text:span text:style-name="T2"> </text:span>file or output stream</text:p>
+   <text:p text:style-name="P21"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P21">Data from input stream is moved to working space, modified, and then moved<text:span text:style-name="T2"> </text:span>to output stream</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>sed -e command filename</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// -e unnecessary if only 1 command</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T2"><text:tab/><text:tab/></text:span>// operate on input stream using specified commands</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// output to stdout</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>sed -f scriptfile filename</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// scriptfile contains sed commands</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// operate on input stream using commands in scriptfile</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// output to stdout</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>echo “I hate you” | sed s/hate/love</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// filter input stream</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// substitute hate with love</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// output to stdout</text:p>
+   <text:p text:style-name="P21"><text:tab/></text:p>
+   <text:p text:style-name="P21"><text:tab/>sed s/first_string/second_string/file</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// substitute first occurrence of first_string with <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>second_string in every line</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>sed s/first_string/second_string/g file</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// substitute all occurrences of first_string with <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>second_string in every line</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>sed 1,3s/first_string/second_string/g file</text:p>
+   <text:p text:style-name="P21"><text:soft-page-break/><text:tab/><text:tab/>// substitute all occurrences of first_string with <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>second_string within specified<text:span text:style-name="T2"> </text:span>range of lines (1,3)</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>sed -i s/first_string/second_string/g file</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// save changes for string substitution in the same file</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// IRREVERSIBLE</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>sed s/first_string/second_string/g file1 &gt; file2</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// substitute all occurrences of first_string with <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>second_string</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// move modified contents to file2</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// if so desired, file1 can be overwritten by</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// mv file2 <text:s/>file1</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">awk<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: acronym of author names (Alfredo Aho, Peter <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>Weinberger,<text:span text:style-name="T2"> </text:span>Brian Kernighan</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: extract then print specific contents of file</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: works well with fields (columns, basically) and <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>collection of fields</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/><text:tab/>: reads input one line at a time</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/></text:p>
+   <text:p text:style-name="P21"><text:tab/>awk ‘command’ file</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// execute commands in terminal</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// commands need to be enclosed in single quotes</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>awk -f scriptfile file</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// execute commands in scriptfile</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>awk ‘{ print $0 }’ /etc/passwd</text:p>
+   <text:p text:style-name="P21"><text:soft-page-break/><text:tab/><text:tab/>// print entire file</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>awk -F: ‘{ print $1 }’ /etc/passwd</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// print first field/column of every line</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// separate with colon</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>awk -F: ‘{ print $1 $7 }’ /etc/passwd</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// print first and 7th field/column of every line</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// separate with colon</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">FILE MANIPULATION</text:h>
+   <text:p text:style-name="P21">sort<text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: rearrange lines/records of text file</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>: can be ascending, descending, or according to <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/><text:tab/></text:span>sort key</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: can sort with respect to fields/columns</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/><text:tab/>: default is the order of ASCII characters</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>sort filename</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// sort lines/records in file according to arrangement of <text:span text:style-name="T2"><text:tab/><text:tab/><text:tab/><text:tab/></text:span>ASCII characters (default)</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>cat file1 file2 | sort</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// combine file1 and file2</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// sort (default)</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// output to stdout</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>sort -r filename</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// reverse sort</text:p>
+   <text:p text:style-name="P21"><text:soft-page-break/></text:p>
+   <text:p text:style-name="P21"><text:tab/>sort -k 3 filename</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// sort based on 3rd field of each line</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21"><text:tab/>sort -u filename</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// sort, then check for unique values</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/>// same as running uniq</text:p>
+   <text:p text:style-name="P21"/>
+   <text:p text:style-name="P21">uniq<text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span><text:tab/>: remove consecutive lines</text:p>
+   <text:p text:style-name="P21"><text:tab/><text:tab/><text:tab/><text:span text:style-name="T2"><text:tab/></text:span>:</text:p>
   </office:text>
  </office:body>
 </office:document>
