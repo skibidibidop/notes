@@ -36,6 +36,8 @@ CONTENTS
 * FILE OWNERSHIP
 * TEXT MANIPULATION
 * FILE MANIPULATION
+* REGULAR EXPRESSIONS AND SEARCH PATTERNS
+* STRINGS AND GREP
 
 # NAVIGATION
 cd			: change to home directory
@@ -677,6 +679,23 @@ awk				: acronym of author names (Alfredo Aho, Peter Weinberger, Brian Kernighan
 		// print first and 7th field/column of every line
 		// separate with colon
 
+tr				: translate or delete specified characters
+				: can only have 1 to 2 arguments
+
+	tr options 'set1' 'set2'
+		// options and set2 are optional
+		// set1 contains list of characters to be translated
+		// set2 contains list of characters to be used for substitution
+		// safer to always contain arguments in single quotes
+
+	tr a-z A-Z
+		// translate lower case a-z to uppercase
+
+tee				: display to stdout and also save to file
+
+cut				: extract specific columns
+				: default delimiter is tab
+
 # FILE MANIPULATION
 sort				: rearrange lines/records of text file
 				: can be ascending, descending, or according to sort key
@@ -701,5 +720,43 @@ sort				: rearrange lines/records of text file
 		// sort, then check for unique values
 		// same as running uniq
 
-uniq				: remove consecutive lines
-				:
+uniq				: remove duplicate consecutive lines
+				: will not remove duplicates if not consecutive
+
+paste				: combine different fields and lines, even from multiple files
+				: -d changes the delimiter
+
+join				: check if there are common fields, then join lines in multiple
+					files based on common field
+
+split				: break up a file into equal-sized segments
+				: default is 1000 line segments
+				: original file will not be changed
+				: segments will be files with same file name but with x prefix
+
+# REGULAR EXPRESSIONS AND SEARCH PATTERNS
+Regular expressions		- text strings for matching specific patterns
+				- can contain normal and meta characters
+				- different from wildcards
+
+.				: match any single character
+a | z				: match a or z
+$				: match end of a line
+^				: match beginning of a line
+*				: match preceeding item 0 or more times
+
+# STRINGS AND GREP
+
+grep				: primary text searching tool
+				: can be used with regular expressions
+
+	grep pattern filename
+		// search pattern in filename
+		// print all matching lines
+	
+	grep -v pattern filename
+		// print all non-matching lines
+	
+strings				: extract all printable character strings found in files
+
+	strings book1.xls | grep my_string
