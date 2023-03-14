@@ -41,6 +41,7 @@ CONTENTS
 * NETWORK OPERATIONS
 * IPv4 ADDRESSES
 * IP ADDRESS ALLOCATION
+* NAME RESOLUTION
 
 # NAVIGATION
 cd			: change to home directory
@@ -806,3 +807,5 @@ Dynamic addresses can change every reboot
 Dynamic Host
 Configuration Protocol		- DHCP
 				- used to assign IP addresses dynamically
+
+# NAME RESOLUTION
