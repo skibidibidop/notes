@@ -1,0 +1,1448 @@
+JAVASCRIPT NOTES
+
+READING LIST
+
+CONTENTS
+# INTERNAL & EXTERNAL JAVASCRIPT
+# VARIABLES AND OPERATORS
+# INTERACTION
+# JAVASCRIPT NUMBERS
+# JAVASCRIPT NUMBERS AND STRINGS
+# DATA TYPES
+# MORE ON STRINGS
+# CONDITIONALS
+# LOOPS
+# REGULAR EXPRESSIONS
+# FUNCTIONS
+# CALL STACK
+# ARRAYS
+# BEHAVIOR DRIVEN DEVELOPMENT
+# POLYFILLS AND TRANSPILERS
+# DOCUMENT MODEL OBJECT MANIPULATION
+# EVENTS
+
+JAVASCRIPT
+
+# INTERNAL & EXTERNAL JAVASCRIPT
+Internal JavaScript
+
+<body>
+	<script>
+		console.log(“Hello, World!”)
+	</script>
+</body>
+
+External JavaScript
+
+	<script src=”javascript.js”></script>
+
+# VARIABLES AND OPERATORS
+var (old, don’t use), let, and const
+const will only let the variable be defined once
+
+Common Operators
+Note: all operations return values
+Operator precedence: PEMDAS (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table)
+
+Addition: +
+Subtraction: -
+Multiplication: *
+Exponentiation: **
+Division: /
+Modulus: %
+Increment (can only be used on variables): ++
+Decrement (can only be used on variables): –
+
+Assume that the value is 1:
+
+Postfix form: counter++ (Return old value, and then increment. 1 will be returned, and then the value will be incremented)
+Prefix form: ++counter (Increment, and then return new value. Value will be returned, and then 2 will be returned)
+
+Application:
+let counter = 0;
+counter++;
+++counter;
+alert ( counter ); // Alert will output 2
+
+OR
+
+let counter = 0;
+alert ( ++counter ); // Alert will output 1
+
+OR
+						
+let counter = 0;
+alert ( counter++ ); // Alert will output 0
+
+Assignment: =
+Chaining assignments
+
+let a, b, c;
+a = b = c = 2 + 2;
+
+a, b, and c are all assigned 4 as their value
+
+Chained assignments evaluate from right to left
+It’s better to split this into separate lines for readability
+
+Equality and Strict Equality: == and ===
+== cannot distinguish the number zero or an empty string (because ‘’ is converted to the number zero before comparison) from boolean false
+(also converted to number zero before comparison), so use === (strict equality operator) instead
+
+=== will compare the values without converting them to numbers. If the values have different data types, the result is automatically false.
+
+!== (strict non-equality)
+
+Operands (sometimes called arguments):
+Variables
+Numbers
+Expressions
+
+Bitwise Operators
+Arguments are treated as 32-bit integer numbers
+
+List:
+&
+|
+XOR (^)
+NOT (~)
+LEFT SHIFT (<<)
+RIGHT SHIFT (>>)
+ZERO-FILL RIGHT SHIFT (>>>)
+
+More on bitwise operators: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise_operators
+
+Operator: Comma (,)
+	
+Allows us to evaluate several expressions divided by the comma
+
+		let a = ( 1 + 2, 3 + 4 );
+		alert( a ); // Output is 7, the result of 3 + 4
+
+	All expressions are evaluated but only the result of the last expression is returned
+	The result of 1 + 2 is thrown away
+
+Comma’s precedence is lower than =
+
+Logical Operators
+
+Source: https://javascript.info/logical-operators
+
+
+Include ||, &&, !, ?? (Nullish Coalescing)
+Extra features:
+
+OR (||)
+
+	Any value is allowed as operand
+
+	Lower precedence than AND
+
+From left to right, converts operand to boolean. If true, evaluation stops and original value of operand is returned
+
+A chain of OR will return the first truthy value, or the the last one if none is found
+
+alert( 1 || 0 ); // 1 (1 is truthy)
+
+alert( null || 1 ); // 1 (1 is the first truthy value)
+alert( null || 0 || 1 ); // 1 (the first truthy value)
+
+alert( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+
+				Another example:
+
+let firstName = "";
+let lastName = "";
+let nickName = "SuperCoder";
+
+alert( firstName || lastName || nickName || "Anonymous"); // Output is SuperCoder. If all variables were empty (falsy), output would be Anonymous.
+
+		AND (&&)
+
+			Any value is allowed as operand
+
+			Higher precedence than OR
+
+From left to right, converts operand to boolean value, finds the first falsy value, and then returns original value of that operand
+			If no falsy operand, returns the value of the last operand
+
+		NOT (!)
+
+			Higher precedence than && and ||
+
+Converts operand to boolean, inverts the value, and then returns the inverted value
+
+Double NOT (!!) can be used to convert to non-inverted boolean value
+
+		NULLISH COALESCING (??)
+
+			Returns the first argument that is defined
+
+			let a = 34;
+			let b = null or undefined;
+
+			alert(a ?? b) // a, since a is the first argument which is defined
+
+			Common use case:
+
+			let user; // user is undefined here
+
+alert(user ?? ‘Anonymous’); // since user is undefined, output will be Anonymous
+
+		In comparison to OR (||)
+
+			OR (||) finds the first truthy value
+			?? finds the first defined value
+
+			|| treats null, undefined, and 0 as falsey
+?? treats 0 as defined, and null and undefined as undefined
+
+Using || in cases where 0 is a valid value may cause problems by replacing it with the default value, while using ?? in the same cases will retain 0 as the value
+Ternary Operator
+
+	condition0 ? run this code : run this code instead
+
+Example
+
+	const greeting = isBirthday
+  	? 'Happy birthday Mrs. Smith — we hope you have a great day!'
+: 'Good morning Mrs. Smith.';
+
+		A more complex example
+
+		let age = prompt('age?', 18);
+
+let message = (age < 3) ? 'Hi, baby!' :
+(age < 18) ? 'Hello!' :
+(age < 100) ? 'Greetings!' :
+'What an unusual age!';
+
+# INTERACTION
+“Modal” pauses script execution, visitor is not allowed to interact with the rest of the window until the modal window is dismissed.
+
+alert: Modal window, shows message and OK button.
+
+prompt: Modal window. Shows title, input field, and OK and Cancel buttons.
+
+	let var = prompt(title, [default]);
+	// [default] is the initial value
+	// square brackets [ ] indicate that this is optional
+	// if Cancel button is clicked, var = null
+	// if input is provided and OK button is clicked, var = the input
+	
+	let var = prompt(‘How old are you?’, 100);
+
+	alert(‘You are ${var} years old!’);
+
+	// You are 100 years old!
+
+confirm: Modal window. Shows a question, and the OK and Cancel buttons. Clicking OK returns true, clicking Cancel returns false.
+
+	let isBoss = confirm("Are you the boss?");
+
+alert( isBoss ); // true if OK is pressed
+
+# JAVASCRIPT NUMBERS
+Number is a data type. In C, data types include int, float, etc.
+BigInt is another data type. Used for very very large numbers
+Avoid leading 0s because those might be interpreted as Octal
+
+Can be:
+With decimals
+Without decimals
+Scientific notation: 123e5 (12300000) or 123e-5 (0.00123)
+
+Always 64-bit floating point
+Value is stored in first 52 bits (0 - 51)
+Exponent is stored in 11 bits after that (52 - 62)
+Sign is stored in 1 bit (63)
+Integer precision: 15 digits
+Floating precision: not always accurate, so
+
+let x = 0.2 + 0.1
+
+	can be done as this instead:
+
+	let x = (0.2 * 10 + 0.1 * 10)/10
+
+Numeric Separator: _
+
+	let num = 1000;
+	
+	can be written as 
+
+	let num = 1_000;
+
+	or
+
+	let num = 10_00; // still equivalent to 1000
+
+# JAVASCRIPT NUMBERS AND STRINGS
+The operator + is used for both addition (for numbers) and concatenation (for strings)
+
+For numbers
+		let x = 10;
+		let y = 20;
+		let z = x + y;
+		// z is 30
+
+For strings
+		let x = “10”;
+		let y = “20”;
+		let z = x + y;
+
+		z is 1020
+
+Numbers and strings combined will still result in concatenation
+		let x = 10;
+		let y = “20”;
+		let z = x + y;
+
+		z is 1020
+
+The interpreter reads from left to right, so 
+	“The result is “ + 10 + 20 = The result is 1020
+
+	The combination of “The result is “ + 10 will be treated as concatenated string, and then that will be concatenated with 20
+
+	10 + 20 + “30” = 3030
+
+	10 + 20 is normal addition, and then that will be concatenated with the string “30”, resulting to the string 3030
+
+	The + operator can also be used to convert non-numeric operands to numbers. When used this way, it is referred to as the “unary plus”
+
+	let apples = “2”;
+	let oranges = “3”;
+
+	alert ( apples + oranges ); // Output is 23
+	alert ( +apples + +oranges); // Output is 5
+
+	The unary plus has higher precedence than all other basic operators. Look here for the precedence table: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table
+
+Numeric Strings
+
+Other operators will work if numeric strings are operated on
+	“100” / “10” will result to 10
+	“100” * “10” will result to 1000
+
+Addition operator will not work because it is for concatenating strings
+	“100” + “10” will result to 10010
+
+NaN: Not a Number
+	NaN is considered a number
+
+	typeof NaN // Output is “Number”
+
+	Arithmetic with non-numeric string
+
+	100/”Apple” // Output is  “NaN”
+
+	Arithmetic with numeric string
+
+	100 / “10” // Output is 10
+
+	isNaN() can be used to find out if value is not a number
+
+	let x = 100 / “Apple”;
+	isNaN(x); // Output will be true
+
+	If NaN is used in arithmetic, result will be NaN or concatenation with Nan
+
+Infinity
+	Also considered a number
+
+	If calculated number is outside the largest number possible, output will be either of these:
+	Infinity
+	-Infinity	
+
+	Division by 0 also outputs Infinity
+
+Hexadecimal
+	Should be preceded by 0x
+
+	let x = 0xFF;
+
+Converting number bases
+	To binary, hex, octa, etc.
+
+	let x = 1;
+	myNumber.toString(32);
+	myNumber.toString(16);
+	myNumber.toString(12);
+	myNumber.toString(10);
+	myNumber.toString(8);
+	myNumber.toString(2);
+
+JavaScript Numbers as Objects
+	Numbers can be defined as objects with the keyword “new”
+
+	let x = 123;
+	let y = new Number(123);
+
+	x is a number
+	y is an object
+
+	Don’t create Number Objects because they can produce unexpected results
+
+	The keyword “new” can also complicate the code and slow down execution speed
+
+# DATA TYPES
+Variables can contain any data type. A variable containing a Number can also end up containing a string, etc. This property makes JavaScript “dynamically typed”.
+
+The 8 basic data types
+
+number: represents both integer and floating point numbers
+	Primitive, can only contain one value at a time
+	Includes special numeric values: Infinity, -Infinity, NaN
+	Cannot safely represent values larger than (253-1), or less than -(253-1)
+
+bigint: created by appending “n” to the end of an integer
+	Primitive
+	const bigInt = 12341284219874981271907412321415n;
+
+string: Must be surrounded by quotes. Primitive.
+
+boolean: only has true or false value. Also primitive.
+
+null: “null” represents “nothing”, “empty”, or “unknown”. Primitive.
+
+undefined: “value is not assigned”. Primitive.
+
+object:
+
+symbol: used to create unique identifiers for objects
+
+
+typeof: returns the type (data type, can also include function) of the operand
+typeof null; // This will return “object” even though null is not an object. This is a recognized error in typeof 
+
+# MORE ON STRINGS
+Remember to surround strings with quotation marks
+
+Strings are immutable. String methods don’t modify the original string, and always return new strings.
+
+Any text without quotes surrounding it is assumed to be a variable name, property name, reserved word, etc.
+
+“string” and ‘string’ are basically the same (double and single quotes are considered “simple” quotes)
+
+`string` (backtick quotes, considered “extended functionality” quotes) allow variables and expressions to be embedded into the string contained. Also called template literal
+
+Variables and expressions can be embedded using ${}
+
+	${name}  or ${1 + 2}
+
+Escaping characters in a string
+
+Instead of 
+	const string = ‘I’ve got no money’;
+
+Use
+	const string = ‘I\’ve got no money’;
+
+So that the entire value is read as a string and not just ‘I’
+
+Concatenating strings
+Variables can be embedded into template literals to concatenate
+
+	alert(`Hi ${name}, nice to meet you!`);
+
+Strings can also be concatenated using the + operator (see examples in JavaScript numbers and strings)
+
+concat() can also be used to join two or more strings
+
+	let text1 = "Hello";
+	let text2 = "World";
+	let text3 = text1.concat(" ", text2);
+
+Converting to number (use the Number() function)
+
+	const aString = “123”;
+	const aNum = Number(aString);
+	console.log(typeof aNum) // Output is “number”
+
+Converting to number (another method)
+
+	Number.parseInt(string, radix);
+	
+	// also works with strings that start with numbers but end with non-numeric characters
+	// Number.parseInt(“123abc”, 10); will output 123
+
+Converting to string (use the toString() function)
+
+	const aNum = 123;
+	const aString = aNum.toString();
+	console.log(typeof aString) // Output is “string”
+
+Application example: when a user enters information in a field, it is a string. If that input has to be used as a number, it has to be converted using the Number() function first.
+
+Embedding expressions into template literals
+
+	const song = "Fight the Youth";
+	const score = 9;
+	const highestScore = 10;
+
+	const output = `I like the song ${song}. I gave it a score of
+	${
+	  (score / highestScore) * 100
+	}%.`;
+	console.log(output); // "I like the song Fight the Youth. I gave it a score of 90%."
+
+Multiline Strings
+
+Note the usage of template literals here. Template literals respect breaks in code
+
+	const output = `I like the song.
+	I gave it a score of 90%.`
+	console.log(output); // Output below:
+
+	/*
+	I like the song.
+	I gave it a score of 90%
+	*/
+
+	OR (if not template literal)
+
+	const output = “I like the song.\nI gave it a score of 90%.”);
+	console.log(output) // This will have the same output as above
+
+String Length
+
+	let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	let length = text.length;
+	
+	Output will be 26
+
+Extracting and Replacing String Parts
+
+By using slice(start, end), substring(start, end), substr(start, length), or replace()
+
+slice(start, end)
+
+	Extracts a part of string and returns that in a new string
+
+	let text = "Apple, Banana, Kiwi";
+	let part = text.slice(7, 13); // Output is Banana
+
+	Start counting from 0. Position 7 is B
+
+	OR
+
+	let text = "Apple, Banana, Kiwi";
+	let part = text.slice(7); // Output is Banana, Kiwi
+	
+	OR
+
+	let text = "Apple, Banana, Kiwi";
+	let part = text.slice(-12); // Output is Banana, Kiwi.
+
+	Negative parameter means count from the end of the string
+
+	let text = "Apple, Banana, Kiwi";
+	let part = text.slice(-12, -6); // Output is Banana
+
+substring(start, end)
+	// Similar to slice(), except start and end values less than 0 are treated as 0
+
+substr(start, length)
+	// Similar to slice(), except 2nd parameter specifies length of extracted part
+
+replace()
+	// By default, applicable only on the first match
+	// Does not change the string it is called on. Instead, it returns a new string
+
+	let text = "Please visit Microsoft!";
+	let newText = text.replace("Microsoft", "W3Schools");
+	
+	// Output will be Please visit W3Schools!
+				
+replaceAll()
+
+	// A regular expression will be replaced instead of a string
+	// Replaces all matches	
+
+	text = text.replaceAll(/Cats/g,"Dogs");
+	text = text.replaceAll(/cats/g,"dogs");
+
+Extracting String Characters
+
+charAt()
+
+	Returns character at specified index in a string
+
+charCodeAt()
+
+	Returns the unicode of the character at specified index in a string
+
+Converting to Upper and Lower Case
+
+	Can use toUpperCase() and toLowerCase()
+
+	let text1 = "Hello World!";
+	let text2 = text1.toUpperCase();
+
+	or
+
+	let text2 = text1.toLowerCase();
+
+Removing whitespace
+trim()
+	
+	Removes whitespace from both sides of the string
+
+	let text1 = "  	Hello World!  	";
+	let text2 = text1.trim();
+
+trimStart() and trimEnd()
+
+	trimStart() removes whitespace from the start of a string only
+	trimEnd() removes whitespace from the end of a string only
+
+	let text1 = " 	Hello World! 	";
+	let text2 = text1.trimStart();
+
+	or
+
+	let text2 = text1.trimEnd();
+
+String Padding
+Adds padding at the beginning and end of the string
+
+	let text = "5";
+	let padded = text.padStart(4,"x"); // Output is xxxx5
+
+	or
+
+	let text = "5";
+	let padded = text.padEnd(4,"x"); // Output is 5xxxx
+
+	Numbers must be converted to string before using padStart() or padEnd()
+
+	let text = numb.toString();
+
+Property Access
+
+	let text = "HELLO WORLD";
+	let char = text[0];
+
+	// Output is H (0th index)
+
+Strings are NOT arrays even though it looks like that when using property access
+
+If no character is found, output is undefined
+
+Converting String to Array
+
+Unlike in C, strings in JavaScript are not arrays, so they need to be converted first using split()
+	text.split(",")	// Split on commas
+	text.split(" ")	// Split on spaces
+	text.split("|")	// Split on pipe
+
+If separator is omitted, returned array will contain whole string in index[0]
+If separator is (“”), returned array will be array of single characters
+
+# CONDITIONALS
+
+Comparisons	
+	>, <, <=, >=, ==, !=
+		
+	Comparisons result to boolean values
+
+String comparisons
+Strings are compared letter by letter
+
+	alert( 'Z' > 'A' ); // true
+	alert( 'Glow' > 'Glee' ); // true
+	alert( 'Bee' > 'Be' ); // true
+
+Algorithm:
+	If stringA[0] >= stringB[0], stringA >=stringB, END
+	If stringA[0] <= stringB[0], string A <= stringB, END
+	If stringA[0] == stringB[0], compare stringA[1] and string[1] instead
+	Repeat step 1 with step 3’s index number
+	Repeat until end of string
+	If string length of both strings are equal at end of comparison, then both strings are equal
+	Longer string is greater
+
+Comparison of different types
+	When comparing values of different types, they get converted to numbers first and then compared
+
+	Boolean values true and false will be converted to 1 and 0, respectively
+
+	== cannot distinguish the number zero from boolean false, so use === (strict equality operator) instead
+
+	=== will not convert values to numbers first. If the values have different data types, the result is automatically false.
+
+Comparison with null and undefined
+	If strict equality (===)
+
+	alert(null === undefined); // The result is false
+
+	If not strict equality (==)
+
+	alert(null == undefined); // The result is true
+
+		alert( null > 0 );  // (1) false
+		alert( null == 0 ); // (2) false
+		alert( null >= 0 ); // (3) true
+
+	In the example above, we can observe that for null and undefined:
+
+	Comparisons (>, <, >=, <=) convert to number first (null is converted to 0
+
+	== does not convert to number first
+
+Comparisons with undefined
+	alert( undefined > 0 ); // false (1)
+	alert( undefined < 0 ); // false (2)
+	alert( undefined == 0 ); // false (3)
+
+	In 1, and 2, undefined gets converted to NaN. NaN returns false for all comparisons
+
+	In 3, the result will only be true if the argument is undefined == null
+
+Conditional statements
+Includes if, else, else if, switch
+
+Switch
+switch(expression)
+{
+	case a:
+	//code block
+	break;
+
+	case b:
+	//code block
+	break;
+
+	case c:
+	//code block
+	break;
+
+	case d:
+	case e:
+	//code block for cases d and e
+	break;
+
+	default:
+	//code block
+}
+
+	If no case match, code block under default will execute
+
+	If multiple case match, the code block under the first case is executed
+
+	Multiple cases can share a code block
+
+	If no default block, the program will continue to execute after the switch statement
+
+# LOOPS
+
+break: exits out of the current loop only
+
+continue: if condition is true, stop and start new iteration if condition allows
+
+	for (let i = 0; i < 10; i++) {
+
+ 	// if true, skip the remaining part of the body
+  	if (i % 2 == 0) continue;
+
+  	alert(i); // 1, then 3, 5, 7, 9
+}
+
+Labels for break and continue
+	Useful for breaking out of nested loops. Also applicable for continue
+
+	Syntax:
+
+		labelName: for (...)
+		{
+		…
+		}
+
+	Example:
+
+	outer: for (let i = 0; i < 3; i++)
+	{
+	  for (let j = 0; j < 3; j++)
+	  {
+	    let input = prompt(`Value at coords (${i},${j})`, '');
+
+	    // if an empty string or canceled, then break out of both loops
+	    if (!input) break outer; // (*)
+	    // do something with the value...
+	  }
+	}
+
+	alert('Done!');
+	
+The for…of loop
+	Can loop through a collection
+
+		const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+	for (const cat of cats) {
+	  		console.log(cat);
+	}
+
+		// Get first item in const cats
+		// Assign that to const cat
+		// Perform code in { }
+		// Repeat until end of collection
+
+map() and filter()
+
+map()
+	You can use map() to do something to each item in a collection and create a new collection containing the changed items:
+
+	function toUpper(string) {
+	  return string.toUpperCase();
+	}
+
+	const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+	const upperCats = cats.map(toUpper);
+
+	console.log(upperCats);
+	// [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
+
+filter()
+	New collection will only contain items that match test
+
+	function lCat(cat) {
+	  return cat.startsWith('L');
+	}
+
+	const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+
+	const filtered = cats.filter(lCat);
+
+	console.log(filtered);
+	// [ "Leopard", "Lion" ]
+
+# REGULAR EXPRESSIONS
+Source: Regular Expressions (RegEx) Tutorial - YouTube, Regex101
+
+Regular expressions allow us to check a series of characters for matches (case sensitive by default)
+Syntax: /(put characters/patterns here without the parentheses)/(flag without the parentheses)
+
+Flags
+
+	Flags can be chained together (e.g.: /(characters here)/gi)
+
+	s: single line
+
+	u: unicode
+
+	g: global, finds all matches
+
+	m: multiline
+		
+	y: sticky
+
+	d: indices
+
+	i: case insensitive
+
+Pattern Elements (tokens?)
+
+	Character set
+
+		Syntax: /[characters to match here]/
+
+		Example:
+		/[abc123]atch/
+		will match aatch, batch, catch, 1atch, 2atch, 3atch
+
+	Exclude set
+		Syntax: /[^will match everything except for character here]/
+
+		Example:
+		/[^ab]atch/
+		will match everything except aatch and batch
+
+Ranges
+
+	Will include anything in the range
+
+	Syntax: /[range of characters to match]/
+	Example:
+
+	/[a-z]atch/
+	will match aatch, batch, catch… up to zatch
+
+	/[a-zA-Z]/
+	will match aatch, Aatch, batch, Batch… up to zatch, Zatch
+
+	/[0-9]+
+	The + matches the previous token ([0-9]) at least once and up to unlimited times
+	will match 124124158721576293, etc.
+
+	/[0-9]{11}
+	{11} will match the previous token 11 times
+
+	/[0-9]{5, 8}
+	{5, 8} will match with entries with 5 to 8 characters
+
+	/[0-9]{5,}
+	match with at least 5 characters
+	
+Metacharacters
+Complete list: JavaScript RegExp Reference
+
+	A few notable ones:
+
+		\d: match any digit character [0-9]
+
+		\w: will match a-z, A-Z, 0-9, and _
+
+		\s: match whitespace
+
+		\t: match tab only
+
+	Example:
+
+		/\d{3}\s\w{5}/
+
+		will match anything following this pattern 123 hello
+
+		(3 digits, and then a whitespace, and then 5 word characters, digit characters, _)
+
+Special Characters
+	
+	+: one or more quantifier
+
+	\: escape character
+
+	[]: character set
+
+	[^]: negate symbol in a character set, must be inside [] (aka exclude set)
+	
+	?: zero or one quantifier (makes preceding character optional)
+
+	/hello?/ will match hello and hell because ‘o’ (precedes the ?) is now optional
+
+	.: any character except newline
+
+	*: zero or more quantifier
+	
+Starting and Ending patterns
+
+	^: outside of [], signifies the start of the pattern
+
+	$: end of pattern
+
+	Example:
+
+		/^[a-z]{5}$/ will only match if string is exactly 5 characters long
+
+Alternate Characters
+	
+|: means OR
+		
+	/a|b/ will match either a or b
+
+	/(b|c)atch/ will match either batch or catch
+
+# FUNCTIONS
+Standard built-in objects: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
+Store code in a block, and then invoke that when needed by using short command
+Examples:
+
+	const message1 = ‘I am a person’;
+	const message2 = message1.replace(‘person’, ‘sausage’);
+	console.log(message2);
+
+	//Output is I am a sausage
+	//The replace() function replaces the first argument (person) with the second argument (sausage)
+
+	const myArray = ['I', 'love', 'chocolate', 'frogs'];
+	const madeAString = myArray.join(' ');
+	console.log(madeAString);
+	
+	//Output is I love chocolate frogs
+	//The join() function merges all array items into a single string
+	
+	const myArray = ['I', 'love', 'chocolate', 'frogs'];
+	const madeAString = myArray.join();
+	console.log(madeAString);
+	
+	//Output is I,love,chocolate,frogs
+	//This is the default behavior of the join() function (no parameters specified)
+
+Functions vs methods
+	Methods are functions that are part of objects
+
+Custom Functions
+	Functions defined in the code and not built into the browser
+
+	To create a function (aka Function Declaration):
+		function functionName() {
+		//code block here;
+		}
+
+	To invoke the created function:
+
+		functionName();
+
+	Function declarations are always hoisted, so it is possible to call the function above the declaration.
+
+	Default parameters can also be added during function declaration
+
+	function functionName(variable = ‘value’) {
+	//code block here;
+	}
+	
+	If no parameters are provided during invocation of the function, the default value of the variable will be used.
+	
+Anonymous Functions
+	Functions that don’t have names
+
+		(function() {
+		//code block;
+		}
+
+	Usually used when a function expects another function as a parameter. The anonymous function can be used as the parameter for the expecting function.
+
+	Creating functions this way is referred to as Function Expression. These are not hoisted.
+
+Arrow Functions
+	Alternative form for passing anonymous functions
+	
+	Example
+
+	let func = function(arg1, arg2, ..., argN) {
+	return expression;
+	};
+
+	or
+
+	let func = (arg1, arg2, ..., argN) => expression;
+
+		or
+
+	let sum = (a, b) => a + b;
+
+Function Declaration vs Function Expression
+	Function Declaration
+	Can be used above the line where it is declared
+
+		Syntax:
+
+		function nameFunc() {
+		//code;
+		}
+
+	Function Expression
+	Usable only when execution reaches the line where it is defined
+		
+		Syntax:
+		
+		let var = function () {
+		//code;
+		};
+
+	*Note the semicolon at the end. This is the case with Function Expressions. Function declarations do not need a semicolon at the end
+
+	Should use function declarations more due to readability
+
+Function is a value
+
+	Functions are stored in variables when declared. Declared functions can also be stored in other variables:
+
+	function nameFunc() {
+	//code;
+	}
+
+	otherVar = nameFunc;
+
+	*Note that nameFunc has no () because saying otherVar = nameFunc() would store the returned value of nameFunc() in otherVar instead
+
+	Anonymous functions can also be declared while defining a variable:
+
+		let otherVar  = function() {
+		//code;
+		};
+
+# CALL STACK
+	A way for JS to keep track of which function is currently being run and what functions are invoked within that function
+
+	Last in, first out principle
+
+	If function is invoked, it gets put on top of the call stack
+	If abovementioned function invokes another function, the newly invoked function gets put on top of the call stack
+	Once the function on the top of the call stack finishes execution, it gets popped off of the call stack and resumes where it left off
+	The script will stop when the call stack is empty
+
+	Example:
+
+	function add(a, b) {
+		return a + b;
+	}
+
+	function average(a, b) {
+		return add(a, b) / 2;
+	}
+
+	let x = average(10, 20);
+
+Stack Overflow
+	The call stack has a fixed size
+
+	A stack overflow occurs when there are more execution contexts than the stack’s fixed size
+
+# ARRAYS
+	Variables that can hold more than one value
+	Syntax:
+
+	const arraySample = [‘value1’, ‘value2’, ‘value3’];
+
+	The values contained can be accessed by referring to their index numbers:
+
+	arraySample[0] will give ‘value1’
+
+	To access the whole array:
+
+	const cars = ["Saab", "Volvo", "BMW"];
+	document.getElementById("demo").innerHTML = cars;
+
+	JS arrays are technically objects, but it’s better to refer to them as arrays anyways. 
+
+		Arrays use numbers to access index contents or ‘elements’:
+
+	arraySample[0];
+
+	Objects use names to access its ‘elements’:
+
+		person.firstName // returns John
+
+		const person = {firstName: ‘John’, lastName: ‘Doe’, age: 46}
+
+	Array elements can be objects
+
+		sampleArray = [Date.now, myFunction, myCars];
+
+	Add array elements using push() method
+
+		const fruits = [‘Banana’, ‘Oranges’, ‘Apple’];
+		fruits.push(‘Lemon’);
+
+	Associative Arrays
+
+		Arrays with named indexes
+		Also known as hashes
+		Don’t use, not supported in JavaScript
+
+	Checking if variable is array
+
+		Array.isArray(variable);
+		// will return true if variable is an array
+
+		OR
+
+		variable instanceof Array;
+		// returns true if variable is an array
+
+	Array Methods
+
+		toString(): converts an array to a string of comma separated array values
+
+		join(): behaves similar to toString(), but the separator can be specified
+
+			const fruits = ["Banana", "Orange", "Apple", "Mango"];
+			document.getElementById("demo").innerHTML = fruits.join(" * ");
+			//Output is Banana*Orange*Apple*Mango
+
+		pop(): removes last element of array
+
+		push(): appends new element to array, returns new array length
+
+	shift(): removes first element in the array and then shifts all other elements’ indexes by one lower, returns value that was shifted out
+
+	unshift(): adds new element to the beginning of an array and ‘unshifts’ older elements, returns the new array length
+
+	concat(): merge 2 or more arrays, returns new array (previous arrays are unaffected)
+
+	reverse(): Reverses order of elements in array. Overwrites original array.
+
+	splice(a, b, c): adds new items to an array
+		a = index where new item should be inserted
+		b = how many elements should be removed
+		c = new elements to be added (separate by comma)
+
+		returns array of deleted items
+
+	slice(a, b): slices out piece of an array
+		creates new array, doesn’t remove elements from source array
+
+		a = index of element where selection start is
+	b = The element before this index is the end of selection. The element in this index is not included in the selection
+
+		can slice out the rest of the elements if 2nd argument is omitted
+
+	.at(index): allows use of negative indices
+
+		const language = "JavaScript";
+	language.at(0); // "J"
+	language.at(1); // "a"
+	language.at(-1); // "t"
+	language.at(-2); // "p"
+
+		If negative index, -1 is the last character, -2 is the one before it, and so on
+
+# BEHAVIOR DRIVEN DEVELOPMENT
+Automated testing with Mocha: https://javascript.info/testing-mocha
+
+Example: making a function named pow(x, n), it raises x by n
+	
+The description of how a function should work is called a specification:
+
+	describe(“pow”, function()
+{
+		it(“raises to n-th power”, function ()
+		{
+			assert.equal(pow(2, 3), 8 );
+		});
+	});
+
+The main building blocks of a specification (spec):
+
+	describe(“title”, function() {...})
+
+		This is used to group the “workers” (the it blocks)
+
+	it(“use case description”, function() {...})
+
+		The “use case description” should be in plain english
+	
+	assert.equal(value1, value2)
+
+		The code inside the it block will execute. No errors if implemented correctly
+
+		In the example above, assert.* is used to check whether pow(2, 3) equals 8
+The development flow
+The flow is iterative:
+
+Write initial spec with the most basic functionalities
+Create initial implementation
+Run spec through testing framework (Mocha)
+Make corrections until no errors occur
+Add more use cases in the test, and then repeat 3 to 4
+Repeat until functionality is ready
+
+# POLYFILLS AND TRANSPILERS
+Tools to make older engines understand new JavaScript features
+
+Transpiler
+
+	Translates source code to another source code
+	Parses modern code, then translates to older syntax
+
+	A developer can run their code through a transpiler, and then deploy the translated code to the older engine
+
+Polyfills
+
+	Updates/adds new functions
+
+# OBJECTS
+Review: primitive data type contains single value
+Objects are not considered primitive because they contain complex entities
+	
+Can be created empty or with list of properties
+
+	let variable = new Object();
+
+	or
+
+	let variable = {}; // referred to as ‘object literal’
+
+Syntax:
+
+	let variable =
+	{
+		key: value,
+		key: value
+	};
+
+	The ‘key’ is aka name or identifier
+
+Example:
+
+	let user =
+	{
+		name: ‘John’,
+		age: 30
+	};
+
+To access:
+
+	alert(user.name); // John
+	alert(user.age); // 30
+
+To add property:
+
+	user.isAdmin = true; // user now contains isAdmin: true, aside from name: ‘John’ and age: 30
+
+To remove property, use the delete operator:
+
+	delete user.age; // user no longer contains property age: 30
+
+Multi-word properties must be enclosed in quotation marks:
+
+	let user =
+	{
+		name: ‘John’,
+		age: 30,
+		‘likes birds’: true,
+	};
+
+The last property in a list may also contain a comma (trailing/hanging comma). This can be seen above. Makes it easier to add new properties
+
+Dot access doesn’t work on multi-word properties. Instead, we square brackets can be used:
+
+	user[‘likes birds’] = true;
+
+Square brackets can also be used like this (dot notation can’t be used like this):
+
+	let user =
+	{
+		name: "John",
+		age: 30
+	};
+
+	let key = prompt("What do you want to know about the user?", "name");
+
+	// access by variable
+	alert( user[key] ); // John (if enter "name")
+
+Computed properties
+
+	Using square brackets in object literal when creating object
+
+	let fruit = prompt("Which fruit to buy?", "apple");
+
+	let bag =
+	{
+	  [fruit]: 5, // the name of the property is taken from the variable fruit
+	};
+
+	alert( bag.apple ); // 5 if fruit="apple"
+
+	[fruit] means that the property name should be taken from fruit
+
+	If input is ‘apple’, bag will contain {apple: 5}
+
+	Another example, with more complex expressions:
+
+	let fruit = 'apple';
+	let bag =
+	{
+		[fruit + 'Computers']: 5 // bag.appleComputers = 5
+	};
+
+Property Value Shorthand
+
+	Using existing variables as values for property names
+
+		function makeUser(name, age)
+		{
+	  		return
+			{
+				name: name,
+				age: age,
+				// ...other properties
+			};
+		};
+
+	let user = makeUser("John", 30);
+	alert(user.name); // John
+
+	Shorthand for the example above:
+
+		function makeUser(name, age)
+		{
+			return
+			{
+				name, // same as name: name
+				age,  // same as age: age
+			};
+		};
+
+# DOCUMENT OBJECT MODEL (DOM) MANIPULATION
+Selectors can be used to target nodes in the DOM
+	For this:
+	<div class=”display”></div>
+
+	CSS-style selector examples:
+	div.display
+	.display
+	#container > .display
+	div#container > div.display
+
+Relational selector examples:
+	firstElementChild
+	lastElementChild
+
+DOM Methods
+HTML is converted by web browser to DOM upon parsing	
+Query Selectors
+	Examples:
+	element.querySelector(selector) returns reference to the first match of selector
+
+	element.querySelectorAll(selector) returns “nodelist” containing references to all matches of selector
+
+“Nodelists” may appear like arrays but are not arrays
+
+	Nodelists can be converted to arrays by using Array.from() or the spread operator
+
+Element Creation
+	document.createElement(tagName, [options]) creates new element of tag type tagName
+
+		[options]: optional parameters can be added
+
+	Placing elements in the DOM
+		Append elements
+
+	parentNode.appendChild(childNode) appends childNode as the last child of parentNode
+
+	parentNode.insertBefore(newNode, referenceNode) inserts newNode into parentNode before referenceNode
+
+		Remove elements
+
+	parentNode.removeChild(child) removes child from parentNode on the DOM and returns a reference child
+
+		Altering elements
+
+	When you have a reference to an element, you can use that reference to alter the element’s own properties. This allows you to do many useful alterations, like adding/removing and altering attributes, changing classes, adding inline style information and more.
+
+		const div = document.createElement('div');                	 
+	// creates a new div referenced in the variable 'div'
+
+Adding inline style
+	DOM Enlightenment
+		Use camelCase instead of hyphens for CSS style properties
+		Add ‘css’ prefix in case the CSS property to be used is also a JavaScript keyword
+			float = cssFloat
+
+Editing attributes
+	HTML attribute reference - HTML: HyperText Markup Language | MDN
+
+Working with attributes
+	Standard: toggle CSS style instead of adding and removing inline CSS
+
+Adding text content
+	div.textContent = ‘Hello World!’;
+
+Adding HTML content
+	div.innerHTML = ‘<span>Hello World!</span>’;
+	// renders HTML in div
+	
+Can place script at the bottom of HTML file so that it is run after the DOM nodes are created
+
+Or link script in the head and add defer keyword to load the .js file after the HTML is parsed
+
+	<head>
+		<script src=”script.js” defer></script>
+	</head>
+
+# EVENTS
