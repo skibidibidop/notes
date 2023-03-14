@@ -42,6 +42,7 @@ CONTENTS
 * IPv4 ADDRESSES
 * IP ADDRESS ALLOCATION
 * NAME RESOLUTION
+* NETWORK CONFIGURATION
 
 # NAVIGATION
 cd			: change to home directory
@@ -809,3 +810,10 @@ Configuration Protocol		- DHCP
 				- used to assign IP addresses dynamically
 
 # NAME RESOLUTION
+Convert numerical IP address to hostname (sample.com)
+
+hostname			- view system's hostname
+hostname argument		- system will try to change hostname if root user
+
+# NETWORK CONFIGURATION
+Network configuration files are located in /etc
