@@ -38,6 +38,9 @@ CONTENTS
 * FILE MANIPULATION
 * REGULAR EXPRESSIONS AND SEARCH PATTERNS
 * STRINGS AND GREP
+* NETWORK OPERATIONS
+* IPv4 ADDRESSES
+* IP ADDRESS ALLOCATION
 
 # NAVIGATION
 cd			: change to home directory
@@ -760,3 +763,46 @@ grep				: primary text searching tool
 strings				: extract all printable character strings found in files
 
 	strings book1.xls | grep my_string
+
+# NETWORK OPERATIONS
+
+IP address			- Internet Protocol address
+				- unique network address idenifier
+
+IPv4				- uses 32-bits for addresses
+				- 4.3 billion unique addresses
+
+IPv6				- uses 128-bits
+				- 3.4 x 10^38 unique addresses
+
+Network
+Address Translation		- enables sharing one IP among many locally connected
+					computers
+				- unique address is only seen in local network
+
+Net ID				- network address
+
+Host ID				- host address
+
+# IPv4 ADDRESSES
+Divided into 4 8-bit sections called octets (bytes)
+
+Class A				- NetID.HostID.HostID.HostID
+				- first bit of first octet is always 0
+				- can have up to 16.7 million unique hosts on network
+Class B				- NetID.NetID.HostID.HostID
+				- first two bits of first octet are always set to 1 0
+				- can have up to 65,536 unique hosts on network
+Class C				- NetID.NetID.NetID.HostID
+				- first 3 bits of first octet are always set to 1 1 0
+				- can have up to 8 unique hosts on network
+
+# IP ADDRESS ALLOCATION
+IP addresses can be assigned manually or dynamically
+
+Static addresses are added during manual assignment
+Dynamic addresses can change every reboot
+
+Dynamic Host
+Configuration Protocol		- DHCP
+				- used to assign IP addresses dynamically
