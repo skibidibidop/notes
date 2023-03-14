@@ -856,4 +856,7 @@ mtr				: combine functionality of ping and traceroute
 dig				: test DNS workings
 
 # BROWSERS
+Text-based browsers are sometimes necessary
+Examples: lynx, elinks, w3m
 
+wget				: 
