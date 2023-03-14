@@ -1,0 +1,705 @@
+LINUX NOTES
+
+CONTENTS
+* NAVIGATION
+* FILE OPERATION
+* KEYBOARD SHORTCUTS
+* VIRTUAL TERMINALS
+* I/O REDIRECTION
+* PIPES
+* SEARCHING
+* WILDCARDS
+* PROCESSES
+* TERMINATING A PROCESS
+* PROCESS PRIORITY
+* LOAD AVERAGES
+* BACKGROUND AND FOREGROUND
+* FUTURE PROCESSES
+* FILES
+* NETWORK FILE SYSTEMS (NFS)
+* NFS ON SERVERS
+* NFS ON CLIENT
+* FILESYSTEM ARCHITECTURES
+* REMOVABLE MEDIA
+* COMPARING FILES
+* BACKUP
+* COMPRESSION
+* DISK-TO-DISK COPYING
+* USER ENVIRONMENT
+* ORDER OF STARTUP
+* ALIASES
+* USERS
+* ADDING OR REMOVING USERS
+* THE ROOT ACCOUNT
+* ENVIRONMENT VARIABLES
+* RECALLING PREVIOUS COMMANDS
+* FILE OWNERSHIP
+* TEXT MANIPULATION
+* FILE MANIPULATION
+
+# NAVIGATION
+cd			: change to home directory
+pushd			: go to specified directory regardless of
+				current working directory
+popd			: go back through directories passed
+pwd			: display present working directory
+tree			: view filesystem tree
+ls			: list files in directory
+
+# FILE OPERATION
+wc			: word count
+touch			: create/change/modify files
+mv			: move or rename file
+cp			: copy file
+rm			: remove file
+mkdir			: make directory
+rmdir			: remove directory
+systemctl		: query or command system manager
+ln			: create hard link (not applicable to directories
+				or special files)
+ln -s			: create soft (symbolic) link
+du			: disk usage
+
+# KEYBOARD SHORTCUTS
+Combine all with Ctrl
+L			: clear screen
+D			: exit current shell
+Z			: suspend current process to bg
+C			: kill current process
+H			: same as backspace
+A			: go to start of line
+W			: delete before cursor
+U			: delete from beginning of line to cursor
+E			: go to end of line
+
+# VIRTUAL TERMINALS
+Ctrl + Alt + Function key
+	// enable virtual terminal when in graphical environemnt
+
+Alt + Function key
+	// swap virtual terminal
+
+sudo systemctl stop gdm
+	// stop graphical desktop
+
+sudo systemctl start gdm
+	// start graphical desktop
+
+# I/O REDIRECTION
+Standard file streams: standard input, standard output, standard error
+
+File descriptor
+	Standard input		: 0
+	Standard output		: 1
+	Standard error		: 2
+	Other files		: 3 onwards
+
+sampleprogram < input-file
+	// input source has been changed to input-file
+
+sampleprogram > output-file
+	// redirect output to output-file
+
+sampleprogram 2 > error-file
+	// 2 is the file descriptor for standard error
+	// redirecto error to error-file
+
+sampleprogram > all-output-file 2>&1
+or
+sampleprogram > all-output-file
+	// reidrect both output and error to all-output-file
+
+# PIPES
+Take output from one command or program as input for another
+	command1 | command2 | command3
+
+# SEARCHING
+which				: locate where programs are installed
+whereis				: locate source and man files
+locate				: search for all files matching the argument
+find				: search down file tree recursively
+
+# WILDCARDS
+Can be used when substituting for arguments
+
+?				: match any single character
+*				: match any string of characters
+[set]				: match any character in provided set
+[!set]				: match any character not in provided set
+
+Search will not be restricted to the working directory if arguments are enclosed in double quotes
+
+# PROCESSES
+The kernel is in charge of allocating resources to processes in an optimal manner
+
+Process				- instance of one or more related tasks (threads)
+					executing in the computer
+				- not to be confused with program or command
+				- a command can start multiple processes
+Scheduler			- done by the kernel
+				- shift processes on and off the CPU
+
+Running state			- process is waiting for its time slice
+					or
+				- currently executing instructions on the CPU
+Sleep state			- process is waiting for something to happen
+					before it resumes
+Zombie state			- child process completes but parent process
+					hasn't asked about its status
+				- a process that isn't 'alive' but still
+					shows up in the system process list
+Run queue			- queue of processes in running state
+Wait queue			- queue of processes in sleep state
+
+Process ID			- aka PID
+				- unique to each process, assigned by the kernel
+					to track process state, CPU usage, memory
+					use, etc.
+Parent Process
+ID				- aka PPID
+				- process that started child process
+				- if this dies, child process gets assigned a
+					new adoptive parent
+Thread ID			- aka TID
+				- same as PID for single-threaded processes
+				- threads in multi-threaded processes share
+					the same PID but have different TIDs
+
+# TERMINATING A PROCESS
+kill -SIGKILL <pid>
+or
+kill -9 <pid>
+
+A user can only kill their own process unless user is root
+
+# PROCESS PRIORITY
+Each CPU can only accommodate one task at a time
+Priority can be manipulated
+
+Nice value			- aka niceness, "The niceness of a process"
+				- "The nicer the process, the lower the
+					priority"
+				- can be modified to set priority
+				- -20 is the highest priority
+				- +19 is the lowest priority
+Real-time
+priority			- can be assigned to time-sensitive tasks
+				- not to be confused with hard real-time
+Hard
+real-time			- process has to be completed within a
+					well-defined window of time
+
+Commands:
+ps				: show processes
+pstree				: show processes in tree form
+rnice				: change priority of processes
+
+# LOAD AVERAGES
+Average of the load number for a given period of time
+Processes in running and sleeping (uninterruptible sleepers) state are included
+
+w				: 
+top				: provide real-time updates about what the system
+					is doing
+uptime				: show uptime & load average
+
+
+Assume single CPU in the image above. The load average is shown with three numbers
+0.45				: in the last minute, the system has been
+					utilized 45%
+0.17				: in the last 5 minutes, the system has been
+					utilized 17%
+0.12				: in the last 15 minutes, the system has been
+					utilized 12%
+
+If value = 1.00, system is fully utilized
+If value > 1.00, system is overutilized
+
+If multiple CPUs, divide load average by number of CPUs
+
+# BACKGROUND AND FOREGROUND
+Commands executed from a terminal window become foreground jobs by default
+Foreground jobs need to finish before the shell is free again
+To assign big foreground jobs to the background, use &
+Example:
+
+	updatedb &
+
+Ctrl + c			: terminate foreground job
+Ctrl + z			: suspend foreground job to background
+bg				: put job in background
+fg				: put job in foreground
+jobs				: display all jobs running in bg
+
+Background jobs are connected to the terminal window used. Executing the jobs command in another terminal window will not show the previous ones
+
+# FUTURE PROCESSES
+at				: execute non-interactive command at specified
+					time
+cron				: time based scheduling utility, config at
+					/etc/crontab
+sleep				: suspend execution for given amount of time
+
+# FILES
+root (directory) is not the same as root user
+
+gparted				: display partition layout
+mount				: attach new filesystem to filesystem tree
+unmount				: unmount, needs sudo
+df-Th				: display info about mounted systems
+
+Mount points			- a dir (empty or not) where new filesystem can
+					be grafted on
+				- contents of non-empty dir will be inaccessible
+					until new filesystem is unmounted
+				- better to make sure that directory is empty
+
+# NETWORK FILESYSTEM(NFS)
+aka distributed filesystem
+
+#NFS ON SERVERS
+Daemons				- built-in networking and service processes
+
+sudo systemctl start nfs
+	// starts daemons and other system servers
+
+sudo systemctl restart nfs
+	// restart entire NFS, halts it for a short while
+	// can serve as heavier alternative to exportfs -av
+
+sudo systemctl enable nfs
+	// ensures that services start when the system is booted
+
+/etc/exports			- text file containing directories and
+					permissions
+exportfs -av			: notify Linux about directories allowed
+					to be mounted remotely using	NFS
+
+#NFS ON CLIENT
+/etc/fstab			- can be modified to enable automatic mounting
+					on startup
+nofail				: can be added in fstab in case NFS server
+					is not live at boot
+# FILESYSTEM ARCHITECTURES
+/home				- each user has a home directory
+				- contains user-specific config
+/root				- home dir of the root user
+
+On multi-user systems, the /home directory infrastructure is often mounted as a separate
+filesystem on its own partition, or even exported (shared) remotely on a network through NFS
+
+Grouping users based on department or function:
+	/home/faculty/
+	/home/staff/
+	/home/students/
+
+/bin				- contains executable binaries, essential
+					commands
+/sbin				- contains essential binaries related to
+					system administration
+/usr/bin
+/usr/sbin			- contains commands that are not essential for
+					system boot
+				- original purpose of separation is obsolete
+				- /usr/bin and bin, and /usr/sbin and /sbin are
+					symbolically linked
+/proc				- filesystems mounted here are pseudo-filesystems
+					(no permanent presence on disk)
+				- permit viewing of constantly changing kernel
+					data
+				- has files that mimic kernel structures and
+					config info
+				-no real files, just virtual files that exist
+					in memory
+				- has runtime system info like system memory,
+					devices mounted, hardware configuration,
+					etc.
+				-/proc/<Process-ID#> shows that there is a
+					directory for every running process in
+					the system
+				- /proc/sys contains info about the entire system
+/dev				- has device nodes (pseudo-files)
+				- has entries created by udev system
+				- udev creates and manages nodes on Linux
+/var				- has files that are expected to change in size
+					as the system continues to run
+/etc				- has system configuration files
+				- no binary programs
+				- has some executable scripts
+				- files like passwd, shadow, group can be found
+				- for system-wide config files, only the
+					superuser can modify
+/boot				- contains essential files needed to boot
+					system
+				- has vmlinuz, the compressed Linux kernel
+				- also has Grand Unified Bootloader (GRUB) files
+/lib and /lib64			- has libraries for essential programs in /bin
+					and /sbin
+				- file names may start with ld or lib
+				- lib for 32-bit libraries
+				-lib64 for 64-bit libraries
+
+# REMOVABLE MEDIA
+/media				- historically used as mount point for removable
+					media 
+/run				- used by modern Linux distros instead of /media
+/mnt				- used for temporarily mounting filesystems
+				- can be removable media but also used for network filesystems
+				- also used for loopback filesystems (files that pretend to be partitions)
+
+Additional directories under /
+/opt				- optional application software packages
+/sys				- virtual pseudo-filesystem
+				- has info about system and hardware
+				- can be used to alter system parameters when debugging
+/srv				- site-specific data served up by the system
+/tmp				- temporary files, might be erased upon reboot
+/usr				- multi-user applications, utilities, data
+
+/usr directory tree
+/usr/include			- header files used to compile apps
+/usr/lib			- libraries for programs in /usr/bin and /usr/sbin
+/usr/lib64			- 64-bit libraries for the same above
+/usr/sbin			- non-essential system binaries
+/usr/share			- shared data used by apps
+/usr/src			- source code, usually for the kernel
+/usr/local			- data and programs specific to the local machine
+/usr/bin			- primary directory of executable commands
+
+# COMPARING FILES
+diff				: compare files (text) and directories
+
+Example:
+	diff (options) (filename1) (filename2)
+
+cmp				: compare binaries
+diff3				: compare 3 files at once
+				: compare file1 to file2 and file3
+patch				: apply modifications to source code
+				: patch files contain the deltas (changes), not the entire file
+file				: check actual nature of file because a file named file.txt may actually be executable
+				: extensions are more useful to the user than to the computer
+
+# BACKUP
+cp				: copy files to and from local machine (or NFS)
+rsync				: more efficient than cp
+				: checks modification time and file size
+				: if no difference, will avoid copy and save
+				: only copies parts that have changed
+				: can copy from one machine to another
+				: can be done recursively through directory tree with -r
+				: rsync (source file) (destination file)
+
+# COMPRESSION
+gzip				: compression utility
+				: most used, compresses well and fast
+				: gzip * will compress all files in a directory, each file renamed with .gz
+				: gzip -r (dir) will compress everything in directory, along with all files in all 							directories
+gunzip				: same as gzip -d
+				: decompress
+
+bzip2				: produce smaller files than gzip, but takes longer
+				: deprecated due to superior xz
+
+xz				: slower speed for higher compression ratio
+
+zip				: often required if using compressed files from other OSs
+				: legacy program
+
+tar				: “tape archive”
+				: create and extract files (tarballs) from archive
+				: group files in archive and then compress
+				: can optionally compress while creating archive
+				: can optionally decompress while extracting contents
+
+# DISK-TO-DISK COPYING
+dd				: make exact copy of disk
+
+dd if=/dev/sda of=/dev/sdb will erase all the content in the second disk
+
+# USER ENVIRONMENT
+whoami				: identify current user
+who				: list logged-on users
+
+# ORDER OF STARTUP
+Upon logging into Linux, the following are evaluated in order:
+
+/etc/profile
+Evaluate whichever comes first, then ignore the rest:
+~/.bash_profile
+~/.bash_login
+~/.profile
+
+Upon creating a new shell (or terminal window), only ~/.bashrc is evaluated
+
+# ALIASES
+Used to customize commands
+Usually placed in ~/.bashrc
+
+alias				: list currently defined aliases
+unalias				: remove alias
+
+# USERS
+Real User ID			- aka RUID
+				- assigned to a user who starts a process
+
+Real Group ID			- aka RGID
+				- users are categorized into different groups using this
+				- a user can be a member of more than one group
+
+Effective Group ID		- aka EGID
+				- used to determine a group’s access rights
+
+More commonly used:
+User ID				- UID
+				- starts at 1000 for normal users
+
+Group ID			- GID
+
+Groups are used to organize users based on permissions
+Controlled through /etc/group (shows list of groups and members) and /etc/passwd
+
+# ADDING OR REMOVING USERS
+Can only be done by root user
+
+useradd				: add new user
+userdel				: remove user
+
+doing sudo useradd newusername will result in the following:
+
+	/home/newusername will be created
+	files from /etc/skel will be copied to the directory above
+	/etc/passwd will be updated with details
+	/bin/bash is set as default shell
+
+userdel newusername will remove newusername but leave /home/newusername
+userdel -r newusername will remove newusername and /home/newusername
+
+id				: give info about current user
+				: can take existing username as argument
+
+groupadd			: add new group
+groupdel			: delete group
+
+groups				: check which groups user belongs to
+usermod				: add existing user to group
+
+	make sure to add -a to append instead of overwrite
+
+groupmod			: change group properties
+
+# THE ROOT ACCOUNT
+In other systems, aka the administrator account
+In Linux, aka the superuser account
+Has full access to system
+
+su				: switch/substitute user
+				: launch new shell as another user
+				: dangerous, can cause deletion of vital files
+
+sudo				: preferred over su
+				: config files in /etc/sudoers and /etc/sudoers.d (empty by default)
+
+# ENVIRONMENT VARIABLES
+set				: 
+
+env				: 
+
+export				: lets child processes/subshells use variables that have been set
+
+echo $SHELL			: show value of specific variable
+
+To add a variable permanently, edit ~/.bashrc and add export VARIABLE=value
+
+HOME				: an environment variable that represents home (login)
+				: $HOME is often abbreviated as ~
+
+PATH				: ordered list of directories
+				: scanned when command is given to find program/script
+				: null dir name or ./ means current directory
+
+	:path1:path2 // null directory before first : 
+	path1::path2 // null directory between path1 and path2
+
+	To prefix a private bin directory in your path:
+
+	export PATH=$HOME/bin:$PATH
+
+SHELL				: point to user’s default command shell
+				: echo $SHELL shows full pathname to shell
+
+PS				: prompt statement
+				: customize prompt string in terminal window
+
+PS1				: primary prompt variable
+				: controls what command line prompt looks like
+				: can include the following:
+				\u - user name
+				\h - host name
+				\w - current working directory
+				\! - history number of command
+				\d - date
+				: the special characters above must be enclosed in single quotes
+
+# RECALLING PREVIOUS COMMANDS
+In the terminal window, press up or down to show previously entered commands
+
+history				: prints list of previously entered commands
+
+History is stored in ~/.bash_history upon termination of session
+
+HISTFILE			: location of history file
+HISTFILESIZE			: max number of lines in history file (500 by default)
+HISTSIZE			: max number of commands in history file
+HISTCONTROL			: how commands are stored
+HISTIGNORE			: which commands don’t need to be saved
+
+man bash has more instructions for history
+
+!!				: execute previous command
+
+Ctrl+R				: search previously used commands
+
+!				: start history substitution
+!$				: refer to last argument in a line
+!n				: refer to nth command line
+!string				: refer to the most recent command starting with string
+
+# FILE OWNERSHIP
+chown				: change user ownership of file or dir
+chgrp				: change group ownership
+chmod				: change permissions on file\
+
+Possible permissions are read, write, and execute (r, w, x or rwx)
+Affects the users, groups, and others/world (u, g, o)
+
+# TEXT MANIPULATION
+cat				: short for concatenate
+				: view, read, and print files
+
+	cat file1 
+		// display combined output of file1 and file2
+	cat file1 file2 > newfile
+		// combine file1 and file2, output to newfile
+	cat file >> existingfile
+		// append file to existingfile
+	cat > file
+		// input lines to file until Ctrl+D (save and exit)
+	cat >> file
+		// append lines to file until Ctrl+D (save and exit)
+	cat > file << EOF
+		// input lines to file until EOF is written in the beginning of a line
+		// EOF is case sensitive
+		// EOF can be another word such as STOP
+
+tac				: print lines in reverse
+
+echo				: display text
+				: display string on stdout
+
+	echo string > newfile
+		// place string in newfile
+	echo string >> existing
+		// append string to existing file
+	echo $variable	
+		// display environment variable content
+
+less				: view content without loading entire file
+				: useful for viewing very large files
+head				: read first few lines of file to stdout
+				: 10 lines by default	
+tail				: print last few lines of file to stdout
+				: 10 lines by default
+				: useful for troubleshooting using log files
+zcat				: view compressed file
+zless				: page through compressed file
+zgrep				: search in compressed file
+zdiff				: compare compressed files
+sed				: abbreviation for stream editor
+				: modify (filter, substitute) contents of file and place in new file or output stream
+
+Data from input stream is moved to working space, modified, and then moved to output stream
+
+	sed -e command filename
+		// -e unnecessary if only 1 command
+		// operate on input stream using specified commands
+		// output to stdout
+
+	sed -f scriptfile filename
+		// scriptfile contains sed commands
+		// operate on input stream using commands in scriptfile
+		// output to stdout
+
+	echo “I hate you” | sed s/hate/love
+		// filter input stream
+		// substitute hate with love
+		// output to stdout
+	
+	sed s/first_string/second_string/file
+		// substitute first occurrence of first_string with second_string in every line
+
+	sed s/first_string/second_string/g file
+		// substitute all occurrences of first_string with second_string in every line
+
+	sed 1,3s/first_string/second_string/g file
+		// substitute all occurrences of first_string with second_string within specified range of lines (1,3)
+
+	sed -i s/first_string/second_string/g file
+		// save changes for string substitution in the same file
+		// IRREVERSIBLE
+
+	sed s/first_string/second_string/g file1 > file2
+		// substitute all occurrences of first_string with second_string
+		// move modified contents to file2
+		// if so desired, file1 can be overwritten by
+		// mv file2  file1
+
+awk				: acronym of author names (Alfredo Aho, Peter Weinberger, Brian Kernighan)
+				: extract then print specific contents of file
+				: works well with fields (columns, basically) and collection of fields
+				: reads input one line at a time
+			
+	awk ‘command’ file
+		// execute commands in terminal
+		// commands need to be enclosed in single quotes
+
+	awk -f scriptfile file
+		// execute commands in scriptfile
+
+	awk ‘{ print $0 }’ /etc/passwd
+		// print entire file
+
+	awk -F: ‘{ print $1 }’ /etc/passwd
+		// print first field/column of every line
+		// separate with colon
+
+	awk -F: ‘{ print $1 $7 }’ /etc/passwd
+		// print first and 7th field/column of every line
+		// separate with colon
+
+# FILE MANIPULATION
+sort				: rearrange lines/records of text file
+				: can be ascending, descending, or according to sort key
+				: can sort with respect to fields/columns
+				: default is the order of ASCII characters
+
+	sort filename
+		// sort lines/records in file according to arrangement of ASCII characters (default)
+
+	cat file1 file2 | sort
+		// combine file1 and file2
+		// sort (default)
+		// output to stdout
+
+	sort -r filename
+		// reverse sort
+
+	sort -k 3 filename
+		// sort based on 3rd field of each line
+
+	sort -u filename
+		// sort, then check for unique values
+		// same as running uniq
+
+uniq				: remove consecutive lines
+				:
