@@ -1,0 +1,510 @@
+WEB DEVELOPMENT NOTES
+
+READING LIST
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced
+
+CONTENTS
+# HYPERTEXT MARKUP LANGUAGE
+# BASIC SECTIONS OF A DOCUMENT
+# HYPERLINKS
+# ATTRIBUTE: DATA
+# SPECIAL CHARACTERS
+# METADATA
+# FAVICON
+# CHARACTER ENCODING
+# FORMS
+# LINKING CSS AND JAVASCRIPT
+# PRIMARY LANGUAGE
+# HEADINGS AND PARAGRAPHS
+# LISTS
+# EMPHASIS AND IMPORTANCE
+# QUOTATIONS
+# ABBREVIATIONS
+# CONTACT DETAILS
+# SUPERSCRIPT AND SUBSCRIPT
+# COMPUTER CODE
+# TIMES AND DATES
+# IMAGES
+# FIGURES AND CAPTIONS
+# VIDEO
+# AUDIO
+# VIDEO TEXT TRACKS
+# OTHER EMBEDDING TECHNOLOGIES
+# VECTOR GRAPHICS
+# RESOLUTION SWITCHING
+# ZOOMED IN/PORTRAIT IMAGE
+# HTML TABLES
+
+# HYPERTEXT MARKUP LANGUAGE
+<p class=”sample-class”>Sample text here.</p>
+
+	<p> is the opening tag
+	“Sample text here.” is the content (without the quotation marks)
+	</p> is the closing tag
+	class=”sample-class” is one of the possible attributes
+	The entire thing is an element
+
+# BASIC SECTIONS OF A DOCUMENT
+Header			: <header>, usually has the logo and tagline
+Navigation bar		: <nav>, links to site’s main sections
+Main content		: <main>, contains most of the content of a webpage
+			: put inside <body>, don’t nest within other elements
+			: contains content unique to that page
+<article>		: contains block of content that makes sense without the rest of the page
+<section>		: for grouping thematically or functionally similar content
+			: begin each section with a heading
+			: <articles> can also be broken up into several sections
+Sidebar			: <aside>, usually inside main
+			: put inside <body>
+			: peripheral info, secondary navigation system
+Footer			: <footer>, usually contains fine print, contact info, secondary info
+<div> and <span>	: <div> is a block element
+			: <span> is inline
+			: both can be used as non-semantic wrappers
+<br>			: line break in a paragraph
+<hr>			: horizontal line denoting thematic break
+
+# HYPERLINKS
+href 			: specifies web address for link, means Hypertext Reference
+title 			: extra info, tooltip when mouse cursor hover not readable
+				with keyboard controls or touchscreen
+target=”_blank” 	: opens in new tab
+Absolute links		: links to other websites on the internet
+			: includes protocol and domain name
+			: will always point to the same location
+	<a href=”https://www.somerandomurl.com”>some content here</a>
+
+Relative links		: links to pages within the same website
+	<a href=”./pages/about.html”>About</a>
+
+Document Fragments	: specific part of the HTML document
+	<a href=”./index.html#id>content here</a>
+
+	or
+
+	<a href=”#id”> // has to be in the current document
+
+#ATTRIBUTE: DATA
+data-*
+data-(whatever attribute name I want) // without the parentheses
+
+Examples:
+	data-key
+	data-index-number
+
+A possible use: store extra information without visual representation
+May have compatibility issues with assistive technologies and search crawlers
+
+# SPECIAL CHARACTERS
+<			: &lt;
+>			: &gt;
+"			: &quot;
+'			: &apos;
+&			: &amp;
+
+	<p>In HTML, you define a paragraph using the &lt;p&gt; element.</p>
+
+# METADATA
+Including the author and description can help with documentation and Search Engine Optimization
+(SEO)
+
+<meta name=”author” content=”Name of author”>
+	<meta name=”description” content=”Description of website or webpage”>
+
+	The description can also be displayed on search engine result pages
+
+Open Graph Data: provides richer metadata for websites.
+Example: links can appear along with images and descriptions when pasted/shared
+	
+https://ogp.me/
+
+Force mobile browsers to adopt real viewport width:
+<head>
+	<meta name=”viewport” content=”width=device-width”>
+</head>
+
+
+# FAVICON
+"Favorite icon", 16-pixel icon, usually appears in the tab next to page title
+Can be saved in the same directory as site's index page (.ico, .png, .gif, etc.)
+
+	<link rel=”icon” href=”favicon.ico” type=”image/x-icon”>
+
+# CHARACTER ENCODING
+Lets header information be sent to the server so that text is not displayed as HTML codes
+Necessary because of large number of characters used in markup writing
+A mapping technique used to define text and bytes
+Unicode Transformation Format 8-bit (UTF-8) is used because it is fully compatible with ASCII.
+
+Usage:
+
+	<head>
+	<meta charset=”UTF-8”>
+	</head>
+
+In URLs, invalid characters are replaced by a “%” followed by 2 hex digits
+
+# FORMS
+action(attribute) indicates where form data should be sent
+	
+	<form action=”/sample-url-here”></form>
+
+# LINKING CSS AND JAVASCRIPT
+For CSS (put in <head>)
+
+	<link rel=”stylesheet” href=”style.css”>
+
+For JavaScript (put in <head>)
+
+<script src=”script.js”></script>
+	// add defer after “script.js” to load JavaScript after DOM has been created
+
+# PRIMARY LANGUAGE
+	<html lang="en-US">
+
+Lets search engines index the HTML efficiently
+Improves accessibility
+
+Can also be used in sections of the HTML
+
+	<p>Japanese Example: <span lang=”ja”>Japanese characters here</span>.</p>
+
+Standard for language codes (ISO 639-1): https://en.wikipedia.org/wiki/ISO_639-1
+
+# HEADINGS AND PARAGRAPHS
+Best pracitces:
+Use a single h1 per page
+Follow correct hierarchy
+Aim to use no more than 3 headings unless necessary
+Headings can affect SEO, improve accessibility
+
+# LISTS
+
+Unordered lists			: <ul><li></li></ul>
+				: bullet points
+				: order of items doesn't matter
+Ordered lists			: <ol><li></li><ol>
+				: numbers
+				: order of items matter
+Description lists
+	<dl>
+		<dt>term to be defined</dt>
+			<dd>
+				definition
+			</dd>
+	</dl>
+
+There can be multiple descriptions <dd> for each term <dt>
+Nested lists are possible
+
+# EMPHASIS AND IMPORTANCE
+Emphasis			: <em></em>
+				: put content in italics
+				: screen readers will read in different tone
+				: avoid using if only for italics, used CSS for that
+					instead
+Strong importance		: <strong></strong>
+				: make content bold
+				: screen readers will read in different tone
+				: avoid using if only for bold, use CSS for that
+
+# QUOTATIONS
+Blockquotes
+For block level content
+
+	<blockquote cite=”URL where quote is from”>
+		<p>
+			Put quote here
+		</p>
+	</blockquote>
+
+Inline quotations
+For inline level content
+
+	<p>Some text<q cite=”URL where quote is from”>inline quotation</q></p>
+
+Citations
+<cite> element is meant to contain the title of resource being quoted
+Default style: italics
+
+	<a href=”reference URL”><cite>Reference Title</cite></a>
+
+# ABBREVIATIONS
+<abbr></abbr>			: wrap around acronyms and abbreviations
+				: add title attribute for meaning of acronym or abbreviation
+
+# CONTACT DETAILS
+<address>
+	<p>
+		Name<br>
+		Location<br>
+		2nd line of location<br>
+		Country<br>
+	</p>
+
+	<ul>
+		<li>Tel no.</li>
+		<li>Mobile no.</li>
+	</ul>
+</address>
+
+Can also be used to contain link to page with contact details
+Should only be used to contain contact info for nearest <article> or <body>, or for contact info of entire site
+Should not be used for list of addresses unrelated to content
+
+# SUPERSCRIPT AND SUBSCRIPT
+<sup></sup>
+<sub></sub>
+
+# COMPUTER CODE
+<code>				: generic pieces of code
+<pre>				: whitespace
+<var>				: variables
+<kbd>				: input
+<samp>				: output
+
+# TIMES AND DATES
+<time datetime="2016-01-20">20 January 2016</time>
+
+This will ensure that the computer will be able to read the date and time in the correct format
+
+# IMAGES
+<img src=”link to image” alt=”description of image” width=”#” height=”#”>
+
+Image file names can affect SEO
+
+Use CSS background images if for decoration only
+If an image is a vital part of the content, use <img> instead
+
+Enter only the original width and height of the image. If size has to be changed, use CSS
+
+The title attribute for <img> isn’t great to use because of limited accessibility
+
+# FIGURES AND CAPTIONS
+<figure> and <figcaption> allows us to link images to captions which improves accessibility
+
+<figure>
+	<img
+	src="images/dinosaur.jpg"
+	alt="The head and torso of a dinosaur skeleton;
+	it has a large head with long sharp teeth"
+	width="400"
+	height="341">
+
+	<figcaption>
+		A T-Rex on display in the Manchester University Museum.
+	</figcaption>
+</figure>
+
+Captions can also benefit people who can see the image
+Alt text is only visible if the image is unavailable or through screen readers, etc.
+
+# VIDEO
+<video src=”videotitle.webm” controls>
+	<p>
+		Your browser doesn’t support HTML video. Here’s a
+		<a href=”videotitle.webm”>link to the video</a> instead.
+	</p>
+</video>
+
+The controls attribute enable video and audio playback control
+
+Fallback content is placed in the <p></p> in <video></video>
+
+<video controls>
+	<source src="rabbit320.mp4" type="video/mp4" />
+	<source src="rabbit320.webm" type="video/webm" />
+	<p>
+		Your browser doesn't support this video. Here is a
+		<a href="rabbit320.mp4">link to the video</a> instead.
+	</p>
+</video>
+
+<video controls width=”400” height=”400” autoplay loop muted preload=”auto” poster=”poster.png”> 
+
+width and height		: can also be set using CSS
+				: aspect ratio of video is maintained
+
+loop				: video repeats after ending
+
+poster				: splash or advertising screen
+
+preload				: “none” does not buffer file
+				: “auto” buffers the file
+				: “metadata” only buffers the metadata
+
+# AUDIO
+<audio controls>
+	<source src="viper.mp3" type="audio/mp3" />
+	<source src="viper.ogg" type="audio/ogg" />
+	<p>
+		Your browser doesn't support this audio file. Here is a
+		<a href="viper.mp3">link to the audio</a> instead.
+	</p>
+</audio>
+
+# VIDEO TEXT TRACKS
+<video controls>
+	<source src="example.mp4" type="video/mp4" />
+	<source src="example.webm" type="video/webm" />
+	<track kind="subtitles" src="subtitles_es.vtt" srclang="es" label="Spanish" />
+</video>
+
+Should be saved as a .vtt file
+Link .vtt file with <track> element, which should be placed inside <video>
+or <audio> after all <source> elements
+Use kind attribute to specify if subtitles (translation), captions, or descriptions
+Use srclang for the language used
+Use label to help readers identify the language they are searching for
+
+# OTHER EMBEDDING TECHNOLOGIES
+<iframe>			: can embed entire web document inside another
+				: can be used for external content such as videos
+					from OVPs, commenting systems
+
+Set src using JavaScript to improve loading times, which affect the SEO
+
+iframes are a common attack vector
+
+Clickjacking			: an invisible frame is embedded into the
+					document to capture user’s interactions
+
+Embed only when necessary
+Use HTTPS
+Use sandbox attribute
+
+<embed>
+<object>
+
+# VECTOR GRAPHICS
+Achieved through the Scalable Vector Graphics (SVG) format
+Can scale properly when resized
+
+Can be added using <img>
+
+	height and width attributes required
+	quick and easy but cannot be manipulated using JavaScript
+	has to be controlled using inline CSS
+	can’t be restyled with CSS pseudoclass
+	
+SVG code can be included in the HTML document
+
+	aka SVG inline or inlining SVG
+
+	<svg></svg>
+
+	can reduce loading time
+	can be styled with CSS using classes and ids
+	resource intensive maintenance if used in multiple places
+	increases size of HTML
+	
+SVG can be embedded using iframe
+
+	fallback will only be displayed only if there is no support for iframes
+	can’t use JavaScript to manipulate SVG
+
+Responsive images
+<img
+  srcset="elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w"
+  sizes="(max-width: 600px) 480px,
+         800px"
+  src="elva-fairy-800w.jpg"
+  alt="Elva dressed as a fairy" />
+
+// The 480w is the intrinsic width (intrinsic size is the image’s real size)
+// sizes is a set of media conditions
+// if max-width: 600px is true, the picture will be displayed at 480px
+// src is last, image size will default to that if conditions in sizes above are not met
+
+Use new image formats such as WebP and AVIF (low file size, high quality)
+
+# RESOLUTION SWITCHING
+
+By using x-descriptors
+
+<img
+  srcset="elva-fairy-320w.jpg, elva-fairy-480w.jpg 1.5x, elva-fairy-640w.jpg 2x"
+  src="elva-fairy-640w.jpg"
+  alt="Elva dressed as a fairy" />
+// sizes is omitted, width can be provided through CSS
+
+# ZOOMED IN/PORTRAIT IMAGE
+<picture>
+  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+</picture>
+
+media attribute is a test, the first to return true is displayed
+
+srcset has the path to the image
+
+img src serves as the default if no conditions are met
+
+Additionally, type can be added so that the browser can reject immediately if file is unsupported
+	
+	<picture>
+  		<source type="image/svg+xml" srcset="pyramid.svg" />
+  		<source type="image/webp" srcset="pyramid.webp" />
+  		<img
+    		src="pyramid.png"
+    		alt="regular pyramid built from four equilateral triangles" />
+</picture>
+
+	// in <source>, you can only refer to images with types declared using the type attribute
+
+# HTML TABLES
+Avoid using tables for layouts of entire pages. Screen readers will be less effective
+
+Tables are sized according to content
+<table>
+	<caption>
+		Sample caption here
+	</caption>
+	<tr>					// <tr> denotes a single row
+		<th>Table header</th>		// <th> is for table header (row)
+		<td>Table data</td> 		// <td> creates cells in a row
+		<td>Table data</td>
+		<td>Table data</td>
+	</tr>
+</table>
+
+<th> attribute scope associates <th> with a column, row, column group, or row group, improving accessibility
+
+	<th scope=”col | row | colgroup | rowgroup”>
+
+// colgroup and rowgroup can be used for headers that sit on top of multiple columns or rows
+
+<th> attribute id can be used to assign unique identifier for headers
+<td> attribute headers=”id” can be used to establish association between cells and headers
+
+<th> attribute colspan and rowspan lets a header span multiple cells
+
+	<th colspan=”2”> // lets cell span 2 columns
+
+<thead></thead> // must wrap the table header
+<tbody></tbody> // must wrap content that isn’t for table header or footer
+<tfoot></tfoot> // must wrap the footer
+
+Provides more structure and useful for CSS
+
+Common styling for columns:
+<table>
+	<colgroup>			// colgroup defines a sort of pattern for column formatting
+		<col />			// yellow will be applied on 2nd column + span
+		<col style=”background-color: yellow” />
+		// can also be <col style=”background-color:yellow” span=”2”>
+	</colgroup>
+	<tr>
+		<td>Table data</td>
+		<td>Table data</td>
+	</tr>
+	<tr>
+		<td>Table data</td>
+		<td>Table data</td>
+	</tr>
+</table>
+
+Styling using <col> and <colgroup> only allows the following properties to be modified: border, background, width, and visibility
+
+For other styling options, every <th> and <td> in the column has to be styled individually (complex selectors can also be used)
