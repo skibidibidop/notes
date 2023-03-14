@@ -1,0 +1,176 @@
+CSS NOTES
+
+READING LIST
+
+CONTENTS
+# SYNTAX
+# SELECTORS
+# COMBINATORS
+# THE CASCADE
+# INTERNAL, EXTERNAL, INLINE CSS
+# THE BOX MODEL
+# FLEXBOX
+
+CASCADING STYLE SHEETS
+
+# SYNTAX
+
+selector {
+	property: value;
+}
+
+# SELECTORS
+*  // universal selector
+div {} // type selector
+.custom-class {} // class selector
+An element can have multiple classes
+
+#custom-id {} // ID selector
+An element can only have one ID
+An ID cannot be repeated on a single page
+
+. read,
+.unread {} // grouping selector
+Can be used if multiple classes share the same properties and values
+
+.class1.class2 {} // chaining selector
+Selects any elements that have both classes
+
+# COMBINATORS
+.ancestor .child {} // descendant combinator
+
+Will select element with class child only if it is nested under element with class ancestor
+
+# THE CASCADE
+Specificity (most to least specific)
+Inline styles
+ID selectors
+Class selectors
+Type selectors
+
+Inheritance
+
+Descendants can inherit properties of ancestor element
+Typography properties are usually inherited
+Always beaten by direct targeting
+
+Rule order: last rule defined will take precedence
+
+# INTERNAL, EXTERNAL, INLINE CSS
+To link External CSS to HTML:
+
+<head>
+	<link rel=”stylesheet” href=”styles.css”>
+</head>
+
+Internal CSS:
+
+<head>
+	<style>
+		/* CSS here */
+	</style>
+</head>
+
+Inline CSS:
+
+<body>
+	<div style=”color: white;”>some content here</div>
+</body>
+
+# THE BOX MODEL
+A few property examples:
+border: size style color;
+padding					: space between border and content
+margin					: space between borders of a box and borders of adjacent box
+border					: space between padding and margin
+
+Block elements
+display: block;
+	// Elements will display stacked on top of each other
+	// This is the default setting
+
+div					: this element is block-level by default
+span					: inline element by default
+					: Can be used to group text content and inline HTML elements for styling
+					: Can function kinda like a highlighter
+
+Inline elements
+Will appear in the same line of the element where it is plugged into
+
+<p>Some text here<a href=”link”>hyperlink text here</a>other text here</p>
+
+# FLEXBOX
+To enable:
+
+	display: flex;
+
+Flex containers				: groups flex items together and defines how they are positioned
+Flex items				: direct child of flex container
+
+	// Default arrangement of blocks is horizontal
+
+flex-direction: column;
+
+	// Block arrangement will be vertical
+
+flex-direction: row;
+
+	// Block arrangement will be horizontal
+	// This is the default setting for Flexbox
+	// Can also be row-reverse or column-reverse
+	// Affects order of flex items
+
+justify-content
+	// Affects primary axis
+
+align-items
+	// Affects cross axis
+
+flex-wrap
+	// flex items remain inside flex container
+
+flex-wrap: wrap
+	// no overflow
+flex-wrap: nowrap
+	// overflow
+
+order:
+	// Affects individual flex items
+	// Default value is 0, can increase or decrease to move left or right
+
+align-self:
+	// Targets flex items
+	// Overrides align-items of flex container
+
+flex:
+	// Defines width of individual flex items in a flex container
+	// Items with flex value of 2 will grow twice as fast as items with flex value of 1
+
+flex: initial;
+	// Will remain fixed, using the item’s explicit width
+
+margin-left: auto;
+	// Auto-margins eat up all available space in flex container
+
+flex: is shorthand for the following:
+flex-grow
+	// Uses number as growth factor (proportionality)
+	// Will override explicit width
+
+flex-shrink
+	// Applicable when flex items combined are larger than their flex container
+	// Uses number as the shrink factor (also proportionality)
+	// flex-shrink: 0 will stop item from shrinking
+	// Will override explicit width
+
+flex-basis
+	// Sets initial size of item
+	// Number is treated as percentage
+	// If set to 0, will provide smallest width
+	// If set to auto, each item will check for width independent of others
+
+flex:1 is shorthand for flex: 1, 1, 0;
+
+flex-grow: 1, flex-shrink: 1, flex-basis: 0
+
+flex: auto is shorthand for flex: 1, 1, auto;

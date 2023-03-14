@@ -4,7 +4,7 @@ READING LIST
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced
 
 CONTENTS
-# HYPERTEXT MARKUP LANGUAGE
+# HTML
 # BASIC SECTIONS OF A DOCUMENT
 # HYPERLINKS
 # ATTRIBUTE: DATA
@@ -35,7 +35,9 @@ CONTENTS
 # ZOOMED IN/PORTRAIT IMAGE
 # HTML TABLES
 
-# HYPERTEXT MARKUP LANGUAGE
+HYPERTEXT MARKUP LANGUAGE
+
+# HTML
 <p class=”sample-class”>Sample text here.</p>
 
 	<p> is the opening tag
