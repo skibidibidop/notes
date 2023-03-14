@@ -46,6 +46,8 @@ CONTENTS
 * NETWORK INTERFACES
 * MORE NETWORKING TOOLS
 * BROWSERS
+* FILE TRANSFER PROTOCOL
+* SECURE SHELL (SSH)
 
 # NAVIGATION
 cd			: change to home directory
@@ -859,4 +861,34 @@ dig				: test DNS workings
 Text-based browsers are sometimes necessary
 Examples: lynx, elinks, w3m
 
-wget				: 
+wget				: can do recursive or ordinary downloads
+curl				: by default, prints source code of webpage to terminal window
+				: curl -o saved.html to save source code in saved.html
+
+# FILE TRANSFER PROTOCOL
+One of the methods used for transferring files from one machine to another through the internet
+Client-server model
+Inadequate for modern needs, insecure
+Anonymous FTP			: security is not a concern
+
+FTP client			- enables transfer of files using FTP
+				- in browsers, replace http with ftp
+
+CLI FTP client
+ftp				: transmits password without encryption, avoid use
+sftp				: secure FTP, has encryption, uses Secure Shell (ssh) protocol
+				: does not work with anonymous FTP
+ncftp				: enhanced FTP
+yafc				: Yet Another FTP Client
+
+rsync				: remote sync
+				: only moves file portions that have changed
+
+# Secure Shell (SSH)
+A cryptographic network protocol for data communication
+Useful for remote access
+
+ssh some_system
+	// login to remote system using user name
+	// user will also be prompted for password
+
