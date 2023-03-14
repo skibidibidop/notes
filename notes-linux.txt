@@ -43,6 +43,9 @@ CONTENTS
 * IP ADDRESS ALLOCATION
 * NAME RESOLUTION
 * NETWORK CONFIGURATION
+* NETWORK INTERFACES
+* MORE NETWORKING TOOLS
+* BROWSERS
 
 # NAVIGATION
 cd			: change to home directory
@@ -812,8 +815,45 @@ Configuration Protocol		- DHCP
 # NAME RESOLUTION
 Convert numerical IP address to hostname (sample.com)
 
-hostname			- view system's hostname
-hostname argument		- system will try to change hostname if root user
+hostname			: view system's hostname
+hostname argument		: system will try to change hostname if root user
 
 # NETWORK CONFIGURATION
-Network configuration files are located in /etc
+/etc/network/			- has basic network config files
+
+nmtui				: Network Manager Terminal UI
+nmcli				: Network Manager CLI
+				- more sparse than nmtui
+netplan				: Ubuntu YAML network config abstraction
+
+# NETWORK INTERFACES
+Network interface		- a connection channel between device and network
+ip				: info about network interface
+ifconfig			: info about network interface
+
+/sbin/ip addr show
+	// view IP address
+
+/sbin/ip route show
+	// view routing information
+
+ping				: check if machine can receive and send data
+				: confirm if remote host is online and responding
+				: can increase network load a lot
+route				: view or change IP routing table
+				: can add/delete/modify routes/hosts/networks
+traceroute			: inspect route which data packet takes to reach destination
+
+# MORE NETWORKING TOOLS
+ethtool				: queries network interfaces
+				: set parameters
+netstat				: display all active connections and routing tables
+nmap				: scan open ports on network
+tcpdump				: dump network traffic for analysis
+iptraf				: monitor network traffic in text mode
+mtr				: combine functionality of ping and traceroute
+				: continuous update display
+dig				: test DNS workings
+
+# BROWSERS
+
