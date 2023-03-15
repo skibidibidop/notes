@@ -48,6 +48,7 @@ CONTENTS
 * BROWSERS
 * FILE TRANSFER PROTOCOL
 * SECURE SHELL (SSH)
+* BASH SHELL AND SCRIPTING
 
 # NAVIGATION
 cd			: change to home directory
@@ -892,3 +893,17 @@ ssh some_system
 	// login to remote system using user name
 	// user will also be prompted for password
 
+scp				: secure copy
+				: transfer files securely between two hosts using SSH
+
+# BASH SHELL AND SCRIPTING
+#!/bin/bash
+	// first line of script, contains 
+
+After the first line, enter commands, options, and arguments as you would in a terminal window
+When done, Ctrl + D to save
+Alternatively, script_name.sh can be made beforehand
+
+chmod +x script_name.sh		: make script executable by all users
+./script_name.sh		: execute script (needs chmod +x)
+bash script_name.sh		: execute script (does not need chmod +x)
