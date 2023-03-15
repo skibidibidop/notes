@@ -51,6 +51,9 @@ CONTENTS
 * BASH SHELL AND SCRIPTING
 * SCRIPT PARAMETERS
 * COMMAND SUBSTITUTION
+* FUNCTIONS
+* IF STATEMENT
+* BOOLEAN EXPRESSIONS
 
 # NAVIGATION
 cd			: change to home directory
@@ -964,3 +967,44 @@ $(command)
 	// result of the inserted command can be used as a portion of another command
 	// example: ls/lib/modules/$(command)/
 
+# FUNCTIONS
+AKA subroutines
+Need to be declared and then called
+
+Syntax:
+	function_name ()
+	{
+		command... $*
+	}
+
+Arguments/parameters can be passed to functions (see # SCRIPT PARAMETERS)
+
+# IF STATEMENT
+	if condition
+	then
+		statements
+	else
+		statements
+	fi
+
+Enclose arguments in [] or [[]] to delineate test condition
+
+elif				: same as else if
+	if [ sometest ] ; then
+		statements
+	elif [ someothertest ] ; then
+		statements
+	fi
+
+Add these as test conditions (full list in man 1 test)
+-e file				: check if file exists
+-d file				: check if file is dir
+-f file				: check if file is regular file (not symbolic link, etc.)
+-s file				: check if file size is non-zero
+-g file				: check if file has sgid set
+-u file				: check if file has suid set
+-r file				: check if file is readable
+-w file				: check if writeable
+-x file				: check if executable
+
+# BOOLEAN EXPRESSIONS
