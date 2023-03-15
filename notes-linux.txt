@@ -54,6 +54,7 @@ CONTENTS
 * FUNCTIONS
 * IF STATEMENT
 * BOOLEAN EXPRESSIONS
+* ARITHMETIC EXPRESSIONS
 
 # NAVIGATION
 cd			: change to home directory
@@ -1008,3 +1009,27 @@ Add these as test conditions (full list in man 1 test)
 -x file				: check if executable
 
 # BOOLEAN EXPRESSIONS
+&& , ||, !, ==
+
+Use the following operators with if statements:
+Syntax:
+	condition1 -operator condition2
+
+-eq				: equal to
+-ne				: not equal to
+-gt				: greater than
+-lt				: less than
+-ge				: greater than or equal to
+-le				: less than or equal to
+
+# ARITHMETIC EXPRESSIONS
+echo $((x+1))
+	// built-in shell format
+
+let x=( 1 + 2 ); echo $x
+	// built-in let command
+
+var=$((expression))
+	// replacement for expr utility
+
+# STRING MANIPULATION
