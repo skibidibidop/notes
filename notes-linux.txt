@@ -49,6 +49,8 @@ CONTENTS
 * FILE TRANSFER PROTOCOL
 * SECURE SHELL (SSH)
 * BASH SHELL AND SCRIPTING
+* SCRIPT PARAMETERS
+* COMMAND SUBSTITUTION
 
 # NAVIGATION
 cd			: change to home directory
@@ -907,3 +909,58 @@ Alternatively, script_name.sh can be made beforehand
 chmod +x script_name.sh		: make script executable by all users
 ./script_name.sh		: execute script (needs chmod +x)
 bash script_name.sh		: execute script (does not need chmod +x)
+
+#				: start comment
+\				: concatenation operator
+				: place at end of line to indicate continue to next line
+;				: for chaining of commands
+				: what follows is a new command to be executed next
+				: commands will execute even if preceeding ones fail
+&&				: abort if preceeding command fails
+				: placed between commands
+||				: abort if a command succeeds
+				: placed between commands
+$				: what follows is an environment variable
+>				: redirect output
+<<				: append output
+<				: redirect input
+|				: pipe result into next command
+				: piping != chaining commands
+
+env
+set
+printenv			: get list of variables with these commands
+read VAR			: stores input to variable
+$VAR				: dollar sign before variable
+				: reference the value of a variable
+				: echo $VAR will print the value of the variable in the terminal
+
+	Example of how to set value of variable
+		// VAR=blue
+
+export				: make variable accessible to child processes (sub-shells)
+				: if no arguments, list currently exported environment variables
+	// export VAR=value
+	// or
+	// VAR=value ; export VAR
+	// a child processe can modify an exported variable but the changes will not affect the
+		state of the variable in the parent process
+
+exit				: same as return
+				: default
+					// 0 means success
+					// non-zero means failure
+
+# SCRIPT PARAMETERS
+$0				: script name
+$1				: first parameters
+$2				: second parameter
+$3				: third parameter
+$*				: all parameters
+$#				: number of arguments
+
+# COMMAND SUBSTITUTION
+$(command)
+	// result of the inserted command can be used as a portion of another command
+	// example: ls/lib/modules/$(command)/
+
