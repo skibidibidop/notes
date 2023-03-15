@@ -1,0 +1,17 @@
+C LANGUAGE NOTES
+
+READING LIST
+
+CONTENTS //////////////////////////////////////////////////////////////////////////////////////////
+* DATA TYPES
+
+THE C LANGUAGE ////////////////////////////////////////////////////////////////////////////////////
+
+* DATA TYPES
+
+bool				: boolean expression
+char				: a single character
+double				: floating-point value with more digits than float
+float				: floating-point value
+int				: integers up to a certain number of bits
+long				: integers with more bits than int
