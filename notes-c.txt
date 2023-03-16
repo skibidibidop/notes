@@ -3,11 +3,23 @@ C LANGUAGE NOTES
 READING LIST
 
 CONTENTS //////////////////////////////////////////////////////////////////////////////////////////
+* COMPUTER SCIENCE CONCEPTS
 * DATA TYPES
+* ARRAYS
 
 THE C LANGUAGE ////////////////////////////////////////////////////////////////////////////////////
 
-* DATA TYPES
+# COMPUTER SCIENCE CONCEPTS
+
+Preprocessing			- header files in code are included
+Compiling			- written code is converted to assembly code
+Assembling			- assembly code is converted to machine code
+Linking				- code from included libraries also converted
+					to machine code, then combined with
+					user's code. Executable file is then
+					outputted
+
+# DATA TYPES
 
 bool				: boolean expression
 char				: a single character
@@ -15,3 +27,15 @@ double				: floating-point value with more digits than float
 float				: floating-point value
 int				: integers up to a certain number of bits
 long				: integers with more bits than int
+
+# ARRAYS
+
+Using arrays in functions:
+
+	type func_name(type array[])
+		// For prototype and declaration
+	
+	func_name(var)
+		// during invocation, no [] on var
+
+
