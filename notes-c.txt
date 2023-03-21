@@ -3,76 +3,77 @@ C LANGUAGE NOTES
 READING LIST
 
 CONTENTS //////////////////////////////////////////////////////////////////////////////////////////
-* COMPUTER SCIENCE CONCEPTS
 * DATA TYPES
 * ARRAYS
 * COMMAND-LINE ARGUMENTS
+* DATA STRUCTURES
+* OTHER NOTES
 
 THE C LANGUAGE ////////////////////////////////////////////////////////////////////////////////////
 
-# COMPUTER SCIENCE CONCEPTS
-
-Preprocessing			- header files in code are included
-Compiling			- written code is converted to assembly code
-Assembling			- assembly code is converted to machine code
-Linking				- code from included libraries also converted
-					to machine code, then combined with
-					user's code. Executable file is then
-					outputted
-
-Passed by value			- most variables in C are passed by value
-				- arrays are an exception
-				- means that a local copy is created in the receiving variable,
-					the passing variable is unaffected by changes made to
-					receiving variable
-Passed by reference		- arrays, pointers
-				- passing variable and receiving variable both point to the
-					same memory address
-				- modifications to passing variable will affect receiving 
-					variable, vice versa
-
 # COMPILING
-gcc -o [executable_name] [source_file].c
+	gcc -o [executable_name] [source_file].c
 	// without the square brackets
 	// -o means outfile
 
 # DATA TYPES
-
-bool				: boolean expression
-char				: a single character
-double				: floating-point value with more digits than float
-float				: floating-point value
-int				: integers up to a certain number of bits
-long				: integers with more bits than int
+	bool				: boolean expression
+	char				: a single character
+	double				: floating-point value with more digits than float
+	float				: floating-point value
+	int				: integers up to a certain number of bits
+	long				: integers with more bits than int
 
 # ARRAYS
-Elements of arrays can be treated as variables
-Arrays cannot be treated as variables
+	Elements of arrays can be treated as variables
+	Arrays cannot be treated as variables
 
-Assignment of one array to another using the = operator is not possible in C
-It has to be done iteratively
+	Assignment of one array to another using the = operator is not possible in C
+	It has to be done iteratively
 
-Declaring arrays
-type var[n] = { val1, val2, val3 };
-	// n is not required, compiler can figure it out if elements are provided in
-		curly brackets
-	// n should be the number of elements in the array
+	Declaring arrays
+		type var[n] = { val1, val2, val3 };
+		// n is not required, compiler can figure it out if elements are provided in
+			curly brackets
+		// n should be the number of elements in the array
 
-This is also possible:
-type var[n][n];
+	This is also possible:
+	type var[n][n];
 
-Using arrays in functions:
-
-	type func_name(type array[])
-		// For prototype and declaration
-	
-	func_name(var)
-		// during invocation, no [] on var
+	Using arrays in functions:
+		type func_name(type array[])
+			// For prototype and declaration
+		
+		func_name(var)
+			// during invocation, no [] on var
 
 # COMMAND-LINE ARGUMENTS
-
 	int main(int argc, string argv[])
 	// argc is the argument count
 	// argv is the argument vector
 	// the program name counts as the first argument
 	// the argument vector will contain [program name, argument, argument, ..., null-pointer]
+
+# DATA STRUCTURES
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# OTHER NOTES
+	Preprocessing			- header files in code are included
+	Compiling			- written code is converted to assembly code
+	Assembling			- assembly code is converted to machine code
+	Linking				- code from included libraries also converted
+						to machine code, then combined with
+						user's code. Executable file is then
+						outputted
+
+	Passed by value			- most variables in C are passed by value
+					- arrays are an exception
+					- means that a local copy is created in the receiving variable,
+						the passing variable is unaffected by changes made to
+						receiving variable
+	Passed by reference		- arrays, pointers
+					- passing variable and receiving variable both point to the
+						same memory address
+					- modifications to passing variable will affect receiving 
+						variable, vice versa
