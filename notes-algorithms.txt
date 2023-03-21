@@ -20,14 +20,24 @@ ALGORITHMS /////////////////////////////////////////////////////////////////////
 
 	How does the growth of the input affect performance and memory requirement?
 	
-	O			: worst case
+	Capital letter O	: worst case (upper bound)
 	Capital theta		: best case (lower bound) and worst case (upper bound) are the same
-	Constants are cancelled out
+	Constants are dropped out
+
+	In cases where the data set is small enough, slower algorithms with faster starts may still
+		be used instead of faster algorithms with slower starts
 
 	EXAMPLE 1 ( Linear, or O(n) )
 		Take a string and iterate over it
 		For every unit of the string, the loop has to be executed again
 		The growth is LINEAR
 
-	EXAMPLE 2 ( O(1) )
+	EXAMPLE 2 ( Constant time, or O(1) )
 		Reading from an array takes the same number of steps no matter the size of input
+	
+	EXAMPLE 3 ( O(n^2) )
+		A loop within a loop where a string is iterated over twice
+	
+	EXAMPLE 4 ( O(log n) )
+		Binary search
+		Divide in half for each iteration
