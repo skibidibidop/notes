@@ -77,17 +77,18 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 # RECURSION
 	Function calling itself
 	Can be terminated by providing base case
+	Base case: a solution that stops the recursive process
 
 	void draw(int n)
 	{
 		// If nothing to draw
-		if (n <= 0)
+		if (n <= 0)					// this is the base case
 		{
 			return;
 		}
 
 		// Draw pyramid of height n - 1
-		draw(n - 1);
+		draw(n - 1);					// this is the recursive case
 
 		// Draw one more row of width n
 		for (int i = 0; i < n; i++)
