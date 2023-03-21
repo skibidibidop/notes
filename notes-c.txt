@@ -75,6 +75,27 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	Dot notation, as seen above, can be used to access the newly defined data type
 
 # RECURSION
+	Function calling itself
+	Can be terminated by providing base case
+
+	void draw(int n)
+	{
+		// If nothing to draw
+		if (n <= 0)
+		{
+			return;
+		}
+
+		// Draw pyramid of height n - 1
+		draw(n - 1);
+
+		// Draw one more row of width n
+		for (int i = 0; i < n; i++)
+		{
+			printf("#");
+		}
+		printf("\n");
+	}
 	
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OTHER NOTES
