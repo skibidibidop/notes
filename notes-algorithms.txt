@@ -1,0 +1,33 @@
+ALGORITHMS
+
+READ / WATCH LIST
+
+
+SOURCES
+- The Last Algorithms Course You'll Need (The Primeagen)
+- Introduction to Algorithms, third edition (Thomas Cormen)
+- A Common-Sense Guide to Data Structures and Algorithms (Jay Wengrow)
+
+CONTENTS
+* BIG O NOTATION
+
+ALGORITHMS ////////////////////////////////////////////////////////////////////////////////////////
+
+# BIG O NOTATION
+	Not an exact measurement, generalizes growth of algorithms
+	Used to categorize algorithm time or memory requirements based on input
+	Informs about the performance of algorithms and data structures
+
+	How does the growth of the input affect performance and memory requirement?
+	
+	O			: worst case
+	Capital theta		: best case (lower bound) and worst case (upper bound) are the same
+	Constants are cancelled out
+
+	EXAMPLE 1 ( Linear, or O(n) )
+		Take a string and iterate over it
+		For every unit of the string, the loop has to be executed again
+		The growth is LINEAR
+
+	EXAMPLE 2 ( O(1) )
+		Reading from an array takes the same number of steps no matter the size of input
