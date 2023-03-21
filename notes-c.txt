@@ -8,6 +8,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * COMMAND-LINE ARGUMENTS
 * DATA STRUCTURES
 * OTHER NOTES
+* RECURSION
 
 THE C LANGUAGE ////////////////////////////////////////////////////////////////////////////////////
 
@@ -55,8 +56,26 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	// the argument vector will contain [program name, argument, argument, ..., null-pointer]
 
 # DATA STRUCTURES
+	Define new data type:
+		
+		typedef struct
+		{
+			string name;
+			string number;
+		}
+		person; // name of new struct
 
+	Newly defined data type can be used to define new arrays/variables
+		
+		person people[2];
 
+		people[0].name = "Sample1";
+		people[0].number = "+1-234-567";
+
+	Dot notation, as seen above, can be used to access the newly defined data type
+
+# RECURSION
+	
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OTHER NOTES
 	Preprocessing			- header files in code are included
