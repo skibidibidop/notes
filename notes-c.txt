@@ -10,6 +10,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * OTHER NOTES
 * RECURSION
 * POINTERS
+* OVERFLOW
 
 THE C LANGUAGE ////////////////////////////////////////////////////////////////////////////////////
 
@@ -136,6 +137,16 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	valgrind			: a program that can be used to check memory-related issues
 					: checks if all malloc'd memory are free'd
 
+	scanf				: gets input and stores in variable address
+		Example:
+
+		int n;
+		scanf("%i", &n);
+
+# OVERFLOW
+	heap overflow			: accessing areas of memory not supposed to be touched
+	stack overflow			: happens when too many functions are called
+	buffer overflow			: both heap and stack overflow are considered buffer overflow
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OTHER NOTES
