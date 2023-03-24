@@ -10,7 +10,8 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * OTHER NOTES
 * RECURSION
 * POINTERS
-* OVERFLOW
+* STACK, HEAP
+* FILES
 
 THE C LANGUAGE ////////////////////////////////////////////////////////////////////////////////////
 
@@ -108,20 +109,31 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		int *p = &n;
 
 		n contains 50, p is a pointer that contains the address of n
+		The int before *p describes the data type in &n
 
 
 	%p				: print out address to which a pointer refers
 	&				: provide address
-	*				: pointer, go to this location in memory
+	*				: dereference operator
+					: pointer, go to this location in memory
+	
+	null pointer			: always initialize to NULL if value can't be set
+						immediately
+		Example:
+
+		int *p = NULL;
 
 	Comparing two identical-looking strings using the == operator will result in false
 		because what's being compared are actually the addresses
 	
 	malloc				: allocate memory with specific size
 					: can return NULL if something goes wrong
+					: always terminate if malloc returns NULL
 
 		Example:
-		int *n = malloc(size);
+		int *n = malloc( sizeof(int) );
+		or
+		int *n = malloc(4) where 4 is the size of an int in bytes
 
 	free				: free memory allocated with malloc
 		
@@ -143,11 +155,63 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		int n;
 		scanf("%i", &n);
 
-# OVERFLOW
+# STACK, HEAP
 	heap overflow			: accessing areas of memory not supposed to be touched
 	stack overflow			: happens when too many functions are called
 	buffer overflow			: both heap and stack overflow are considered buffer overflow
+	
+	heap				: used for dynamic memory allocation
+	stack				: used for static memory allocation
+	
+	When a new function is called, it is PUSHED onto the top of the stack
+	When a a function finishes, it is POPPED off of the stack
+	Last in, first out
 
+# FILES
+	stdio.h				: contains file manipulation functions
+
+	fopen()				: opens file
+					: terminate if fopen() returns NULL
+		FILE *ptr = fopen(<filename>, <operation>);
+		or
+		FILE *ptr1 = fopen("file.txt", a); // a is append, r is read, etc.
+	
+	fclose()			: closes the file pointed to
+		fclose(<file pointer>);
+	
+	fgetc()				: read and return next character from file pointed to
+					: file pointer must have the file opened for reading
+		char ch = fgetc(<file pointer>);
+	
+		Example (mimics behavior of cat command in Linux):
+
+		char ch;
+
+		while ((ch = fgetc(ptr) != EOF);
+		{
+			printf("%c", ch);
+		}
+	
+	fputc()				: write character into file
+					: file pointer must have file opened for writing or appending
+		fputc(<character>, <file pointer>);
+	
+	fread()				: reads <qty> units of size <size>  from the file pointed to,
+						then stores that in memory pointed to by <buffer>
+					: file pointer must have file opened for reading
+		fread(<buffer>, <size>, <qty>, <file pointer>);
+
+	fwrite()			: writes <qty> units of <size> to file pointed to by reading
+						input from memory pointed to by <buffer>
+					: file pointer must have file opened for writing or appending
+		fwrite(<buffer>, <size>, <qty>, <file pointer>);
+
+		Example:
+
+		int arr[10];
+		fwrite(arr, sizeof(int), 10, ptr);
+	
+	Check stdio.h for more file manipulation functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OTHER NOTES
 	Preprocessing			- header files in code are included
