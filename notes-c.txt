@@ -9,6 +9,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * DATA STRUCTURES
 * OTHER NOTES
 * RECURSION
+* POINTERS
 
 THE C LANGUAGE ////////////////////////////////////////////////////////////////////////////////////
 
@@ -98,6 +99,44 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		printf("\n");
 	}
 	
+# POINTERS AND MEMORY
+	pointer				- variable that contains the address of some value
+		Example:
+
+		int n = 50;
+		int *p = &n;
+
+		n contains 50, p is a pointer that contains the address of n
+
+
+	%p				: print out address to which a pointer refers
+	&				: provide address
+	*				: pointer, go to this location in memory
+
+	Comparing two identical-looking strings using the == operator will result in false
+		because what's being compared are actually the addresses
+	
+	malloc				: allocate memory with specific size
+					: can return NULL if something goes wrong
+
+		Example:
+		int *n = malloc(size);
+
+	free				: free memory allocated with malloc
+		
+		Example:
+		free(n); // in relation to malloc example
+
+	If, for example, strcpy doesn't exist, when creating an identical copy, use malloc to
+		allocate memory for the copy, and then string2[0] = string1[0]
+	
+	Not using malloc before doing string2[0] = string1[0] will result in both pointing to
+		the same memory address
+	
+	valgrind			: a program that can be used to check memory-related issues
+					: checks if all malloc'd memory are free'd
+
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OTHER NOTES
 	Preprocessing			- header files in code are included
