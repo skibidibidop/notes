@@ -28,6 +28,12 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	int				: integers up to a certain number of bits
 	long				: integers with more bits than int
 
+	uint8_t				: u stands for unsigned
+					: int for integer
+					: 8 bits or 1 byte
+					: _t denotes that this is its own type
+					: an unsigned 8 bit integer that is its own type
+
 # ARRAYS
 	Elements of arrays can be treated as variables
 	Arrays cannot be treated as variables
@@ -171,6 +177,21 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	Last in, first out
 
 # FILES
+	Syntax:
+
+		FILE * input = fopen("hi.txt", "r");
+
+		FILE *			: declares the variable input as a file pointer
+		input			: the pointer that contains the address of some file
+		fopen()			: function used to open files
+					: fopen(<filename>, <operation>)
+					: looks in the current directory
+		hi.txt			: file name
+		r			: read mode (operation)
+
+	buffer				: some place in memory where data read from a file
+						is temporarily stored
+
 	stdio.h				: contains file manipulation functions
 
 	fopen()				: opens file
@@ -203,6 +224,17 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 						then stores that in memory pointed to by <buffer>
 					: file pointer must have file opened for reading
 		fread(<buffer>, <size>, <qty>, <file pointer>);
+
+		fread(buffer, 1, 3, input) is interpretted as
+			From the file being pointed to by "input", read 3 single-byte blocks and
+			put those in the buffer "buffer"
+		
+			In this example, after 3 single-byte blocks have been read, the address
+			contained by the file pointer is updated to the start of the next 3 single-
+			byte blocks
+
+			The size of the buffer should be the same as the size of each block being
+			read
 
 	fwrite()			: writes <qty> units of <size> to file pointed to by reading
 						input from memory pointed to by <buffer>
