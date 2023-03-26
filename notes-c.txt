@@ -106,11 +106,14 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		Example:
 
 		int n = 50;
-		int *p = &n;
+		int * p = &n;
 
 		n contains 50, p is a pointer that contains the address of n
-		The int before *p describes the data type in &n
+		int * is the data type (an integer pointer)
+		p is pointing to an integer
 
+	To emphasize that the * above is being used to indicate data type and not as
+		the dereference operator, I use int * variable instead of int *variable
 
 	%p				: print out address to which a pointer refers
 	&				: provide address
@@ -121,7 +124,7 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 						immediately
 		Example:
 
-		int *p = NULL;
+		int * p = NULL;
 
 	Comparing two identical-looking strings using the == operator will result in false
 		because what's being compared are actually the addresses
@@ -131,9 +134,9 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 					: always terminate if malloc returns NULL
 
 		Example:
-		int *n = malloc( sizeof(int) );
+		int * n = malloc( sizeof(int) );
 		or
-		int *n = malloc(4) where 4 is the size of an int in bytes
+		int * n = malloc(4) where 4 is the size of an int in bytes
 
 	free				: free memory allocated with malloc
 		
@@ -172,9 +175,9 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 	fopen()				: opens file
 					: terminate if fopen() returns NULL
-		FILE *ptr = fopen(<filename>, <operation>);
+		FILE * ptr = fopen(<filename>, <operation>);
 		or
-		FILE *ptr1 = fopen("file.txt", a); // a is append, r is read, etc.
+		FILE * ptr1 = fopen("file.txt", a); // a is append, r is read, etc.
 	
 	fclose()			: closes the file pointed to
 		fclose(<file pointer>);
