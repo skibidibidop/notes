@@ -12,6 +12,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * POINTERS
 * STACK, HEAP
 * FILES
+* DATA STRUCTURES
 
 THE C LANGUAGE ////////////////////////////////////////////////////////////////////////////////////
 
@@ -247,6 +248,20 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		fwrite(arr, sizeof(int), 10, ptr);
 	
 	Check stdio.h for more file manipulation functions
+
+# DATA STRUCTURES
+
+	Queue
+		FIFO
+		enqueue			: add something to end of queue
+		dequeue			: remove from queue, FIFO basis
+	
+	Stack
+		LIFO
+		push			: add to top of stack
+		pop			: remove from top of stack
+	
+	
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OTHER NOTES
 	Preprocessing			- header files in code are included
