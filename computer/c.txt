@@ -6,7 +6,6 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * DATA TYPES
 * ARRAYS
 * COMMAND-LINE ARGUMENTS
-* DATA STRUCTURES
 * OTHER NOTES
 * RECURSION
 * POINTERS
@@ -34,6 +33,34 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 					: 8 bits or 1 byte
 					: _t denotes that this is its own type
 					: an unsigned 8 bit integer that is its own type
+
+	Define new data type:
+		
+		typedef struct
+		{
+			string name;
+			string number;
+		}
+		person; // name of new struct
+
+	Newly defined data type can be used to define new arrays/variables
+		
+		person people[2];
+
+		people[0].name = "Sample1";
+		people[0].number = "+1-234-567";
+
+	Dot notation, as seen above, can be used to access the newly defined data type
+
+	If necessary to call newly defined structure inside that structure:
+
+		typedef struct person
+		{
+			string name;
+			string number;
+			struct person * next;
+		}
+		person;
 
 # ARRAYS
 	Elements of arrays can be treated as variables
@@ -64,25 +91,6 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	// argv is the argument vector
 	// the program name counts as the first argument
 	// the argument vector will contain [program name, argument, argument, ..., null-pointer]
-
-# DATA STRUCTURES
-	Define new data type:
-		
-		typedef struct
-		{
-			string name;
-			string number;
-		}
-		person; // name of new struct
-
-	Newly defined data type can be used to define new arrays/variables
-		
-		person people[2];
-
-		people[0].name = "Sample1";
-		people[0].number = "+1-234-567";
-
-	Dot notation, as seen above, can be used to access the newly defined data type
 
 # RECURSION
 	Function calling itself
@@ -155,7 +163,8 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	
 	Not using malloc before doing string2[0] = string1[0] will result in both pointing to
 		the same memory address
-	
+	realloc				: realloc(<array to copy>, <size of final array>)
+
 	valgrind			: a program that can be used to check memory-related issues
 					: checks if all malloc'd memory are free'd
 
@@ -250,6 +259,7 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	Check stdio.h for more file manipulation functions
 
 # DATA STRUCTURES
+Organizing data in memory
 
 	Queue
 		FIFO
@@ -261,7 +271,37 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		push			: add to top of stack
 		pop			: remove from top of stack
 	
-	
+	Linked list
+		Not stored in contiguous blocks of memory
+		Square bracket notation usually used for arrays not possible
+		Can connect values that are located in different areas of memory by
+			using pointers
+		Binary search not possible
+		Can dynamically grow and shrink
+
+		->			: arrow operator
+					: go to address, then look inside a structure
+					: same as using (*ptr).number, where number is a
+						content of the struct that *ptr is pointing to
+		
+		Example:
+
+		pointer0 contains the address of 1st node
+		1st node contains a value and the address of the 2nd node
+		2nd node contains a value and the address of the 3rd node
+		Assuming that the 3rd node is the last struct, it will point to NULL to indicate
+			the end of the linked list
+
+		A node in a linked list may look like this:
+
+		typedef struct node
+		{
+			int number;
+			struct node * next; 	// a pointer that contains the address of the
+						// next struct node
+		}
+		node;
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OTHER NOTES
 	Preprocessing			- header files in code are included
