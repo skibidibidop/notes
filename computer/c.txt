@@ -294,13 +294,49 @@ Organizing data in memory
 
 		A node in a linked list may look like this:
 
+			typedef struct node
+			{
+				int number;
+				struct node * next; 	// a pointer that contains the address of the
+							// next struct node
+			}
+			node;
+
+	Trees
+		Binary search trees	: center value becomes top of the tree
+					: values less than center value go to one side
+					: values greater than center value go to the other side
+		
+		A node in a BST may look like this
+
 		typedef struct node
 		{
 			int number;
-			struct node * next; 	// a pointer that contains the address of the
-						// next struct node
+			struct node * left;
+			struct node * right;
 		}
 		node;
+	
+	Dictionaries
+		Contains key and value pairs
+		Can achieve O(1)
+
+	Hashing and Hash Tables
+		Hashing			: taking a value and being able to output a value that becomes
+						a shortcut of it later
+					: implemented by bucketizing
+		Hash function		: algorithm that reduces a large value to something small and
+						predictable
+		Hash Tables		: combination of arrays and linked lists
+					: array of pointers to nodes
+		Collisions		: when a value is added to a hash table but something already
+						exists in the location
+	
+	Tries
+		Trie (singular)
+		Short for retrieval but pronounced like try/tries
+		Always searchable in O(1)
+		Takes a lot of memory
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # OTHER NOTES
