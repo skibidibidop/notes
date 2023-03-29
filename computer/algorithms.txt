@@ -1,7 +1,7 @@
-ALGORITHMS
+DATA STRUCTURES AND ALGORITHMS
 
 READ / WATCH LIST
-
+- A Common-sense Guide to Data Structures and Algorithms (Jay Wengrow): page 
 
 SOURCES
 - The Last Algorithms Course You'll Need (The Primeagen)
@@ -9,9 +9,12 @@ SOURCES
 - A Common-Sense Guide to Data Structures and Algorithms (Jay Wengrow)
 
 CONTENTS
+* ARRAYS
 * BIG O NOTATION
 
 ALGORITHMS ////////////////////////////////////////////////////////////////////////////////////////
+# ARRAYS
+
 
 # BIG O NOTATION
 	Not an exact measurement, generalizes growth of algorithms
