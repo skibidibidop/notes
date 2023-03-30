@@ -1,7 +1,7 @@
 DATA STRUCTURES AND ALGORITHMS
 
 READ / WATCH LIST
-- A Common-sense Guide to Data Structures and Algorithms (Jay Wengrow): position 72.6 / 1076
+- A Common-sense Guide to Data Structures and Algorithms (Jay Wengrow): position 300.7 / 1076
 
 SOURCES
 - The Last Algorithms Course You'll Need (The Primeagen)
@@ -11,11 +11,20 @@ SOURCES
 CONTENTS
 * DEFINITIONS
 * DATA STRUCTURE OPERATIONS
+// DATA STRUCTURES //
 * ARRAYS
+* ORDERED ARRAYS
 * SETS
+* HASH TABLES
+/////////////////////
 * BIG O NOTATION
+// ALGORITHMS //
+* BINARY SEARCH
+* BUBBLE SORT
+* SELECTION SORT
+* INSERTION SORT
 
-ALGORITHMS ////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 # DEFINITIONS
 	Time complexity		: the speed of an operation
 				: measuring the speed of an operation is also known as measuring
@@ -40,8 +49,12 @@ ALGORITHMS /////////////////////////////////////////////////////////////////////
 	Delete			: removing value/s from data structures
 				: in an array, also O(n)
 
+///// DATA STRUCTURES /////
 # ARRAYS
 	Contiguous block of memory used to store values of same data type (in C, at least)
+
+# ORDERED ARRAYS
+	Elements in ordered arrays always need to be in order
 
 # SETS
 	A data structure that doesn't allow duplicates
@@ -51,6 +64,24 @@ ALGORITHMS /////////////////////////////////////////////////////////////////////
 			has to be searched for duplicates, and then the insertion
 			happens after the elements have been shifted to make space
 
+# HASH TABLES
+	O(1)
+	Very fast lookup, good for data access
+	List of paired values (key and value)
+	Hashing is computationally and storage space-efficient
+	Hash function		: can be used to map data to fixed-size values
+				: takes a key that is associated with data that can be
+					retrieved
+		Example:
+
+		Royce -> 01
+		Mark -> 02
+		John -> 03
+		Jane -> 04
+	
+	Hash value		: returned by Hash functions
+
+//////////////////////////
 # BIG O NOTATION
 	Not an exact measurement, generalizes growth of algorithms
 	Used to categorize algorithm time or memory requirements based on input
@@ -73,9 +104,52 @@ ALGORITHMS /////////////////////////////////////////////////////////////////////
 	EXAMPLE 2 ( Constant time, or O(1) )
 		Reading from an array takes the same number of steps no matter the size of input
 	
-	EXAMPLE 3 ( O(n^2) )
+	EXAMPLE 3 ( Quadratic time, O(n²) )
 		A loop within a loop where a string is iterated over twice
 	
 	EXAMPLE 4 ( O(log n) )
-		Binary search
+		Binary search is an example
+		O(log n) is shorthand for O(log₂ n)
+		Refresher on logarithms:
+			log₂ 8 = 3
+			"How many 2s do I need to multiply together to get 8?"
+			2 * 2 * 2 is 8, so log₂ 8 is 3
 		Divide in half for each iteration
+
+///// ALGORITHMS /////
+# BINARY SEARCH
+	O(log n)
+	Start search by beginning in the middle
+	Enables immediate elimination of half of the problem for each iteration
+
+# BUBBLE SORT
+	O(n²)
+	Biggest numbers are placed at the end of the list, one by one
+	Done by comparing the value being sorted with the value after it
+	Ends when no swaps are done
+
+# SELECTION SORT
+	O(n²), although realistically only takes about half the time that bubble sort does
+	Pass through list, keep lowest value in a variable
+	At the end of the list, the lowest value is placed in the proper index,
+		starting from 0 and incrementing with each pass through
+	Repeat until entire list is sorted
+
+# INSERTION SORT
+	O(n²)
+	Take this array: 4, 2, 7, 1, 3
+	First pass through will start at the second element. Subsequent passthroughs will
+		start at subsequent elements
+	Current element is 2
+	Store 2 in temporary variable, then remove from the array to create a gap
+	Compare 2 to previous element (4)
+	4 > 2, so shift it to the gap
+	There are no more elements to compare/shift, so put 2 in the newly created gap
+		after shifting 4 (index 0)
+	Repeat until list is sorted
+
+	42713
+	24713
+	12473	// In this iteration, 1 is shifted to index 0 in one go. The comparisons don't
+		// end until there are no more elements to be shifted
+	12347	// In this iteration, 3 is also shifted multiple times, from index 4 to index 2

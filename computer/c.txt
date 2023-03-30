@@ -329,6 +329,7 @@ Organizing data in memory
 						predictable
 		Hash Tables		: combination of arrays and linked lists
 					: array of pointers to nodes
+					: this is one of the ways to implement dictionaries
 		Collisions		: when a value is added to a hash table but something already
 						exists in the location
 	
