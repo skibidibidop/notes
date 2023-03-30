@@ -1,7 +1,7 @@
 DATA STRUCTURES AND ALGORITHMS
 
 READ / WATCH LIST
-- A Common-sense Guide to Data Structures and Algorithms (Jay Wengrow): page 
+- A Common-sense Guide to Data Structures and Algorithms (Jay Wengrow): position 72.6 / 1076
 
 SOURCES
 - The Last Algorithms Course You'll Need (The Primeagen)
@@ -9,12 +9,47 @@ SOURCES
 - A Common-Sense Guide to Data Structures and Algorithms (Jay Wengrow)
 
 CONTENTS
+* DEFINITIONS
+* DATA STRUCTURE OPERATIONS
 * ARRAYS
+* SETS
 * BIG O NOTATION
 
 ALGORITHMS ////////////////////////////////////////////////////////////////////////////////////////
-# ARRAYS
+# DEFINITIONS
+	Time complexity		: the speed of an operation
+				: measuring the speed of an operation is also known as measuring
+					its time complexity
 
+# DATA STRUCTURE OPERATIONS
+	Read			: looking something up by using a reference (usually the index)
+				: in an array, this can be done in constant time since the
+					index is provided
+	Search			: checking if a particular value exists, and then possibly
+					returning the index number (if array) of that value
+				: in an array, the time complexity is O(n) since in the worst
+					case scenario, the computer will have to go through
+					all of the elements before finding the value being
+					searched for or figuring out that the value doesn't
+					exist in the array
+	Insert			: adding new value/s to data structures
+				: in an array, O(n) (technically n + 1 but the constant 1 is
+					disregarded in Big O notation)
+				: in the worst case, all elements have to be shifted one place
+					to make space for the insertion
+	Delete			: removing value/s from data structures
+				: in an array, also O(n)
+
+# ARRAYS
+	Contiguous block of memory used to store values of same data type (in C, at least)
+
+# SETS
+	A data structure that doesn't allow duplicates
+	For array-based sets:
+		The time complexity of reading and searching is the same with arrays
+		Inserting takes 2n steps (in arrays, only n steps) because the array
+			has to be searched for duplicates, and then the insertion
+			happens after the elements have been shifted to make space
 
 # BIG O NOTATION
 	Not an exact measurement, generalizes growth of algorithms
