@@ -16,13 +16,18 @@ CONTENTS
 * ORDERED ARRAYS
 * SETS
 * HASH TABLES
+* STACKS
+* QUEUES
+
 /////////////////////
 * BIG O NOTATION
+
 // ALGORITHMS //
 * BINARY SEARCH
 * BUBBLE SORT
 * SELECTION SORT
 * INSERTION SORT
+* RECURSION
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 # DEFINITIONS
@@ -65,6 +70,8 @@ CONTENTS
 			happens after the elements have been shifted to make space
 
 # HASH TABLES
+	A Common-sense Guide to Data Structures and Algorithms (Jay Wengrow), Chapter 8
+
 	O(1)
 	Very fast lookup, good for data access
 	List of paired values (key and value)
@@ -80,7 +87,33 @@ CONTENTS
 		Jane -> 04
 	
 	Hash value		: returned by Hash functions
+	Collision		: when a slot in a hash table is already filled and an
+					attempt to put new data there is made, a collision
+					happens
+	
+	Separate chaining	: an example of a collision workaround
+				: The existing data in the slot is replaced with a
+					reference to another array. The colliding data
+					is stored in that array
+				: effectively turns the hash table to an array, O(n)
+	
+	Rule of thumb	: every 7 data elements stored in a hash table should have 10 memory
+		slots
+			: this ration is referred to as the "load factor"
+			: so, the ideal load factor is 0.7 (7 divided by 10)
 
+# STACKS
+	Abstract data type (more of a theoretical concept, like sets)
+	Can be achieved with various data structures like arrays, etc.
+	Data can only be inserted and deleted from the end of the stack
+	Only the last element of a stack can be read
+	Push and pop
+	LIFO
+# QUEUES
+	Abstract data type
+	FIFO
+	Enqueue and dequeue
+	
 //////////////////////////
 # BIG O NOTATION
 	Not an exact measurement, generalizes growth of algorithms
@@ -153,3 +186,12 @@ CONTENTS
 	12473	// In this iteration, 1 is shifted to index 0 in one go. The comparisons don't
 		// end until there are no more elements to be shifted
 	12347	// In this iteration, 3 is also shifted multiple times, from index 4 to index 2
+
+# RECURSION
+	A function calling itself
+	Infinite loop if without base case
+	Function calls are pushed to the top of the stack until base case is reached
+	Once base case is reached, function calls are popped off the stack
+	Can cause stack overflow if the computer runs out of memory due to excessive recursion
+	Practical example: filesystem traversal where depth of subdirectories is unknown
+
