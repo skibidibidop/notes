@@ -1,7 +1,7 @@
 DATA STRUCTURES AND ALGORITHMS
 
 READ / WATCH LIST
-- A Common-sense Guide to Data Structures and Algorithms (Jay Wengrow): position 300.7 / 1076
+- A Common-sense Guide to Data Structures and Algorithms (Jay Wengrow): position 414.1 / 1076, String Reversal
 
 SOURCES
 - The Last Algorithms Course You'll Need (The Primeagen)
@@ -194,4 +194,3 @@ CONTENTS
 	Once base case is reached, function calls are popped off the stack
 	Can cause stack overflow if the computer runs out of memory due to excessive recursion
 	Practical example: filesystem traversal where depth of subdirectories is unknown
-
