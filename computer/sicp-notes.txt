@@ -1,13 +1,13 @@
 STRUCTURE AND INTERPRETATION OF COMPUTER PROGRAMS (2ND EDITION)
 by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 
-page 
-
 CONTENTS
 * ELEMENTS OF PROGRAMMING
 * NAMING AND THE ENVIRONMENT
 * EVALUATING COMBINATIONS
 * COMPOUND PROCEDURES
+* CONDITIONAL EXPRESSIONS AND PREDICATES
+*
 
 # ELEMENTS OF PROGRAMMING
 	Primitive expressions			: represent the simplest entities in the language
@@ -53,7 +53,7 @@ CONTENTS
 	Procedure definition - a compound operation can be named and referred to as a unit using
 		this method of abstraction
 
-		Syntax: (define (<name> <formal parameters>) <body>)
+		Syntax: (define (<name> <formal parameters>) (<body>))
 
 		Example of a compound procedure:
 			(define (square x) (* x x))
@@ -63,3 +63,47 @@ CONTENTS
 
 		Example:
 			(define (sum-of-squares x y) (+ (square x) (square y))
+
+# CONDITIONAL EXPRESSIONS AND PREDICATES
+	cond					: special form
+						: stands for conditional
+
+	Conditional expressions are generally expressed as:
+		(cond (<predicate> <consequent expression>))
+
+		Predicate			: expressions or procedures that return true or
+							false
+		Consequent expression		: will be returned as the value of the conditional
+							expression if <predicate> evaluates to true
+		
+		Predicate and consequent expression are called clauses
+		
+	Example:
+		(define (abs x)
+		  (cond ((> x 0) x)
+			((= x 0) 0)
+			((< x 0) (-x))))
+
+		Each predicate will be examined until one is evaluated as true
+		The value of cond is undefined if no predicate is evaluated as true
+
+		>, <, and = are Primitive Predicates
+	
+	else					: special form
+						: can be used together with cond
+
+	if					: special form
+						: can be used only when there are two cases
+						: (if <predicate> <consequent> <alternative>)
+
+		If the predicate is true, the value of the consequent will be returned. Otherwise,
+			the value of the alternative will be returned
+
+		Re-doing the example above:
+
+		(define (abs x)
+		  ( if (x < 0)
+		       (- x)
+		       x))
+	
+	and					: 
