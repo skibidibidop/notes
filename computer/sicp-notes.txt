@@ -1,0 +1,37 @@
+STRUCTURE AND INTERPRETATION OF COMPUTER PROGRAMS (2ND EDITION)
+by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
+
+CONTENTS
+* ELEMENTS OF PROGRAMMING
+* 
+	
+# ELEMENTS OF PROGRAMMING
+	Primitive expressions			: represent the simplest entities in the language
+						: examples below:
+							numbers, primitive procedures
+
+	Means of combination			: used to build compound elements from simpler
+							ones
+						: examples below:
+							primitive procedures such as +, -, etc.
+
+	Means of abstraction			: used to manipulate compound elements as units
+							with names
+
+	Procedures				: rules for manipulating data
+
+	Data					: stuff that we want to manipulate using
+							procedures
+
+	Global environment			: memory that keeps track of name-object pairs
+							(variables?)
+
+	Combinations				: example below:
+							(+ 1 2)
+						: compound expressions represent the application
+							of the procedure to the numbers in the
+							example above
+
+	Prefix notation				: placing the operator before the operands
+
+	
