@@ -48,6 +48,14 @@ CONTENTS
 	Special forms				: example below:
 							(define x 3)
 						: not combinations
+	
+	Applicative order evaluation		: the interpreter evaluates the operator and
+							operands first, and then applies to
+							arguments
+
+	Normal order evaluation			: substitute all parameters with expressions, and
+							then evaluate
+						: fully expand and then reduce
 
 # COMPOUND PROCEDURES
 	Procedure definition - a compound operation can be named and referred to as a unit using
