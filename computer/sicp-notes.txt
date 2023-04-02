@@ -1,30 +1,19 @@
 STRUCTURE AND INTERPRETATION OF COMPUTER PROGRAMS (2ND EDITION)
 by Harold Abelson, Gerald Jay Sussman, and Julie Sussman
 
+page 
+
 CONTENTS
 * ELEMENTS OF PROGRAMMING
-* 
-	
+* NAMING AND THE ENVIRONMENT
+* EVALUATING COMBINATIONS
+* COMPOUND PROCEDURES
+
 # ELEMENTS OF PROGRAMMING
 	Primitive expressions			: represent the simplest entities in the language
 						: examples below:
 							numbers, primitive procedures
-
-	Means of combination			: used to build compound elements from simpler
-							ones
-						: examples below:
-							primitive procedures such as +, -, etc.
-
-	Means of abstraction			: used to manipulate compound elements as units
-							with names
-
-	Procedures				: rules for manipulating data
-
-	Data					: stuff that we want to manipulate using
-							procedures
-
-	Global environment			: memory that keeps track of name-object pairs
-							(variables?)
+	Primitive procedures			: operators such as +, *, etc.
 
 	Combinations				: example below:
 							(+ 1 2)
@@ -32,6 +21,45 @@ CONTENTS
 							of the procedure to the numbers in the
 							example above
 
-	Prefix notation				: placing the operator before the operands
+	Nested Combinations			: example below:
+							(+ (* 3 4) (- 8 6))
 
+# NAMING AND THE ENVIRONMENT
+	Variables				: names used to refer to computational objects/
+							values
+						: variables can also be used to contain complex
+							objects, see below
+						: example below:
+							(define pi 3.1416)
+							(define pisquared (* pi pi))
 	
+	Environment				: memory that keeps track of variables and values
+
+	Machine instructions are stored as values for symbols such as + and * in the global
+		environment
+	
+# EVALUATING COMBINATIONS
+	Procedure
+		Evaluate the subexpressions of the combination
+		Apply the operators to the arguments
+
+	Evaluation is recursive in nature
+
+	Special forms				: example below:
+							(define x 3)
+						: not combinations
+
+# COMPOUND PROCEDURES
+	Procedure definition - a compound operation can be named and referred to as a unit using
+		this method of abstraction
+
+		Syntax: (define (<name> <formal parameters>) <body>)
+
+		Example of a compound procedure:
+			(define (square x) (* x x))
+
+	Compound procedures like the one in the example above can also be used as building blocks
+		for other procedures
+
+		Example:
+			(define (sum-of-squares x y) (+ (square x) (square y))
