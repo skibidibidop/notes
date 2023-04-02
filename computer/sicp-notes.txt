@@ -65,8 +65,10 @@ CONTENTS
 			(define (sum-of-squares x y) (+ (square x) (square y))
 
 # CONDITIONAL EXPRESSIONS AND PREDICATES
-	cond					: special form
-						: stands for conditional
+	cond					: stands for conditional
+						: can have a sequence of consequent expressions,
+							as opposed to (if) which can only have
+							1 consequent and 1 alternative
 
 	Conditional expressions are generally expressed as:
 		(cond (<predicate> <consequent expression>))
@@ -106,4 +108,16 @@ CONTENTS
 		       (- x)
 		       x))
 	
-	and					: 
+	Logical composition operations (and), (or), and (not) can be used to create compound
+		predicates
+		
+		and				: if any expression evaluates to false, this is
+							false and the rest of the expressions
+							are not evaluated
+						: if all expressions evaluate to true, the value
+							of the last expression is returned
+		or				: returns the value of the first expression that
+							evaluates to true
+						: if all expressions are false, this is false
+		not				: invert value
+
