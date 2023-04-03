@@ -8,7 +8,9 @@ CONTENTS
 * COMPOUND PROCEDURES
 * CONDITIONAL EXPRESSIONS AND PREDICATES
 * PROCEDURES AS BLACK-BOX ABSTRACTIONS
-*
+* INTERNAL DEFINITIONS AND BLOCK STRUCTURE
+* LINEAR RECURSION AND ITERATION
+* TREE RECURSION
 
 # ELEMENTS OF PROGRAMMING
 	Primitive expressions			: represent the simplest entities in the language
@@ -131,4 +133,54 @@ CONTENTS
 		not				: invert value
 
 # PROCEDURES AS BLACK-BOX ABSTRACTIONS
+	Divide program into modular parts, each focusing on a task
+	Each modular part should be used as building blocks for other procedures
+
+	When looking at the bigger picture / bigger part of the solution, abstract away the
+		details of how the smaller parts work
+	Focus is on the input and output of each modular part, rather than how each procedure
+		works
 	
+	Keep variables local to their procedures to avoid confusion and errors
+	"Bound variables declared as the formal parameters of a procedure has the body of the
+		procedure as their scope"
+
+# INTERNAL DEFINITIONS AND BLOCK STRUCTURE
+	Block structure
+		The scope of smaller procedures (the building blocks) can be restricted to one
+			bigger procedure
+		In other words, a big procedure can have internal definitions for these smaller
+			procedures, and this limits the scope of those smaller procedures
+		
+		Example:
+			(define (sqrt x)
+			  (define  (good-enough? guess x)
+			  // the rest of the code here
+			  ))
+
+			The code above has another (define) inside the main procedure being
+				(define)d, demonstrating block structure
+	
+	Lexical scoping
+		Certain shared variables in the bigger procedure are turned to free variable
+			in the internal definitions instead of bound variables
+
+		Instead of:
+			(define (sqrt x)
+			  (define  (good-enough? guess x)
+
+		The code can be:
+			(define (sqrt x)
+			  (define (good-enough? guess)
+
+		With x being shared by the sqrt and good-enough? procedures
+
+# LINEAR RECURSION AND ITERATION
+	Linear recursive process		: the amount of information to track and number of steps
+							grow linearly with the input size
+	Linear iterative process		: requires counter, does not require as much
+							resources as linear recursion
+						: the number of iterations grow linearly with input size
+
+# TREE RECURSION
+	Occurs when a process makes more than one recursive call
