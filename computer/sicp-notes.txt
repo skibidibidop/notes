@@ -167,11 +167,11 @@ CONTENTS
 
 		Instead of:
 			(define (sqrt x)
-			  (define  (good-enough? guess x)
+			  (define  (good-enough? guess x)))
 
 		The code can be:
 			(define (sqrt x)
-			  (define (good-enough? guess)
+			  (define (good-enough? guess)))
 
 		With x being shared by the sqrt and good-enough? procedures
 
