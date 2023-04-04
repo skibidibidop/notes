@@ -184,3 +184,4 @@ CONTENTS
 
 # TREE RECURSION
 	Occurs when a process makes more than one recursive call
+	Useful for operations on heirarchically structured data
