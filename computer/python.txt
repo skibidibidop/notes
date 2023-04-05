@@ -13,6 +13,7 @@ SOURCES:
 # CONSTANTS
 # LISTS
 # METHODS
+# STATEMENTS
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -81,7 +82,17 @@ SOURCES:
 	Can be used in f-strings
 	Methods can be applied
 		print(f"This is the item in the list: {example[0].upper()}.")
+
+# MODIFYING LISTS
+	append() can be used to add elements to the end of lists
+	append() can also be used to add elements to an empty list
+		listname.append('<item to append>')
 	
+	insert() can be used to add new elements to any position
+		listname.insert(<index>, '<item to insert>')
+
+	The del statement can be used to remove any element in a list
+		del listname[<index number>]
 # METHODS
 	Actions that can be performed on data
 
@@ -100,3 +111,12 @@ SOURCES:
 		This will print www.samplesite.com
 
 	.removesuffix()			: works the same as removeprefix(), but for suffixes
+	.append()			: add to end of list
+					: can also add elements to empty list
+	.insert()			: add elements to any position in a list
+
+# STATEMENTS
+	Usage encountered so far:
+		statement list[index]
+
+	del listname[<index>]		: delete element at specified index number
