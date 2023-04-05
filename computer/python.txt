@@ -12,8 +12,12 @@ SOURCES:
 # FLOATS
 # CONSTANTS
 # LISTS
+# ORGANIZING LISTS
+# LENGTH OF A LIST
+# LOOPS
 # METHODS
 # STATEMENTS
+# FUNCTIONS
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -52,6 +56,8 @@ SOURCES:
 		print("Hi\t\n name")
 
 	Remove whitespace using rstrip(), lstrip(), strip()
+
+	Indentation matters syntactically in Python
 
 # INTEGERS
 	Operators: +, -, *, /, ** (exponents), parentheses
@@ -93,6 +99,50 @@ SOURCES:
 
 	The del statement can be used to remove any element in a list
 		del listname[<index number>]
+	
+	If the index number is not available, elements can be removed using remove()
+		listname.remove('<item to remove>')
+		# Only removes the first occurrence
+
+	Elements can be popped off (removed but still available for use) lists with pop()
+		popped_item = listname.pop(<index>)
+		# The popped off item is in the variable popped_item
+
+# ORGANIZING LISTS
+	sort() sort alphabetically (default)
+	sort(reverse=True) sorts in reverse alphabetical order
+	sort cannot be udnone
+		listname.sort()
+			# Sorts the elements in the list
+		print(listname)
+			# Will print out alphabetically sorted list
+
+	The function sorted() prints out sorted list but doesn't affect actual arrangement
+		print(sorted(listname))
+			# Will print out sorted list
+			# Actual arrangement of list is not affected
+
+	The method reverse() reverses the original sort of a list permanently
+		listname = ['a', 'b', 'e', 'c', 'd']
+		listname.reverse()
+		print(listname)
+			# will print out ['d', 'c', 'e', 'b', 'a']
+			# not reverse alphabetical, just reversed the original list order
+# LENGTH OF A LIST
+	Find the length of a list using the function len()
+		len(listname)
+
+# LOOPS
+	for loops
+	In the example below, the for loop will take an element from the list names and
+		associate that with the variable name until there is no more in the list
+
+		names = ["name1", "name2", "name3"]
+
+		for name in names:
+			print(name)
+				# Indented lines are inside the for loop
+
 # METHODS
 	Actions that can be performed on data
 
@@ -114,9 +164,23 @@ SOURCES:
 	.append()			: add to end of list
 					: can also add elements to empty list
 	.insert()			: add elements to any position in a list
+	.pop()				: remove item in specified index from list and make
+						available for use
+	.remove()			: remove item from list using value, not idex
+	.sort()				: sort permanently, default is alphabetical
+	.reverse()			: reverse order of the list (different from
+						reverse alphabetical sort)
 
 # STATEMENTS
 	Usage encountered so far:
 		statement list[index]
 
 	del listname[<index>]		: delete element at specified index number
+
+# FUNCTIONS
+	Usage encountered so far:
+		print(function(list))
+
+	sorted()			: prints sorted list but doesn't affect actual
+						arrangement
+	len()				: get list length
