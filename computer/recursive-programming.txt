@@ -2,8 +2,12 @@ RECURSIVE PROGRAMMING
 
 ///// SOURCE/S /////
 	Introduction to Recursive Programming by Manuel Rubio-Sanchez
+	The Recursive Book of Recursion by Al Sweigart
 
 ///// CONTENTS /////
-# 
+# BASIC CONCEPTS OF RECURSIVE PROGRAMMING
 
-# 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+# BASIC CONCEPTS OF RECURSIVE PROGRAMMING
+	Get subproblem with smaller size than the original problem
+	Decompose the original problem into a smaller one
