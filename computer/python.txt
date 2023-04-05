@@ -14,6 +14,8 @@ SOURCES:
 # LISTS
 # ORGANIZING LISTS
 # LENGTH OF A LIST
+# LIST OF NUMBERS
+# LIST COMPREHENSION
 # LOOPS
 # METHODS
 # STATEMENTS
@@ -128,9 +130,38 @@ SOURCES:
 		print(listname)
 			# will print out ['d', 'c', 'e', 'b', 'a']
 			# not reverse alphabetical, just reversed the original list order
+
 # LENGTH OF A LIST
 	Find the length of a list using the function len()
 		len(listname)
+
+# LIST OF NUMBERS
+	The function range() generates a series of numbers
+		for number in range(1, 5)
+			print(number)
+				# 1 to 4 will be printed
+
+		range(<start>, <end>, <step size>)
+			start is inclusive, optional
+			end is exclusive, required
+			step size: for example, if this is 2, range() will count every 2
+				numbers
+
+	The function list() will convert arguments to a list
+		print(list(range(1, 6)))
+			# This will print [1, 2, 3, 4, 5]
+
+	The function min(<list name>) returns the lowest number in the list
+	The function max(<list name>) returns the highest number in the list
+	The function sum(<list name>) returns the sum of all the numbers in the list
+
+# LIST COMPREHENSION
+	Combines for loop and creation of new elements in one line
+		squares = [value**2 for value in range(1, 11)]
+		print(squares)
+			# This prints the square of the numbers from 1 to 10
+
+		listname = [<expression> <for loop>]
 
 # LOOPS
 	for loops
@@ -184,3 +215,10 @@ SOURCES:
 	sorted()			: prints sorted list but doesn't affect actual
 						arrangement
 	len()				: get list length
+	range()				: takes 3 arguments, start at first argument, ends
+						at 2nd argument - 1, 3rd argument is step
+						size
+	list()				: convert to list
+	min()				: returns lowest number
+	max()				: returns highest number
+	sum()				: returns sum of all numbers in list
