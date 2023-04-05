@@ -16,6 +16,8 @@ SOURCES:
 # LENGTH OF A LIST
 # LIST OF NUMBERS
 # LIST COMPREHENSION
+# PARTS OF LISTS
+# COPYING A LIST
 # LOOPS
 # METHODS
 # STATEMENTS
@@ -162,6 +164,40 @@ SOURCES:
 			# This prints the square of the numbers from 1 to 10
 
 		listname = [<expression> <for loop>]
+
+# PARTS OF LISTS
+	Slice				: a specific part of a list
+
+		names = ["name1", "name2", "name3", "name4"]
+
+		print(names[0:3])
+			# This will print the elements at indexes 0, 1, and 2
+
+		print(names[2:4])
+			# This will print the elements at indexes 2 and 3
+
+		print(names[:3])
+			# This will print the elements at indexes 0, 1, and 2
+
+		print(names[1:])
+			# Print from index 1 to end of list
+
+		print(names[-2:])
+			# Print from the second to the last item up to the last item
+
+		print(names[0:4:1])
+			# Print from index 0 to index 3 while skipping 1 item between
+			# items
+	
+	Looping through a slice
+		for name in names[:3]:
+			print(name)
+				# Print each element up to index 2
+
+# COPYING A LIST
+	Create a slice from the start of the list up to the end by omitting the indexes
+		names[:]
+			# This creates a copy of the list
 
 # LOOPS
 	for loops
