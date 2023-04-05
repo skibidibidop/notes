@@ -20,6 +20,9 @@ SOURCES:
 # COPYING A LIST
 # TUPLES
 # LOOPS
+# IF STATEMENTS
+# AND, OR
+# IN, NOT
 # METHODS
 # STATEMENTS
 # FUNCTIONS
@@ -228,6 +231,35 @@ SOURCES:
 		for name in names:
 			print(name)
 				# Indented lines are inside the for loop
+
+# IF STATEMENTS
+	Example:
+		if variable == "string":
+			# line/s of code
+		else:
+			# line/s of code
+
+# AND, OR
+	and
+		True if all conditions are True, otherwise False
+			(variable1 == 2) and (variable2 == 4)
+	
+	or
+		True if one or more conditions are True, otherwise False
+			(variable1 == 2) or (variable2 == 4)
+
+# IN, NOT
+	in
+		Can be used to check if a value is in a list
+			listname = [1, 2, 3]
+			4 in listname
+				# This will return False
+
+	not
+		Check if a value is not in a list
+			listname = [1, 2, 3]
+			4 not in listname
+				# This will return True
 
 # METHODS
 	Actions that can be performed on data
