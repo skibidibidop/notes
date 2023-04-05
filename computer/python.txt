@@ -4,7 +4,99 @@ SOURCES:
 	PYTHON CRASH COURSE (3RD EDITION) BY ERIC MATTHES
 
 ///// CONTENTS /////
-# 
+# VARIABLES
+# STRINGS
+# VARIABLES IN STRINGS
+# WHITESPACE
+# INTEGERS
+# FLOATS
+# CONSTANTS
+# LISTS
+# METHODS
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-# 
+# VARIABLES
+	Variable names can only contain letters, numbers, and underscores
+	Varable names can't start with numbers
+	Don't use reserved words for variable names
+
+# STRINGS
+	A data type
+	A series of characters
+	Can be denoted with single quotes or double quotes
+
+	Example of a quotation in a string:
+		'They said "put quotation here"!'
+	
+	Example of apostrophe in string
+		"This is an 'example'."
+
+	Change to uppercase, lowercase, or Title Case using upper(), lower(), or title()
+	
+# VARIABLES IN STRINGS
+	f-strings			: f stands for format
+					: variables can be put inside f-strings
+
+		final_var = f"{variable1} {variable2}"
+
+		or
+
+		printf(f"Hello, {final_var.title()}!")
+
+# WHITESPACE
+	\t				: tab
+	\n				: newline
+
+	Usage:
+		print("Hi\t\n name")
+
+	Remove whitespace using rstrip(), lstrip(), strip()
+
+# INTEGERS
+	Operators: +, -, *, /, ** (exponents), parentheses
+	Underscores can be used to make large numbers more readable:
+		1000 is the same as 10_00 or 1_000
+		Python will ignore the underscores
+		This is applicable to all numbers in Python
+
+# FLOATS
+	Any number with decimal point
+	Division always results to floats, even if the operands are both integers
+	Mixing floats with integers in operations also results to floats
+
+# CONSTANTS
+	Use all capitals to indicate that a variable is constant
+	
+# LISTS
+	Making list names plural is a good idea
+	Similar to arrays, can also be accessed using indexes
+
+	example = ['example1', 'example2', 'example3']
+	example1 is at example[0]
+	
+	index -1 will return the last item in the list
+	index -2 will return the second to the last item in the list
+		, so on and so forth
+
+	Can be used in f-strings
+	Methods can be applied
+		print(f"This is the item in the list: {example[0].upper()}.")
+	
+# METHODS
+	Actions that can be performed on data
+
+	Usage encountered so far:
+		variable.method()
+
+	.title()			: change each word to Title Case
+	.upper()			: change to upper case
+	.lower()			: change to lower case
+	.rstrip()			: remove extra whitespace to the right of string
+	.lstrip()			: remove extra whitespace to the left of string
+	.strip()			: remove extra whitespace on both sides of string
+	.removeprefix()			: remove specified character/s
+		variable = 'https://www.samplesite.com'
+		variable.removeprefix('https://')
+		This will print www.samplesite.com
+
+	.removesuffix()			: works the same as removeprefix(), but for suffixes
