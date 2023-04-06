@@ -24,6 +24,7 @@ SOURCES:
 # AND, OR
 # IN, NOT
 # DICTIONARIES
+# SETS
 # METHODS
 # STATEMENTS
 # FUNCTIONS
@@ -316,6 +317,41 @@ SOURCES:
 				dictionary
 			# if second argument is not provided, None is returned instead
 
+	items() method:
+		can be used to loop through a dictionary
+
+		for var_key, var_val in dictionary.items():
+			# where var_key is the variable for the key (can have other names)
+			# where var_val is the variable for the value (can have other names)
+
+	keys() method:
+		can be used to loop through a dictionary while only accessing keys
+		
+		for var_key in dictionary.keys():
+			print(var_key)
+
+		produces the same behavior as
+
+		for var_key in dictionary:
+			print(var_key)
+
+		can be omitted or included for improved readablity
+
+	values() method:
+		can be used to loop through a dictionary while only accessing values
+
+	set() function:
+		filter out duplicates
+
+		for var_val in set(dictionary.values()):
+			# line/s of code here
+
+# SETS
+	List without duplicates
+	Curly brackets
+
+	set_sample = {'sample1', 'sample2', 'sample3'}
+
 # METHODS
 	Actions that can be performed on data
 
@@ -346,6 +382,9 @@ SOURCES:
 	.get()				: get value of specified key
 					: if key doesn't exist, this can return a default
 						value
+	.items()			: can be used to loop through a dictionary
+	.keys()				: can be used to loop through dictionaries while
+						only accessing keys
 
 # STATEMENTS
 	Usage encountered so far:
@@ -367,3 +406,4 @@ SOURCES:
 	min()				: returns lowest number
 	max()				: returns highest number
 	sum()				: returns sum of all numbers in list
+	set()				: filters out duplicate from data structures
