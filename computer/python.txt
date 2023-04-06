@@ -23,6 +23,7 @@ SOURCES:
 # IF STATEMENTS
 # AND, OR
 # IN, NOT
+# DICTIONARIES
 # METHODS
 # STATEMENTS
 # FUNCTIONS
@@ -249,7 +250,7 @@ SOURCES:
 		listname = [1, 2, 3]
 		if listname:
 			# line/s of code here will be executed since listname has at
-			# least one element
+				least one element
 
 # AND, OR
 	and
@@ -272,6 +273,48 @@ SOURCES:
 			listname = [1, 2, 3]
 			4 not in listname
 				# This will return True
+
+# DICTIONARIES
+	A collection of key-value pairs
+	Dynamic
+
+	Example:
+		dictionary_0 = {"name" : "mark", "points" : 5}
+		print(dictionary_0["name"])
+			# will print the value in name (mark)
+		print(dictionary_0["points"])
+			# will print the value in points (5)
+
+	An empty dictionary:
+		dictionary_0 = {}
+
+	To add new key-value pairs:
+		dictionary_0 = {"name" : "mark"}
+		print(dictionary_0)
+			# will print out {'name' : 'mark'}
+
+		dictionary_0["color"] = "green"
+		dictionary_0["x_coord"] = 100
+		print(dictionary_0)
+			# will print out {'name' : 'mark', 'color' : 'blue', 'x_coord' : 100}
+
+	To reassign values in a dictionary:
+		dictionary_0[<key>] = <new value>
+	
+	To remove key-pair values:
+		del dictionary_0[<key>]
+			# This will remove the key and its paired value
+
+	get() method:
+		can be used instead of square bracket notation if unsure about existence
+			of key in dictionary
+
+		variable = dictionary.get("points", "Key doesn't exist")
+			# first argument is the key, value is returned if this exists in
+				the dictionary
+			# second argument is returned if the key doesn't exist in the
+				dictionary
+			# if second argument is not provided, None is returned instead
 
 # METHODS
 	Actions that can be performed on data
@@ -300,6 +343,9 @@ SOURCES:
 	.sort()				: sort permanently, default is alphabetical
 	.reverse()			: reverse order of the list (different from
 						reverse alphabetical sort)
+	.get()				: get value of specified key
+					: if key doesn't exist, this can return a default
+						value
 
 # STATEMENTS
 	Usage encountered so far:
