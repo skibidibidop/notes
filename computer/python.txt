@@ -237,11 +237,19 @@ SOURCES:
 		if variable == "string":
 			# line/s of code
 		elif variable == "string2":
-			#line/s of code
+			# line/s of code
 		elif variable == "string3":
-			#line/s of code
+			# line/s of code
 		else:
 			# line/s of code
+
+	If the name of a list is used as a conditional test, it will return True if it
+		has at least one element. Otherwise, False
+
+		listname = [1, 2, 3]
+		if listname:
+			# line/s of code here will be executed since listname has at
+			# least one element
 
 # AND, OR
 	and
