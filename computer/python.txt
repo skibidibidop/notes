@@ -25,6 +25,7 @@ SOURCES:
 # IN, NOT
 # DICTIONARIES
 # SETS
+# NESTING
 # METHODS
 # STATEMENTS
 # FUNCTIONS
@@ -234,6 +235,9 @@ SOURCES:
 			print(name)
 				# Indented lines are inside the for loop
 
+	To iterate a specified number of times:
+		for counter in range(20)
+
 # IF STATEMENTS
 	Example:
 		if variable == "string":
@@ -351,6 +355,18 @@ SOURCES:
 	Curly brackets
 
 	set_sample = {'sample1', 'sample2', 'sample3'}
+
+# NESTING
+	Can store a data structure within a data structure
+
+	A List of Dictionaries
+		dict1 = {'key1' : 'val1', 'key2' : 'val2'}
+		dict2 = {'key1' : 'val2', 'key2' : 'val2'}
+
+		dicts = [dict1, dict2]
+
+		It's possible to loop through the list of dictionaries:
+			for dict in dicts:
 
 # METHODS
 	Actions that can be performed on data
