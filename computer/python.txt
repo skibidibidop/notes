@@ -236,6 +236,10 @@ SOURCES:
 	Example:
 		if variable == "string":
 			# line/s of code
+		elif variable == "string2":
+			#line/s of code
+		elif variable == "string3":
+			#line/s of code
 		else:
 			# line/s of code
 
