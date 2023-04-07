@@ -399,6 +399,8 @@ SOURCES:
 
 	int() function
 		Interprets input as numbers
+			answer = input("Question? ")
+			answer = int(answer)
 
 # METHODS
 	Actions that can be performed on data
