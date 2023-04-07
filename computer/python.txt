@@ -368,6 +368,22 @@ SOURCES:
 		It's possible to loop through the list of dictionaries:
 			for dict in dicts:
 
+	A List in a Dictionary
+		Can associate a list with a key if more than 1 value is necessary
+
+		dict1 = {
+			'name1' : ['val1-1', 'val1-2']
+			'name2' : ['val2-1', 'val2-2'],
+			}
+
+	A Dictionary in a Dictionary
+		dict1 = {
+			'dict1-1' : {
+				    'key1' : 'val1'
+				    'key2' : 'val2'
+				    }
+			}
+
 # METHODS
 	Actions that can be performed on data
 
