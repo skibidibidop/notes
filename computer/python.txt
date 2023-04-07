@@ -226,8 +226,9 @@ SOURCES:
 
 # LOOPS
 	for loops
-	In the example below, the for loop will take an element from the list names and
-		associate that with the variable name until there is no more in the list
+		In the example below, the for loop will take an element from the list
+			names and associate that with the variable name until there
+			is no more in the list
 
 		names = ["name1", "name2", "name3"]
 
@@ -237,6 +238,37 @@ SOURCES:
 
 	To iterate a specified number of times:
 		for counter in range(20)
+
+	while loops
+		counter = 1
+		while counter <= 5
+			# execute line/s of code here
+			# counter += 1
+
+	Flags for while loops
+		A variable that can be modified (e.g. changed to True or False) by
+			multiple events
+		Can be used so that the while loop only has to check the flag instead
+			of checking multiple events for each iteration
+		Useful for programs where multiple conditions should stop the loop
+
+		status = True
+		while status:
+			# execute code here
+			if <conditional>:
+				status = False
+
+			if <conditional>:
+				status = False
+
+	break
+		Exit loop immediately
+
+	continue
+		Return to the beginning of a loop
+			while <conditional>
+				if <conditional>
+					continue
 
 # IF STATEMENTS
 	Example:
