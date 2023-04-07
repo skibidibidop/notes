@@ -71,7 +71,7 @@ SOURCES:
 	Indentation matters syntactically in Python
 
 # INTEGERS
-	Operators: +, -, *, /, ** (exponents), parentheses
+	Operators: +, -, *, /, ** (exponents), parentheses, %
 	Underscores can be used to make large numbers more readable:
 		1000 is the same as 10_00 or 1_000
 		Python will ignore the underscores
@@ -379,10 +379,26 @@ SOURCES:
 	A Dictionary in a Dictionary
 		dict1 = {
 			'dict1-1' : {
-				    'key1' : 'val1'
-				    'key2' : 'val2'
+				    'key1' : 'val1',
+				    'key2' : 'val2',
 				    }
 			}
+
+# INPUT
+	input(<prompt>) function
+		Pauses program while waiting for input, and then stores input in a
+			variable
+		Interprets input as a string, even numbers
+
+		variable = input("This is a message to prompt the user for input: ")
+
+	Multiline prompts for the input() function
+		prompt = "Line 1 prompt"
+		prompt += "\nLine 2 prompt: "
+			# helps with readability
+
+	int() function
+		Interprets input as numbers
 
 # METHODS
 	Actions that can be performed on data
@@ -439,3 +455,4 @@ SOURCES:
 	max()				: returns highest number
 	sum()				: returns sum of all numbers in list
 	set()				: filters out duplicate from data structures
+	input()				: pauses program while waiting for user input
