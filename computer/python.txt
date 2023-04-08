@@ -440,53 +440,66 @@ SOURCES:
 	Usage encountered so far:
 		variable.method()
 
-	.title()			: change each word to Title Case
-	.upper()			: change to upper case
-	.lower()			: change to lower case
-	.rstrip()			: remove extra whitespace to the right of string
-	.lstrip()			: remove extra whitespace to the left of string
-	.strip()			: remove extra whitespace on both sides of string
-	.removeprefix()			: remove specified character/s
-		variable = 'https://www.samplesite.com'
-		variable.removeprefix('https://')
-		This will print www.samplesite.com
+		.title()			: change each word to Title Case
+		.upper()			: change to upper case
+		.lower()			: change to lower case
+		.rstrip()			: remove extra whitespace to the right of string
+		.lstrip()			: remove extra whitespace to the left of string
+		.strip()			: remove extra whitespace on both sides of string
+		.removeprefix()			: remove specified character/s
+			variable = 'https://www.samplesite.com'
+			variable.removeprefix('https://')
+			This will print www.samplesite.com
 
-	.removesuffix()			: works the same as removeprefix(), but for suffixes
-	.append()			: add to end of list
-					: can also add elements to empty list
-	.insert()			: add elements to any position in a list
-	.pop()				: remove item in specified index from list and make
-						available for use
-	.remove()			: remove item from list using value, not idex
-	.sort()				: sort permanently, default is alphabetical
-	.reverse()			: reverse order of the list (different from
-						reverse alphabetical sort)
-	.get()				: get value of specified key
-					: if key doesn't exist, this can return a default
-						value
-	.items()			: can be used to loop through a dictionary
-	.keys()				: can be used to loop through dictionaries while
+		.removesuffix()			: works the same as removeprefix(), but for suffixes
+		.append()			: add to end of list
+						: can also add elements to empty list
+		.insert()			: add elements to any position in a list
+		.pop()				: remove item in specified index from list and make
+							available for use
+		.remove()			: remove item from list using value, not idex
+		.sort()				: sort permanently, default is alphabetical
+		.reverse()			: reverse order of the list (different from
+							reverse alphabetical sort)
+		.get()				: get value of specified key
+						: if key doesn't exist, this can return a default
+							value
+		.items()			: can be used to loop through a dictionary
+		.keys()				: can be used to loop through dictionaries while
 						only accessing keys
 
 # STATEMENTS
 	Usage encountered so far:
 		statement list[index]
 
-	del listname[<index>]		: delete element at specified index number
+		del listname[<index>]		: delete element at specified index number
 
 # FUNCTIONS
+	Modules					: separate files where functions can be stored
+
+	To define a function:
+		def function_name(<argument/s>):
+			"""docstring"""
+			# line/s of code here
+			# line/s of code here
+
+		function_name()
+
+		docstring			: describes what the function does
+						: enclosed in triple quotes
+
 	Usage encountered so far:
 		print(function(list))
 
-	sorted()			: prints sorted list but doesn't affect actual
-						arrangement
-	len()				: get list length
-	range()				: takes 3 arguments, start at first argument, ends
-						at 2nd argument - 1, 3rd argument is step
-						size
-	list()				: convert to list
-	min()				: returns lowest number
-	max()				: returns highest number
-	sum()				: returns sum of all numbers in list
-	set()				: filters out duplicate from data structures
-	input()				: pauses program while waiting for user input
+		sorted()			: prints sorted list but doesn't affect actual
+							arrangement
+		len()				: get list length
+		range()				: takes 3 arguments, start at first argument, ends
+							at 2nd argument - 1, 3rd argument is step
+							size
+		list()				: convert to list
+		min()				: returns lowest number
+		max()				: returns highest number
+		sum()				: returns sum of all numbers in list
+		set()				: filters out duplicate from data structures
+		input()				: pauses program while waiting for user input
