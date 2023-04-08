@@ -487,6 +487,23 @@ SOURCES:
 
 		docstring			: describes what the function does
 						: enclosed in triple quotes
+	
+	Positional arguments			: need to be passed in the same order in the
+							function definition
+
+	Keyword arguments			: name-value pair passed to functions
+		function(variable="value", variable2="value2")
+		
+			is equivalent to
+
+		function(variable2="variable2", variable="value")
+
+			the order of arguments doesn't matter
+
+	Default values
+		def function(variable, variable2="value2")
+			# a default value is given for variable2 only
+			# arguments without default values have to be placed first
 
 	Usage encountered so far:
 		print(function(list))
