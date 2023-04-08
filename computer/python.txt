@@ -29,6 +29,7 @@ SOURCES:
 # METHODS
 # STATEMENTS
 # FUNCTIONS
+# CLASSES
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -435,6 +436,7 @@ SOURCES:
 			answer = int(answer)
 
 # METHODS
+	A function that is part of a class is a method
 	Actions that can be performed on data
 
 	Usage encountered so far:
@@ -473,6 +475,7 @@ SOURCES:
 		statement list[index]
 
 		del listname[<index>]		: delete element at specified index number
+		import				: include modules in main file
 
 # FUNCTIONS
 	Modules				
@@ -556,3 +559,47 @@ SOURCES:
 		sum()				: returns sum of all numbers in list
 		set()				: filters out duplicate from data structures
 		input()				: pauses program while waiting for user input
+
+# CLASSES
+	Instantiation
+		Making an object from a class
+		Multiple instances can be created from a single class
+
+	To create a class:
+		class Name:
+			# Capitalize class names
+			"""Concise description"""
+
+			def __init__(self, arg1, arg2)
+				"""Concise description"""
+				# Always use two leading and trailing underscores
+				# self is automatically passed, no need to provide an
+					argument when this method is called
+				# Any variable prefixed with self is available to every
+					method in the class
+				self.var1 = arg1
+				self.var2 = arg2
+					# Attributes: variables accessible through instances
+			
+			def function1(self):
+				"""Concise description"""
+				# line/s of code here
+
+	To create an instance from a class:
+		class Name:
+			# copy code from above
+
+		my_name = Name(arg1, arg2)
+			# This is an instance of the class Name
+
+		print(f"Sample: {my_name.var1}")
+		print(f"Sample: {my_name.var2}")
+
+	Attributes
+		Use dot notation to access attributes of instances
+			my_name.var1 # var1 is an attribute of my_name
+
+	Calling methods:
+		Use dot notation to access methods of instances
+			my_name.function1()
+
