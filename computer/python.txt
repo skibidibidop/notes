@@ -505,6 +505,9 @@ SOURCES:
 			# a default value is given for variable2 only
 			# arguments without default values have to be placed first
 
+	To preven a function from modifying a passed list, a copy can be passed instead
+		function_name(list[:])
+		
 	Usage encountered so far:
 		print(function(list))
 
