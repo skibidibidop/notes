@@ -507,6 +507,15 @@ SOURCES:
 
 	To preven a function from modifying a passed list, a copy can be passed instead
 		function_name(list[:])
+
+	To allow functions to take an arbitrary number of arguments:
+		function_name(argument, *argument2)
+			# the asterisk means that argument2 will be a tuple containing
+			# all the arguments received by the function
+			# *argument2 is a tuple even if there is only 1 argument provided
+			# arbitrary arguments must be placed last
+
+	
 		
 	Usage encountered so far:
 		print(function(list))
