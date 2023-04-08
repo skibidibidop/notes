@@ -475,7 +475,30 @@ SOURCES:
 		del listname[<index>]		: delete element at specified index number
 
 # FUNCTIONS
-	Modules					: separate files where functions can be stored
+	Modules				
+		Separate .py files where functions can be stored
+		
+		To import modules:
+			import module_name
+			# module_name should contain the code that needs to be imported
+			# .py is omitted from module_name.py when importing
+
+		To call function in imported module:
+			module_name.function()
+
+		To import specific functions from modules:
+			from module_name import function_name1, function_name2
+			# if imported this way, no need for dot notation
+		
+	Aliases
+		Alternate names using "as"
+
+		To import and then give alias to functions:
+			from module_name import function_name1 as fn1
+			# fn1 is the alias for function_name1
+
+		Alias for modules
+			import module_name as mn
 
 	To define a function:
 		def function_name(<argument/s>):
