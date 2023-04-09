@@ -32,6 +32,7 @@ SOURCES:
 # CLASSES
 # INHERITANCE
 # COMPOSITION
+# THE PYTHON STANDARD LIBRARY
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -716,3 +717,16 @@ SOURCES:
 	Usage would look like this:
 		new_instance = Child(arg1, arg2)
 		new_instance.var1.sample_method()
+
+# THE PYTHON STANDARD LIBRARY
+	Standard libraries can be included by using import at the beginning of each
+		file
+	The list below is not complete, just some basic ones to get started:
+
+	random
+		randint(<arg1>, <arg2>):
+			Returns random integer between arg1 and arg2, inclusive
+
+		choice(<list or tuple>):
+			Returns randomly chosen element from list or tuple
+
