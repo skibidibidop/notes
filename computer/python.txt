@@ -596,8 +596,36 @@ SOURCES:
 		print(f"Sample: {my_name.var2}")
 
 	Attributes
-		Use dot notation to access attributes of instances
+		Use dot notation to access attributes of instances:
 			my_name.var1 # var1 is an attribute of my_name
+
+		Default values for attributes:
+			def __init__(self, arg1, arg2):
+				self.var1 = arg1
+				self.var2 = arg2
+				self.var3 = <some default value>
+					# No argument provided for var3, but it can be
+						defined in __init__
+
+		Modifying attribute values directly:
+			Access directly through instances
+				# Assume that class Name has __init__() above
+				my_name = Name(arg1, arg2)
+				my_name.var3 = <some new value>
+					# No argument provided for var3
+
+			Through methods
+				# Assume that class Name has __init__() above
+				# Assume that the method below is part of class Name
+				def update_var3(self, new_val):
+					self.var3 = new_val
+				
+				my_name.update_var3(<some new value>)
+			
+			Incrementing using methods
+				# Take code above with these modifications:
+				def increment_var3(self, increment):
+					self.var3 += increment
 
 	Calling methods:
 		Use dot notation to access methods of instances
