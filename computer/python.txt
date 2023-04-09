@@ -30,6 +30,8 @@ SOURCES:
 # STATEMENTS
 # FUNCTIONS
 # CLASSES
+# INHERITANCE
+# COMPOSITION
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -631,3 +633,52 @@ SOURCES:
 		Use dot notation to access methods of instances
 			my_name.function1()
 
+# INHERITANCE
+	The child class (specialized version of parent) inherits from the parent class
+	Child class is aka subclass
+	Parent class is aka superclass
+
+	It's possible to use the parent's __init__() for the child class:
+		class Parent_c:
+			# The parent class has to be in the same file
+			# The parent class has to be written before
+				the child class
+			# Parent class details here
+
+		class Child_c(Parent_c):
+			def __init__(self, arg1, arg2):
+				"""Initialize attributes of parent class"""
+				super().__init__(arg1, arg2)
+					# super() allows the child to call methods
+					# 	from its parent
+					# arg1 and arg2 are used here
+				self.var3 = <some initial value>
+					# This will affect all Child_c instances
+					# 	but not Parent_c instances
+
+	To override methods from parent class:
+		In the child class, create a method with the same name as a method from
+			the parent class
+		The method from the parent class will be disregarded
+	
+# COMPOSITION
+	Breaking a large class into smaller classes that work together
+	
+	class Parent:
+		# Details for the parent class here
+
+	class Class1:
+		# Does not inherit from any class
+		# Details for the class here
+		def sample_method(self):
+			# Details of the method here
+
+	class Child(Parent):
+		# Details of the child class here
+		# See example Child_c above for the details
+		self.var1 = Class1()
+			# This is an instance used as attribute
+	
+	Usage would look like this:
+		new_instance = Child(arg1, arg2)
+		new_instance.var1.sample_method()
