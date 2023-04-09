@@ -685,11 +685,11 @@ SOURCES:
 				"""Initialize attributes of parent class"""
 				super().__init__(arg1, arg2)
 					# super() allows the child to call methods
-					# 	from its parent
+					 	from its parent
 					# arg1 and arg2 are used here
 				self.var3 = <some initial value>
 					# This will affect all Child_c instances
-					# 	but not Parent_c instances
+						but not Parent_c instances
 
 	To override methods from parent class:
 		In the child class, create a method with the same name as a method from
@@ -729,4 +729,43 @@ SOURCES:
 
 		choice(<list or tuple>):
 			Returns randomly chosen element from list or tuple
+
+# FILES
+	Reading file contents
+		from pathlib import Path
+			# Can also be import pathlib, and then the line below
+				will have to be path = pathlib.Path()
+
+		path = Path("filename.txt")
+			# Points to a file
+			# Can use absolute or relative path here
+		contents = path.read_text()
+			# Reads entire contents
+			# read_text() creates newline when EOF
+		contents = contents.rstrip()
+			# Removes right whitespace created by read_text()
+			# Can also use method chaining:
+				contents = path.read_text().rstrip()
+		print(contents)
+			# Prints entire contents
+	
+	Relative file path:
+		Path to dir or file relative to the current directory
+	
+	Absolute file path: 
+		Exact location of dir or file on the computer
+
+	To turn long strings into sets of lines, use splitlines():
+		path = Path("pi_digits.txt")
+		contents = path.read_text()
+		lines = contents.splitlines()
+		for line in lines:
+			# This allows manipulation per line
+	
+	Specific parts of lines can also be isolated using by slicing
+
+	Lines/strings can be treated as Lists (slice, "in", etc.)
+	
+	To work on numbers read from files, convert first using int() or
+		float()
 
