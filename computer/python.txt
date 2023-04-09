@@ -632,6 +632,40 @@ SOURCES:
 	Calling methods:
 		Use dot notation to access methods of instances
 			my_name.function1()
+	
+	Classes can also be stored in modules
+	Importing a single class
+		A class can be stored in a .py file
+		The file should begin with a doctring that describes the contents
+			of the file
+		
+		# Assume that the module is named filename.py
+		from filename import Class_name
+			# .py is omitted intentionally
+			# Proceed to use classes as usual
+	
+	Storing multiple classes in a module
+		Classes stored in a single module should be related
+	
+	Importing multiple classes from a module
+		from filename import Class1, Class2
+		# Proceed to use classes as usual
+	
+	Importing an entire module
+		Easy to read because every call includes the module name
+		
+		import filename
+
+		new_instance = filename.Class1(arg1, arg2)
+	
+	Importing a module into a module
+		Example: if a child class is stored in a separate module from its
+		parent class, the parent class can be imported into the child'said
+		module
+	
+	Aliases
+		from module_name import Class1 as C1
+			# C1 is the alias
 
 # INHERITANCE
 	The child class (specialized version of parent) inherits from the parent class
