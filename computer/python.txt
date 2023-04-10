@@ -764,9 +764,24 @@ SOURCES:
 			# This allows manipulation per line
 	
 	Specific parts of lines can also be isolated using by slicing
-
 	Lines/strings can be treated as Lists (slice, "in", etc.)
 	
-	To work on numbers read from files, convert first using int() or
-		float()
+	To work on numbers read from files, convert first using function int()
+		or function float()
 
+	write_text() method
+		Write to a file using this method
+		Creates new file if file in path doesn't exist yet
+		Closes file properly after writing string
+
+	Writing multiple lines to file
+		content = "Content 1.\n"
+		content += "Content 2.\n"
+
+		path = pathlib.Path("text.txt")
+		path.write_text(content)
+			# text.txt will contain:
+				Content 1.
+				Content 2.
+	
+	To write numerical data into a file, use function str()
