@@ -34,6 +34,8 @@ SOURCES:
 # THE PYTHON STANDARD LIBRARY
 # FILES
 # EXCEPTIONS
+# STORING DATA
+# REFACTORING
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -753,4 +755,46 @@ SOURCES:
 
 		pass can be used under except to handle exceptions
 			silently	
+
+# STORING DATA
+	JSON files
+		JavaScript Object Notation
+		Can be used by other languages, not just JavaScript
 		
+	json.dumps(<data to be converted to JSON format>)
+		Takes 1 argument
+		Returns string (converted to JSON representation) which
+			can be written to a file
+
+		import pathlib
+		import json
+
+		numbers = [1, 2, 3]
+
+		path = pathlib.Path("numbers.json")
+		contents = json.dumps(path)
+		path.write_text(contents)
+
+	json.loads()
+		import pathlib
+		import json
+
+		path = pathlib.Path("numbers.json")
+		contents = path.read_text()
+		numbers = json.loads(contents)
+
+	exists() method
+		Returns True if a file or dir exists, otherwise False
+		
+		path.exists()
+
+# REFACTORING
+	Improving existing code by making it cleaner
+	If possible, parts of the code can be encapsulated into functions
+		to improve readability and to make it easier to extend
+	A function should be focused on its main task
+	If a function is doing more than 1 thing, it might be possible to
+		put the other tasks in other functions
+	Good practice: return None
+		A function should return an expected value or None
+
