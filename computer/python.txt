@@ -27,13 +27,13 @@ SOURCES:
 # SETS
 # NESTING
 # METHODS
-# STATEMENTS
 # FUNCTIONS
 # CLASSES
 # INHERITANCE
 # COMPOSITION
 # THE PYTHON STANDARD LIBRARY
 # FILES
+# EXCEPTIONS
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -443,44 +443,6 @@ SOURCES:
 	A function that is part of a class is a method
 	Actions that can be performed on data
 
-	Usage encountered so far:
-		variable.method()
-
-		.title()			: change each word to Title Case
-		.upper()			: change to upper case
-		.lower()			: change to lower case
-		.rstrip()			: remove extra whitespace to the right of string
-		.lstrip()			: remove extra whitespace to the left of string
-		.strip()			: remove extra whitespace on both sides of string
-		.removeprefix()			: remove specified character/s
-			variable = 'https://www.samplesite.com'
-			variable.removeprefix('https://')
-			This will print www.samplesite.com
-
-		.removesuffix()			: works the same as removeprefix(), but for suffixes
-		.append()			: add to end of list
-						: can also add elements to empty list
-		.insert()			: add elements to any position in a list
-		.pop()				: remove item in specified index from list and make
-							available for use
-		.remove()			: remove item from list using value, not idex
-		.sort()				: sort permanently, default is alphabetical
-		.reverse()			: reverse order of the list (different from
-							reverse alphabetical sort)
-		.get()				: get value of specified key
-						: if key doesn't exist, this can return a default
-							value
-		.items()			: can be used to loop through a dictionary
-		.keys()				: can be used to loop through dictionaries while
-						only accessing keys
-
-# STATEMENTS
-	Usage encountered so far:
-		statement list[index]
-
-		del listname[<index>]		: delete element at specified index number
-		import				: include modules in main file
-
 # FUNCTIONS
 	Modules				
 		Separate .py files where functions can be stored
@@ -548,22 +510,6 @@ SOURCES:
 		function_name(**argument3)
 			# **argument3 is a dictionary instead of a tuple
 		
-	Usage encountered so far:
-		print(function(list))
-
-		sorted()			: prints sorted list but doesn't affect actual
-							arrangement
-		len()				: get list length
-		range()				: takes 3 arguments, start at first argument, ends
-							at 2nd argument - 1, 3rd argument is step
-							size
-		list()				: convert to list
-		min()				: returns lowest number
-		max()				: returns highest number
-		sum()				: returns sum of all numbers in list
-		set()				: filters out duplicate from data structures
-		input()				: pauses program while waiting for user input
-
 # CLASSES
 	Instantiation
 		Making an object from a class
@@ -785,3 +731,26 @@ SOURCES:
 				Content 2.
 	
 	To write numerical data into a file, use function str()
+
+# EXCEPTIONS
+	Created by Python to manage errors
+
+	Exception objects:
+		If handled, program will keep running
+		If not handled, traceback
+	
+	try-except blocks (with else)
+		Used to handle exceptions
+		Can prevent crashes since the program continues
+			to run if exceptions are handled
+
+		try:
+			print(5/0)
+		except ZeroDivisionError:
+			print("You can't divide by zero!")
+		else:
+			# code to execute if try is successful
+
+		pass can be used under except to handle exceptions
+			silently	
+		
