@@ -36,6 +36,7 @@ SOURCES:
 # EXCEPTIONS
 # STORING DATA
 # REFACTORING
+# TESTS
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -798,3 +799,27 @@ SOURCES:
 	Good practice: return None
 		A function should return an expected value or None
 
+# TESTS
+	Unit test
+		Verifies if a specific aspect of a function behaves correctly
+	Test case
+		A collection of unit tests
+		Proves that a function behaves correctly
+	
+	Test files and functions must begin with test_ because pytest will
+		look for those
+			test_name_function.py
+
+	Functions to be tested must be imported into the test file
+
+	Test functions should have descriptive names so that reading the test
+		report is easier
+	
+	Assertion
+		A claim about a condition
+		
+		assert formatted_name == "Mark Beltran"
+	
+	python3.11 -m pytest
+		In a terminal, navigate to dir where the test file is located
+		Run this code to begin test
