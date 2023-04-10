@@ -772,7 +772,7 @@ SOURCES:
 		numbers = [1, 2, 3]
 
 		path = pathlib.Path("numbers.json")
-		contents = json.dumps(path)
+		contents = json.dumps(numbers)
 		path.write_text(contents)
 
 	json.loads()
