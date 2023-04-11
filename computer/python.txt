@@ -800,6 +800,8 @@ SOURCES:
 		A function should return an expected value or None
 
 # TESTS
+	Functions and classes can be tested
+
 	Unit test
 		Verifies if a specific aspect of a function behaves correctly
 	Test case
@@ -826,4 +828,28 @@ SOURCES:
 		Run this code to begin test
 
 	Testing Classes
-	
+		Fixtures
+			Functions with this decorator: @pytest.fixture
+			Can be used to remove repitition in test code
+
+			@pytest.fixture
+			def function_name(arg1, arg2):
+				var_1 = "Sample value"
+				var_2 = ImportedClass(var_1)
+				return var_2
+			
+			Assume that the 2 lines above return var_2 have been
+				repeated in other functions defined in the test
+				file
+			The fixture is used to create the ImportedClass instance
+				var_2, which can be used by other functions
+				instead of repetitively creating instances in
+				their function definitions
+			In other words, fixtures can be used to generate
+				resources used by multiple test functions
+
+		Decorator
+			@pytest.fixture
+				# Needs import pytest
+			def function_name(arg1, arg2)
+
