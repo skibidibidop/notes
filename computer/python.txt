@@ -823,3 +823,5 @@ SOURCES:
 	python3.11 -m pytest
 		In a terminal, navigate to dir where the test file is located
 		Run this code to begin test
+
+*** ADDING THIS LINE AS A TEST FOR PORTABLE GITHUB ***
