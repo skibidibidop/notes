@@ -817,6 +817,7 @@ SOURCES:
 	
 	Assertion
 		A claim about a condition
+		Can be any conditional statement, including "in" and "not"
 		
 		assert formatted_name == "Mark Beltran"
 	
@@ -824,4 +825,5 @@ SOURCES:
 		In a terminal, navigate to dir where the test file is located
 		Run this code to begin test
 
-*** ADDING THIS LINE AS A TEST FOR PORTABLE GITHUB ***
+	Testing Classes
+	
