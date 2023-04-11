@@ -37,6 +37,7 @@ SOURCES:
 # STORING DATA
 # REFACTORING
 # TESTS
+# PYGAME
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -852,4 +853,8 @@ SOURCES:
 			@pytest.fixture
 				# Needs import pytest
 			def function_name(arg1, arg2)
+
+# PYGAME
+	import pygame
+		The module pygame contains functionality necessary to make a game
 
