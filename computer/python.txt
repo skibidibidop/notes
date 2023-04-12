@@ -873,6 +873,9 @@ SOURCES:
 		Can be controlled using a clock
 		In Alien Invasion, 1 ticke per pass through main loop
 
+	Changing color
+		RGB (255, 255, 255)
+
 # NOTES ON ALIEN INVASION
 	pygame.init() function
 		Initializes background settings that Pygame needs
@@ -900,3 +903,11 @@ SOURCES:
 	
 	self.clock.tick(<framerate>)
 		Loop will attempt to run <framerate> times per second
+	
+	self.bg_color = (R, G, B)
+		Where the values for R, G, and B should be from 0 to 255
+		Attribute for background color
+
+        self.screen.fill(self.bg_color)
+		The fill() method takes 1 argument (color) and acts on one surface
+
