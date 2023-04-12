@@ -38,6 +38,7 @@ SOURCES:
 # REFACTORING
 # TESTS
 # PYGAME
+# NOTES ON ALIEN INVASION
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -858,3 +859,44 @@ SOURCES:
 	import pygame
 		The module pygame contains functionality necessary to make a game
 
+	Surface
+		Part of the screen where game elements can be displayed
+		Each element (like ships, aliens, etc.) is also its own surface
+		The game window is also a surface
+		In Alien Invasion, the surfaces are redrawn with every pass through
+			the loop
+	
+	Event
+		An action by the player of the game
+
+	Framerate control
+		Can be controlled using a clock
+		In Alien Invasion, 1 ticke per pass through main loop
+
+# NOTES ON ALIEN INVASION
+	pygame.init() function
+		Initializes background settings that Pygame needs
+	
+	self.variable = pygame.display.set_mode(<dimension>)
+		Create display window
+		Argument is a tuple that defines the dimensions of the game window
+		This is a surface
+
+	run_game() method
+		Controls the game
+		Has an event loop which listens for events
+
+	pygame.event.get() function
+		Returns list of events since last invocation
+
+	pygame.QUIT event type
+		Calls sys.exit() to exit the game
+
+	pygame.display.flip()
+		Make most recently drawn screen visible
+
+	self.clock = pygame.time.Clock()
+		Clock used to control framerate
+	
+	self.clock.tick(<framerate>)
+		Loop will attempt to run <framerate> times per second
