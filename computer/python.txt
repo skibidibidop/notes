@@ -876,6 +876,10 @@ SOURCES:
 	Changing color
 		RGB (255, 255, 255)
 
+	Settings
+		Good practice: store in a module with class dedicated to settings
+			Easier to modify behavior, more organized
+
 # NOTES ON ALIEN INVASION
 	pygame.init() function
 		Initializes background settings that Pygame needs
