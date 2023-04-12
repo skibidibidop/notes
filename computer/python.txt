@@ -447,6 +447,9 @@ SOURCES:
 	A function that is part of a class is a method
 	Actions that can be performed on data
 
+	Helper method: a method that isn't meant to be used by code outside the
+		class. Indicated by a single leading underscore
+
 # FUNCTIONS
 	Modules				
 		Separate .py files where functions can be stored
