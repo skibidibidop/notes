@@ -37,8 +37,7 @@ SOURCES:
 # STORING DATA
 # REFACTORING
 # TESTS
-# PYGAME
-# NOTES ON ALIEN INVASION
+# PYGAME AND ALIEN INVASION
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
@@ -855,63 +854,80 @@ SOURCES:
 				# Needs import pytest
 			def function_name(arg1, arg2)
 
-# PYGAME
-	import pygame
-		The module pygame contains functionality necessary to make a game
+# PYGAME AND ALIEN INVASION
+	Definitions:
+		pygame documentation: https://www.pygame.org/docs/
 
-	Surface
-		Part of the screen where game elements can be displayed
-		Each element (like ships, aliens, etc.) is also its own surface
-		The game window is also a surface
-		In Alien Invasion, the surfaces are redrawn with every pass through
-			the loop
-	
-	Event
-		An action by the player of the game
+		Surface
+			Part of the screen where game elements can be displayed
+			Each element (like ships, aliens, etc.) is also its own surface
+			The game window is also a surface
+			In Alien Invasion, the surfaces are redrawn with every pass through
+				the loop
+		
+		Event
+			An action by the player of the game
 
-	Framerate control
-		Can be controlled using a clock
-		In Alien Invasion, 1 ticke per pass through main loop
+		Framerate control
+			Can be controlled using a clock
+			In Alien Invasion, 1 ticke per pass through main loop
 
-	Changing color
-		RGB (255, 255, 255)
+		Changing color
+			RGB (255, 255, 255)
 
-	Settings
-		Good practice: store in a module with class dedicated to settings
-			Easier to modify behavior, more organized
+		Settings
+			Good practice: store in a module with class dedicated to settings
+				Easier to modify behavior, more organized
 
-# NOTES ON ALIEN INVASION
-	pygame.init() function
-		Initializes background settings that Pygame needs
-	
-	self.variable = pygame.display.set_mode(<dimension>)
-		Create display window
-		Argument is a tuple that defines the dimensions of the game window
-		This is a surface
+		Adding images
+			Check license
+			Pygame loads bitmaps by default
 
-	run_game() method
-		Controls the game
-		Has an event loop which listens for events
+	Notes on Alien Invasion code:
+		pygame.init()
+			Initialize all imported pygame modules
+			If speed is being prioritized, initialize different modules
+				separately
+		
+		pygame.display.set_mode((size))
+			The set_mode() function in module pygame.display initializes a
+				display window or screen
+			Creates a display Surface
+			Accepts arguments for size: width and height in () respectively
 
-	pygame.event.get() function
-		Returns list of events since last invocation
+		pygame.event.get()
+			Gets events from queue
 
-	pygame.QUIT event type
-		Calls sys.exit() to exit the game
+		pygame.QUIT event type
+			Calls sys.exit() to exit the game
 
-	pygame.display.flip()
-		Make most recently drawn screen visible
+		pygame.display.flip()
+			Make most recently drawn screen visible
 
-	self.clock = pygame.time.Clock()
-		Clock used to control framerate
-	
-	self.clock.tick(<framerate>)
-		Loop will attempt to run <framerate> times per second
-	
-	self.bg_color = (R, G, B)
-		Where the values for R, G, and B should be from 0 to 255
-		Attribute for background color
+		pygame.time.Clock()
+			Create Clock object to track time and framerate
 
-        self.screen.fill(self.bg_color)
-		The fill() method takes 1 argument (color) and acts on one surface
+		self.clock.tick(<framerate>)
+			Loop will attempt to run at specified framerate
+		
+		self.screen.fill(self.bg_color)
+			The fill() method takes 1 argument (color) and acts on one surface
+
+		pygame.image.load(<path to file>)
+			Load image from a file source
+
+		blit() method
+			Used to draw images
+		
+		get_rect() method
+			Returns new rectangle covering entire surface
+
+		rect objects
+			Can be positioned using the x and y coordinates of the top, bottom,
+				left, and right edges, and also the middle of the rect
+			Attributes center, centerx, or centery can be used when centering
+				rects
+			Attributes top, left, bottom, and right can be used when working
+				with the edges of the screen
+			The attributes above can also be combined: midleft, midbottom, etc.
 
