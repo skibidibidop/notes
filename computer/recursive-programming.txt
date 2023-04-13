@@ -6,6 +6,8 @@ RECURSIVE PROGRAMMING
 
 ///// CONTENTS /////
 # BASIC CONCEPTS OF RECURSIVE PROGRAMMING
+#
+# PRACTICE QUESTIONS
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 # BASIC CONCEPTS OF RECURSIVE PROGRAMMING
@@ -29,3 +31,62 @@ RECURSIVE PROGRAMMING
 
 	Get subproblem with smaller size than the original problem
 	Decompose the original problem into a smaller one
+
+# PRACTICE QUESTIONS
+	From "The Recursive Book of Recursive Programming" by Al Sweigart
+
+	Chapter 1
+		1. In general, what is a recursive thing?
+			A recursive thing is something that includes itself in its
+				definition.
+
+		2. In programming, what is a recursive function?
+			A recursive function is a function that calls itself. Ideally,
+				recursive functions should have base cases and recursive cases.
+
+		3. What four features do functions have?
+			A function has code that is run when it is invoked
+			A function can accept arguments
+			A function returns a value
+			The line where the function was invoked is remembered by the program
+				so that execution can continue
+
+		4. What is a stack?
+			It is a data structure where processing is LIFO.
+
+		5. What are the terms for adding and removing values to and from the top of
+			a stack?
+			Data is "pushed onto" a stack when it is added
+			Data is "popped off" a stack after it is processed
+
+		6. Say you push the letter J to a stack, then push the letter Q, then pop the
+			stack, then push the letter K, then pop the stack again. What does the
+			stack look like?
+			The stack will only have J.
+
+		7. What is pushed and popped onto the call stack?
+			Frame objects are pushed to and popped off the call stack.
+
+		8. What causes a stack overflow to happen?
+			Stack overflows happen when there are too many function calls in the 
+			call stack and not enough memory.
+
+		9. What is a base case?
+			A base case is a statement, usually conditional, that causes the
+				recursive calls to stop. Calls in the stack are then popped
+				off one after the other.
+
+		10. What is a recursive case?
+			A recursive case is something that causes a recursion, usually when
+				a function calls itself.
+
+		11. How many base cases and recursive cases do recursive functions have?
+			Recursive functions need at least 1 base case and 1 recursive case to
+				function properly.
+
+		12. What happens if a recursive function has zero base cases?
+			An infinite loop / stack overflow.
+
+		13. What happens if a recursive function has zero recursive cases?
+			It becomes an ordinary function, not a recursive one.
+
