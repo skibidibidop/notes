@@ -3,15 +3,17 @@ C LANGUAGE NOTES
 READING LIST
 
 CONTENTS //////////////////////////////////////////////////////////////////////////////////////////
+* COMPILING
 * DATA TYPES
 * ARRAYS
 * COMMAND-LINE ARGUMENTS
-* OTHER NOTES
 * RECURSION
-* POINTERS
+* POINTERS AND MEMORY
 * STACK, HEAP
+* INPUT AND OUTPUT
 * FILES
 * DATA STRUCTURES
+* OTHER NOTES
 
 THE C LANGUAGE ////////////////////////////////////////////////////////////////////////////////////
 
@@ -26,6 +28,7 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	double				: floating-point value with more digits than float
 	float				: floating-point value
 	int				: integers up to a certain number of bits
+	short				: short integer
 	long				: integers with more bits than int
 
 	uint8_t				: u stands for unsigned
@@ -185,6 +188,18 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	When a new function is called, it is PUSHED onto the top of the stack
 	When a a function finishes, it is POPPED off of the stack
 	Last in, first out
+
+# INPUT AND OUTPUT
+	Text stream (input or output)
+		Text input or output is processed as a sequence of characters until \n
+		The newline character serves as a divider of streams
+
+	int getchar(void)
+		Reads and returns the next input character from a text stream with each call
+		Value returned is actually int
+	
+	int putchar(int c)
+		Prints the contents of int c as a character
 
 # FILES
 	Syntax:
