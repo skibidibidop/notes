@@ -9,5 +9,23 @@ RECURSIVE PROGRAMMING
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 # BASIC CONCEPTS OF RECURSIVE PROGRAMMING
+	Recursions
+		Depend on function calls and the call stack
+		Something which includes itself in its definition
+		A function that calls itself
+
+	Frame objects
+		Contain information about a single function call
+		Gets pushed onto or popped off stacks
+
+	Maximum recursion depth
+		Depends on programming language
+		The limit of number of recursive function calls
+
+	Base case
+		A condition which causes the recursive function to stop calling recursively
+
+	Recursive functions require a recursive case and a base case
+
 	Get subproblem with smaller size than the original problem
 	Decompose the original problem into a smaller one
