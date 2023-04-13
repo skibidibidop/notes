@@ -90,3 +90,47 @@ RECURSIVE PROGRAMMING
 		13. What happens if a recursive function has zero recursive cases?
 			It becomes an ordinary function, not a recursive one.
 
+	Chapter 2
+		1. What is 4! ?
+			24
+
+		2. How can you use the factorial of (n - 1) to calculate the factorial of n?
+			def factorial(n):
+				if number == 1:
+					return 1
+
+				return n * factorial(n - 1)
+
+		3. What is the critical weakness of the recursive factorial function?
+			Can very easily cause stack overflow.
+
+		4. What are the first five numbers of the Fibonacci sequence?
+			1, 1, 2, 3, 5
+
+		5. What 2 numbers do you add to get the nth Fibonacci number?
+			(n - 1) and (n - 2)
+
+		6. What is the critical weakness of the recursive Fibonacci sequence?
+			Redundant work / computations.
+
+		7. What does an iterative algorithm always use?
+			Loops.
+
+		8. Is it always possible to convert an iterative algorithm into a recursive one?
+			Yes
+
+		9. Is it always possible to convert a recursive algorithm into an iterative one?
+			Yes
+
+		10. Any recursive algorithm can be performed iteratively by using what two things?
+			An emulated stack and a loop
+
+		11. What three features do programming problems that are suitable to recursive
+			solutions have?
+			Tree-like structure, requires backtracking, and will not cause stack
+				overflow
+
+		12. When is recursion required to solve a programming problem?
+			Never, but thinking recursively while implementing iteratively
+				may lead to better solutions.
+
