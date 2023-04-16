@@ -6,6 +6,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * COMPILING
 * DATA TYPES
 * ARRAYS
+* SCOPE
 * COMMAND-LINE ARGUMENTS
 * RECURSION
 * POINTERS AND MEMORY
@@ -87,6 +88,23 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		
 		func_name(var)
 			// during invocation, no [] on var
+
+# SCOPE
+	External variables (extern keyword)
+		To use a global variable in a function, use extern:
+		
+		// The global variable is declared outside of all functions
+		// The function that needs to use that variable needs to have a declaration
+		// like this:
+			function() {
+				extern int global_variable;
+			}
+
+		If a program is divided into separate files, global variables have to be
+			declared with extern
+
+		Extern declarations are usually collected in a separate file (header) and
+			then included with #include <filename.h>
 
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
