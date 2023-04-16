@@ -37,6 +37,11 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 					: 8 bits or 1 byte
 					: _t denotes that this is its own type
 					: an unsigned 8 bit integer that is its own type
+	
+	unsigned & signed		: applicable to int or char
+					: always positive or zero
+					: an unsigned 8-bit char has values between 0 to 255
+					: a signed 8-bit char has values between -128 and 127
 
 	Define new data type:
 		
