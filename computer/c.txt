@@ -7,6 +7,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * DATA TYPES
 * ARRAYS
 * SCOPE
+* CONSTANTS
 * COMMAND-LINE ARGUMENTS
 * RECURSION
 * POINTERS AND MEMORY
@@ -110,6 +111,26 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 		Extern declarations are usually collected in a separate file (header) and
 			then included with #include <filename.h>
+
+# CONSTANTS
+	Suffixes
+		long constant			: terminal l (ell) or L
+						: 12345l or 12345L
+		unsigned constants		: terminal u or U
+		unsigned long			: ul or UL
+		floating-point constants	: has decimal point or exponent
+						: data type is double unless suffixed
+		float constant			: 123.4f or 123.4F
+		long double constant		: 123.4l or 123.4L
+
+	Hex, Oct notation
+		Octal				: leading 0
+		Hexadecimal			: leading 0x
+		
+		Oct and Hex constants can also have suffixes
+			L for long
+			U for unsigned
+
 
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
