@@ -131,6 +131,27 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 			L for long
 			U for unsigned
 
+			Example: 0xFUL is an unsigned long constant
+	
+	Character constant
+		An integer written as one character within single quotes
+			'a' or 'b', etc.
+		
+		Escape sequences
+			\a			: alert bell
+			\b			: backspace
+			\f			: formfeed
+			\n			: newline
+			\r			: carriage return
+			\t			: horizontal tab
+			\v			: vertical tab
+			\\			: backslash
+			\?			: question mark
+			\'			: single quote
+			\"			: double quotes
+			\ooo			: octal number
+			\xhh			: hex number
+
 
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
