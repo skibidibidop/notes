@@ -151,7 +151,30 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 			\"			: double quotes
 			\ooo			: octal number
 			\xhh			: hex number
+			\0			: null character
 
+	String constant / string literal
+		Zero or more characters enclosed in double quotes
+		An array of characters terminated by '\0'
+
+	'x' is different from "x"
+		'x' is an integer which represents the numeric value of that character
+			in ASCII (or some other character set)
+		"x" is a string of the characters x and \0
+
+	Enumeration constants
+		Enumeration: a list of constant integer values
+		enums can be used an alternative to #define
+		Names need to be distinct, duplicate values are OK
+		If not all values are specified, the progression is continued from the
+			last value
+			enum var1 = { VAL1 = 1, VAL2, VAL3, VAL4 };
+
+		Can also be used like so:
+			enum boolean = { NO, YES };
+				// NO is 0, YES is 1
+				// The first name in an enum has value 0 unless specified
+				// Other values will continue from that unless specified
 
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
