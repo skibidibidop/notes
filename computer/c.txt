@@ -8,6 +8,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * ARRAYS
 * SCOPE
 * CONSTANTS
+* TYPE CONVERSIONS
 * COMMAND-LINE ARGUMENTS
 * RECURSION
 * POINTERS AND MEMORY
@@ -175,6 +176,35 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 				// NO is 0, YES is 1
 				// The first name in an enum has value 0 unless specified
 				// Other values will continue from that unless specified
+
+# TYPE CONVERSIONS
+	Refers to operands of different types
+
+	Specify signed or unsigned if non-character data is to be stored char variables
+
+	For signed operands (in descending order):
+		If there is a long double, convert the other to long double
+		If there is a double, convert the other to double
+			Floats are not automatically converted to double
+		If there is a float, convert the other to float
+		Convert char and short to int
+		If there is a long, convert the other to long
+		
+	For conversions involving unsigned operands, refer to The C Programming Lanugage
+		(2nd Edition) by K & R PDF page 58
+
+	Explicit type conversions
+		AKA coercion
+		By using the cast operator: (type name) expression
+
+		If n is an int:
+			sqrt((double) n)
+			// sqrt requires arguments with type double
+			// the value passed to sqrt is now type double, but n is still not
+			// altered
+
+		Happens automatically in function prototypes where the argument types are
+			declared. No need to cast in this case
 
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
