@@ -13,6 +13,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * PRECEDENCE
 * CONTROL FLOW
 * FUNCTIONS AND PROGRAM STRUCTURE
+* PREPROCESSORS
 * COMMAND-LINE ARGUMENTS
 * RECURSION
 * POINTERS AND MEMORY
@@ -316,6 +317,45 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 		Compilers can ignore register declarations if necessary (the variables will
 			still be stored but not in the machine register)
+
+# PREPROCESSORS
+	#include				: file inclusion
+						: #include "filename.h" or #include <filename.h>
+	#define
+		scope is from point of definition to end of source file
+
+		#define name replacement text, continuation\
+		continuation, continuation, continuation\
+		continuation, end of replacement text
+
+		#define forever for (;;)
+			// using the word forever will create an infinite loop
+
+		#define max(A, B) ((A) > (B) ? (A) : (B))
+
+		#define dprint(expr) printf(#expr " = %g\n", expr)
+			when invoked using dprint(x/y):
+
+			printf("x/y = %g\n", x/y);
+				// the first x/y is enclosed in double quotation marks because
+					of the #expr in the replacement text
+				// "x/y" and " = %g\n" are then concatenated
+
+		##
+			Used to concatenate arguments and strip white space between during
+				macro expansion
+			
+			#define combine(one, two) one ## two
+				// combine(name, 1) will output name1
+	#undefine
+		Names can be undefined to ensure that routines are functions and not macros
+	
+	Conditionals can be used to control preprocessing. This is a way to include code
+		selectively
+
+	#if
+		works with #elif, #else, #endif
+		More info in The C Programming Language (2nd Edition) by K & R, PDF page 105
 
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
