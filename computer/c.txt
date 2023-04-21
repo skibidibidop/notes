@@ -8,9 +8,10 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * ARRAYS
 * SCOPE
 * CONSTANTS
+* TYPE CONVERSIONS
 * BITWISE OPERATORS
 * PRECEDENCE
-* TYPE CONVERSIONS
+* CONTROL FLOW
 * COMMAND-LINE ARGUMENTS
 * RECURSION
 * POINTERS AND MEMORY
@@ -223,7 +224,65 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 # PRECEDENCE
 	Table of Precedence of Operators: The C Programming Language (2nd Edition) by K
 		& R, PDF page 67
+
+# CONTROL FLOW
+	Statements and blocks
+		Expressions with statement terminators (;)
+		Blocks (compound statements) using { and }
+
+	If-else statements and Else-if statements
+
+	Switch statements
+		Multi-way decision
+
+		switch (expression) {
+			case const-expr:
+				statements
+				break
+			case const-expr:
+				statements
+			default:
+				statements
+				break
+		}
+
+		All case expressions must be different
+		Execution starts where a case is matched. All cases after will also
+			execute unless there is a break
+		The default case (optional) is executed if no case is matched
+		No execution if no default and no case match
+		Break causes immediate exit from the switch statement
+		It's good practice to include a break in default in case a new case
+			is added in the future
 	
+	Break and Continue
+		Break can provide early exit from switch statements and for loops
+			for, while, and do
+		Continue skips to the next iteration of the loop
+
+	Goto and labels
+		Useful for:
+			Breaking out of deeply nested loops where
+				breaks are not enough
+			Cases where errors can occur in multiple locations
+
+		Labels can be attached to any statement in the same function as the
+			goto
+
+		if (condition) {
+			goto label1;
+		}
+
+		label1:
+			statements;
+
+		Code made with gotos and labels can always be rewritten without using
+			those
+		Generally, code with gotos and labels are harder to understand and
+			maintain
+
+		Use rarely
+
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
 	// argc is the argument count
