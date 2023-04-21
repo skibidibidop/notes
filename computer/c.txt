@@ -9,6 +9,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * SCOPE
 * CONSTANTS
 * BITWISE OPERATORS
+* PRECEDENCE
 * TYPE CONVERSIONS
 * COMMAND-LINE ARGUMENTS
 * RECURSION
@@ -219,6 +220,10 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 	More info: The C Programming Language (2nd Edition) by K & R, PDF page 62
 
+# PRECEDENCE
+	Table of Precedence of Operators: The C Programming Language (2nd Edition) by K
+		& R, PDF page 67
+	
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
 	// argc is the argument count
