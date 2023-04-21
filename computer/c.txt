@@ -12,6 +12,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * BITWISE OPERATORS
 * PRECEDENCE
 * CONTROL FLOW
+* FUNCTIONS AND PROGRAM STRUCTURE
 * COMMAND-LINE ARGUMENTS
 * RECURSION
 * POINTERS AND MEMORY
@@ -282,6 +283,29 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 			maintain
 
 		Use rarely
+
+# FUNCTIONS AND PROGRAM STRUCTURE
+	Header files
+		Parts of big programs can be separated into multiple files. Example:
+			The main function can be stored in main.c
+			custom_function1 and custom_function2 can be stored in
+				custom_functions.c
+			getch and ungetch functions can be stored in getch.c. These
+				are separated from custom_function1 and
+				custom_function2 since these will come from a separately
+				compiled library
+			Shared definitions and declarations can be stored in 1 header file:
+				sampleheader.h. Each file can then #include "sampleheader.h"
+				if necessary
+			Bigger programs will require more header files for organization
+	
+	Static variables
+		External static variables will only be accessible to functions in the source
+			file where they are declared
+
+			static type variable_name
+
+		External static can be used on variables and functions
 
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
