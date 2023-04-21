@@ -8,6 +8,7 @@ CONTENTS ///////////////////////////////////////////////////////////////////////
 * ARRAYS
 * SCOPE
 * CONSTANTS
+* BITWISE OPERATORS
 * TYPE CONVERSIONS
 * COMMAND-LINE ARGUMENTS
 * RECURSION
@@ -205,6 +206,18 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 		Happens automatically in function prototypes where the argument types are
 			declared. No need to cast in this case
+
+# BITWISE OPERATORS
+	May only be applied to integral operands (char, short, int, long)
+
+	&				: bitwise AND
+	|				: bitwise OR
+	^				: bitwise exclusive OR
+	<<				: left shift
+	>>				: right shift
+	~				: one's complement (unary)
+
+	More info: The C Programming Language (2nd Edition) by K & R, PDF page 62
 
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
