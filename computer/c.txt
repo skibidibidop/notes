@@ -306,6 +306,16 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 			static type variable_name
 
 		External static can be used on variables and functions
+	
+	Register variables
+		Used for variables which will be heavily used
+
+			register type variable_name
+
+		Applicable only to automatic variables and formal parameters
+
+		Compilers can ignore register declarations if necessary (the variables will
+			still be stored but not in the machine register)
 
 # COMMAND-LINE ARGUMENTS
 	int main(int argc, string argv[])
