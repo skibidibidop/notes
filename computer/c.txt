@@ -80,11 +80,16 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		person;
 
 # FORMAT SPECIFIERS
-	%3d				: print integer at least 3 characters wide
-	%2.1f				: print as floating point at least 2 characters wide,
-						with 1 character after the decimal point
-	%.2f				: print as floating point, 2 characters after decimal
-						point
+	%3d
+		print integer at least 3 characters wide
+	%2.1f
+		print as floating point at least 2 characters wide, with 1 character after
+			the decimal point
+	%.2f
+		print as floating point, 2 characters after decimal point
+		
+	scanf("%100s", &variable);
+		take string (character array) with maximum of 100 characters
 
 # ARRAYS
 	Elements of arrays can be treated as variables
