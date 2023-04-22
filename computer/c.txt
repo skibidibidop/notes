@@ -5,6 +5,7 @@ READING LIST
 CONTENTS //////////////////////////////////////////////////////////////////////////////////////////
 * COMPILING
 * DATA TYPES
+* FORMAT SPECIFIERS
 * ARRAYS
 * SCOPE
 * CONSTANTS
@@ -77,6 +78,13 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 			struct person * next;
 		}
 		person;
+
+# FORMAT SPECIFIERS
+	%3d				: print integer at least 3 characters wide
+	%2.1f				: print as floating point at least 2 characters wide,
+						with 1 character after the decimal point
+	%.2f				: print as floating point, 2 characters after decimal
+						point
 
 # ARRAYS
 	Elements of arrays can be treated as variables
@@ -505,7 +513,7 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 		char ch;
 
-		while ((ch = fgetc(ptr) != EOF);
+		while ( (ch = fgetc(ptr) != EOF) );
 		{
 			printf("%c", ch);
 		}
