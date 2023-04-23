@@ -114,6 +114,10 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		func_name(var)
 			// during invocation, no [] on var
 
+		when passing to a function, pass the location of the first element of the array
+			// no need for square bracket notation since arr[0] is equivalent to
+				arr
+
 # SCOPE
 	External variables (extern keyword)
 		To use a global variable in a function, use extern:
@@ -445,6 +449,11 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 		pa = &array[0] can also be expressed as pa = array since by definition,
 			the value of an array is the address of element 0
+
+		array[i] is equivalent to *(array + i)
+			//&array[i] and (array + i) contain the same address
+			// array and index expressions are equivalent to pointer and
+				offset expressions
 
 	malloc				: allocate memory with specific size
 					: can return NULL if something goes wrong
