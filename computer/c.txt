@@ -117,6 +117,8 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		when passing to a function, pass the location of the first element of the array
 			// no need for square bracket notation since arr[0] is equivalent to
 				arr
+			// prefer function(char *s) over function(char s[]) since char *s is
+				more explicit about the parameter being a pointer
 
 # SCOPE
 	External variables (extern keyword)
@@ -425,11 +427,13 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 					: pointer, go to this location in memory
 					: pointers can also be used without dereferencing
 
-	null pointer			: always initialize to NULL if value can't be set
-						immediately
+	null pointer
+		always initialize to NULL if value can't be set immediately
 		Example:
+			int * p = NULL;
 
-		int * p = NULL;
+		NULL is a mnemonic for zero to indicate this special value for a pointer
+		NULL is defined in stdio.h
 
 	Comparing two identical-looking strings using the == operator will result in false
 		because what's being compared are actually the addresses
@@ -455,17 +459,23 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 			// array and index expressions are equivalent to pointer and
 				offset expressions
 
-	malloc				: allocate memory with specific size
-					: can return NULL if something goes wrong
-					: always terminate if malloc returns NULL
+		Increments or decrements to pointers are scaled; if the object being pointed
+			to is four bytes, *p + 1 will increment the pointer by 4 bytes
+			(1 * 4)
+
+	malloc
+		allocate memory with specific size
+		can return NULL if something goes wrong
+		always terminate if malloc returns NULL
 
 		Example:
 		int * n = malloc( sizeof(int) );
 		or
 		int * n = malloc(4) where 4 is the size of an int in bytes
 
-	free				: free memory allocated with malloc
-		
+	free
+		free memory allocated with malloc
+
 		Example:
 		free(n); // in relation to malloc example
 
