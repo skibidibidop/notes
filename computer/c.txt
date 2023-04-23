@@ -419,7 +419,8 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	&				: provide address
 	*				: dereference operator
 					: pointer, go to this location in memory
-	
+					: pointers can also be used without dereferencing
+
 	null pointer			: always initialize to NULL if value can't be set
 						immediately
 		Example:
@@ -429,6 +430,22 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	Comparing two identical-looking strings using the == operator will result in false
 		because what's being compared are actually the addresses
 	
+	array subscripting and pointers
+		Pointers are faster than square bracket notation
+
+		int array[10];
+		int * pa;
+
+		pa = &array[0];
+			// pa is now pointing to the content of array[0]
+		x = *pa;
+			// x has a copy of the contents of array[0]
+		y = *pa + 1;
+			// y has a copy of the contents of array[1]
+
+		pa = &array[0] can also be expressed as pa = array since by definition,
+			the value of an array is the address of element 0
+
 	malloc				: allocate memory with specific size
 					: can return NULL if something goes wrong
 					: always terminate if malloc returns NULL
