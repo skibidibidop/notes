@@ -463,6 +463,19 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 			to is four bytes, *p + 1 will increment the pointer by 4 bytes
 			(1 * 4)
 
+	Pointers to string constants
+		char *sample;
+		sample = "This is a sample message";
+			// The pointer sample contains the address to the first element of
+				the string constant This is a sample message\0
+			// Pointer can be reassigned to another location. Doing this without
+				assigning the current address to a temp pointer can result
+				in orphaning
+
+		char sample[] = "This is a sample message";
+			// Contains the string constant This is a sample message\0 in an
+				array that is exactly its size
+			// Always refers to the same storage location
 	malloc
 		allocate memory with specific size
 		can return NULL if something goes wrong
