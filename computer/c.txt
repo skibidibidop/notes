@@ -131,6 +131,9 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 				extern int global_variable;
 			}
 
+		The example above is redundant if all external variables are defined in the
+			beginning of the code
+
 		If a program is divided into separate files, global variables have to be
 			declared with extern
 
