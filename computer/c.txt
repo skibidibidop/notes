@@ -122,6 +122,9 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 # SCOPE
 	External variables (extern keyword)
+		"Define" means to create a variable and/or allocate storage for it
+		"Declare" means to state the nature of the variable. No storage allocated
+
 		To use a global variable in a function, use extern:
 		
 		// The global variable is declared outside of all functions
