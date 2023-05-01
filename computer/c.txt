@@ -195,11 +195,12 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 	Enumeration constants
 		Enumeration: a list of constant integer values
-		enums can be used an alternative to #define
+		enums can be used as an alternative to #define
 		Names need to be distinct, duplicate values are OK
 		If not all values are specified, the progression is continued from the
 			last value
 			enum var1 = { VAL1 = 1, VAL2, VAL3, VAL4 };
+				// VAL2 is 2, VAL3 is 3, VAL4 is 4
 
 		Can also be used like so:
 			enum boolean = { NO, YES };
