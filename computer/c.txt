@@ -257,6 +257,15 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		// ---
 		//  00
 
+	Bitwise operators also affect leading zeros (padding).
+
+		For the ~ operator will also invert leading zeros (padding). It might be
+		expected that ~5 (101) will result to 2 (010), but the output is actually a
+		very big number since 101 is actually padded with a lot of leading zeros.
+		
+		The number of leading zeros (and the number of binary digits) depends on
+		the data type size
+
 # PRECEDENCE
 	Table of Precedence of Operators: The C Programming Language (2nd Edition) by K
 		& R, PDF page 67
