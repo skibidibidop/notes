@@ -265,6 +265,14 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		
 		The number of leading zeros (and the number of binary digits) depends on
 		the data type size
+	
+	The 0b prefix can be used on binary digits instead of using decimal numbers with
+		bitwise operators
+
+		Decimal 5 can be written as 0b101
+
+		This can also be used when defining macros
+			#define VALUE 0b101
 
 # PRECEDENCE
 	Table of Precedence of Operators: The C Programming Language (2nd Edition) by K
