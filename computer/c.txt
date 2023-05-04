@@ -247,7 +247,15 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	>>				: right shift
 	~				: one's complement (unary)
 
-	More info: The C Programming Language (2nd Edition) by K & R, PDF page 62
+	Operates on the bit-level
+
+	n = 1 & 2;
+		// n = 0;
+		// works by applying the & operator to the binary values of 1 (01) and 2(10)
+		//  01
+		// &10
+		// ---
+		//  00
 
 # PRECEDENCE
 	Table of Precedence of Operators: The C Programming Language (2nd Edition) by K
