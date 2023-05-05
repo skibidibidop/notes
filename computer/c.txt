@@ -369,6 +369,9 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		Compilers can ignore register declarations if necessary (the variables will
 			still be stored but not in the machine register)
 
+		The address of a register variable can't be taken, even if the variable isn't
+			actually stored in a register
+
 # PREPROCESSORS
 	#include				: file inclusion
 						: #include "filename.h" or #include <filename.h>
