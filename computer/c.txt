@@ -511,6 +511,7 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 			// Contains the string constant This is a sample message\0 in an
 				array that is exactly its size
 			// Always refers to the same storage location
+
 	malloc
 		allocate memory with specific size
 		can return NULL if something goes wrong
