@@ -119,6 +119,23 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 				arr
 			// prefer function(char *s) over function(char s[]) since char *s is
 				more explicit about the parameter being a pointer
+	
+	Multidimensional arrays
+		char sample[2][13] = {
+			{0, 31, 28, 30,... other elements},
+			{0, 31, 29, 30,... other elements}
+		}
+			// [row][col]
+
+		Passing to functions:
+			f(char sample[2][13]) or f(char sample[][13]) since the number of rows is
+				irrelevant
+
+			can also be f(char (*sample)[13]) // pointer to an array of 13 chars
+				// parentheses for (*sample) are necessary
+		
+		An array of strings is a multidimensional array
+			char *name[] = {"Name1", "Name2", "Name3"};
 
 # SCOPE
 	External variables (extern keyword)
