@@ -597,6 +597,19 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 	Last in, first out
 
 # INPUT AND OUTPUT
+	Input redirection
+		In the terminal:
+			program_name <file.txt
+
+	Output redirection
+		program_name >output.txt
+			Creates output.txt if it doesn't exist, overwrites otherwise
+
+		Prompt will also be written to output.txt
+
+	program_name <input.txt >output.txt
+		Input and output file in the same command is possible
+
 	Text stream (input or output)
 		Text input or output is processed as a sequence of characters until \n
 		The newline character serves as a divider of streams
