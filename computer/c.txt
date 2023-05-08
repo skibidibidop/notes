@@ -679,6 +679,38 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 
 # DATA STRUCTURES
 Organizing data in memory
+	Declaration:
+		struct name {
+			members
+		} list of variables with this type;
+
+		struct point {
+			int x;
+			int y;
+		};
+
+		Storage is reserved only if variables are listed after the terminating right brace
+
+		struc point sample = { 100, 200 };
+			The members of sample with type point are initialized to 100 and 200,
+			respectively
+
+		Referring to a member:
+			structure-name.member
+
+			sample.x or sample.y if accessing members of the example above
+
+	Nested structures
+		struct container {
+			struct point sample1; // refer to struct point definition above
+			struct point sample2;
+		};
+
+		Accessing members of this nested structure:
+			struct container box;
+
+			box.sample1.x	// refers to member x in structure point sample, which
+					// is in turn a member of structure container box
 
 	Queue
 		FIFO
