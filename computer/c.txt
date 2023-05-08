@@ -732,6 +732,27 @@ Organizing data in memory
 
 			printf("%d\n", pp->x);
 
+	Typedef
+		Create new data type names
+			typedef int new_int;
+			// new_int and int are now synonymouse
+	
+	Typedef stuct
+		typedefs struct {
+			members
+		} data type name;
+
+		Example:
+			typedef struct {
+				char *name;
+				char *gender;
+			} person;
+
+			person individual;
+
+			individual.name = "Sample Name";
+			individual.gender = "Sample gender";
+
 	Queue
 		FIFO
 		enqueue			: add something to end of queue
