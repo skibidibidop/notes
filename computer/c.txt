@@ -581,6 +581,9 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		int n;
 		scanf("%i", &n);
 
+		scanf("\n%c", &o);
+			The \n before %c skips reading the newline from the previous input line
+
 # STACK, HEAP
 	heap overflow			: accessing areas of memory not supposed to be touched
 	stack overflow			: happens when too many functions are called
