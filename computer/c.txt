@@ -709,8 +709,28 @@ Organizing data in memory
 		Accessing members of this nested structure:
 			struct container box;
 
-			box.sample1.x	// refers to member x in structure point sample, which
-					// is in turn a member of structure container box
+			box.sample1.x	// refers to member x in struct point sample, which
+					// is in turn a member of struct container box
+
+	Pointers to structures
+		struct name *sample_pointer;
+
+		Example:
+			struct point *sample_pointer;
+			struct point pt1;
+			sample_pointer = &pt1;
+
+			(*sample_pointer).x // access member x of struct pointt pt1
+
+			The () are necessary; *sample_pointer.x is illegal
+
+		Shorthand:
+			pointer->member
+
+			struct point pt1;
+			struct point *pp = &pt1;
+
+			printf("%d\n", pp->x);
 
 	Queue
 		FIFO
