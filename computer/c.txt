@@ -531,6 +531,24 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 				array that is exactly its size
 			// Always refers to the same storage location
 
+	Function pointers
+		return type (*identifier)(*parameter data type/s)
+		Example:
+			int func2(char a, int b) {...};
+
+			int func3(char a, int b) {...};
+
+			void other(int (*func)(char, int)) {...};
+
+			int (*func)(char, int);
+			func = &func2;
+			// some function that uses func
+			func = &func3;
+			// some function that uses func, but func contains the address of func3 now
+
+			other(&func2); // other() uses a function pointer as its parameter
+			other(&func3); 
+
 	malloc
 		allocate memory with specific size
 		can return NULL if something goes wrong
