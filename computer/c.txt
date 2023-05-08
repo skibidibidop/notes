@@ -429,11 +429,13 @@ THE C LANGUAGE /////////////////////////////////////////////////////////////////
 		More info in The C Programming Language (2nd Edition) by K & R, PDF page 105
 
 # COMMAND-LINE ARGUMENTS
-	int main(int argc, string argv[])
-	// argc is the argument count
-	// argv is the argument vector
-	// the program name counts as the first argument
-	// the argument vector will contain [program name, argument, argument, ..., null-pointer]
+	int main(int argc, char *argv[])
+		argc is the argument count
+		argv is the argument vector
+		the program name counts as the first argument
+		the argument vector will contain [program name, argument, argument, ..., null-pointer]
+		
+	char *argv[] is a multi-dimensional array; it is an array of character array
 
 # RECURSION
 	Function calling itself
