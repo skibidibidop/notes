@@ -6,6 +6,15 @@ SOURCES:
 * Book: Introduction to Computation and Programming Using Python (3rd edition) by John V. Guttag
 
 CONTENTS /////////////////////////////////////////////////////////////////////////////////////////////////
-*
+* BASIC CONCEPTS, COMPUTATIONAL THINKING
 
 NOTES ////////////////////////////////////////////////////////////////////////////////////////////////////
+# BASIC CONCEPTS, COMPUTATIONAL THINKING
+	Declarative Knowledge
+		No information on how to do things, just statements of facts
+	
+	Imperative Knowledge
+		Information on how to do things
+
+	Algorithm
+		Basically a list of instructions to process input and provide output

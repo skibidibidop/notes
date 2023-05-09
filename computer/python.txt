@@ -5,6 +5,7 @@ SOURCES:
 
 ///// CONTENTS /////
 # VARIABLES
+# OPERATORS
 # STRINGS
 # VARIABLES IN STRINGS
 # WHITESPACE
@@ -44,6 +45,16 @@ SOURCES:
 	Variable names can only contain letters, numbers, and underscores
 	Varable names can't start with numbers
 	Don't use reserved words for variable names
+
+# OPERATORS
+	type
+		shows data type of operand
+	//
+		floor division
+		truncates remainder
+		6//4 evaluates to 1, while 6/4 evaluates to 1.5
+	
+	+, -, *, **, /, %
 
 # STRINGS
 	A data type
