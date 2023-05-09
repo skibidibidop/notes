@@ -6,10 +6,10 @@ SOURCES:
 * Book: Introduction to Computation and Programming Using Python (3rd edition) by John V. Guttag
 
 CONTENTS /////////////////////////////////////////////////////////////////////////////////////////////////
-* BASIC CONCEPTS, COMPUTATIONAL THINKING
+* BASIC CONCEPTS
 
 NOTES ////////////////////////////////////////////////////////////////////////////////////////////////////
-# BASIC CONCEPTS, COMPUTATIONAL THINKING
+# BASIC CONCEPTS
 	Declarative Knowledge
 		No information on how to do things, just statements of facts
 	
@@ -18,3 +18,9 @@ NOTES //////////////////////////////////////////////////////////////////////////
 
 	Algorithm
 		Basically a list of instructions to process input and provide output
+
+	Overloaded operators
+		Operators with different functions depending on the operands
+
+		In Python, + can mean addition for numbers or concatenation for strings
+
