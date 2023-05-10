@@ -7,6 +7,7 @@ SOURCES:
 ///// CONTENTS /////
 # VARIABLES
 # OPERATORS
+# TYPE CONVERSION
 # STRINGS
 # VARIABLES IN STRINGS
 # WHITESPACE
@@ -56,6 +57,15 @@ SOURCES:
 		6//4 evaluates to 1, while 6/4 evaluates to 1.5
 	
 	+, -, *, **, /, %
+
+# TYPE CASTS
+	AKA type conversions
+
+	int("3") * 4 evaluates to 12
+
+	int(int_var * float_var) evaluates to an int
+
+	Converting from float to int truncates the fractional part
 
 # STRINGS
 	A data type
