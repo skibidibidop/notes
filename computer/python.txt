@@ -7,7 +7,8 @@ SOURCES:
 ///// CONTENTS /////
 # VARIABLES
 # OPERATORS
-# TYPE CONVERSION
+# TYPE CASTS
+# CHARACTER ENCODING
 # STRINGS
 # VARIABLES IN STRINGS
 # WHITESPACE
@@ -69,6 +70,13 @@ OPERATORS, TYPE CONVERSION, INPUT, VARIABLES IN STRINGS, LISTS
 	int(int_var * float_var) evaluates to an int
 
 	Converting from float to int truncates the fractional part
+
+# CHARACTER ENCODING
+	Add this as 1st or 2nd line to tell Python which character encoding system to use:
+		# -*- coding: encoding name -*-
+	
+	Example:
+		# -*- coding: utf-8 -*-
 
 # STRINGS
 	str
