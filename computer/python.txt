@@ -43,7 +43,7 @@ SOURCES:
 # PYGAME AND ALIEN INVASION
 
 ///// REFRESHER /////
-OPERATORS, TYPE CONVERSION, VARIABLES IN STRINGS, LISTS
+OPERATORS, TYPE CONVERSION, INPUT, VARIABLES IN STRINGS, LISTS
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
