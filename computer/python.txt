@@ -88,7 +88,16 @@ SOURCES:
 
 		or
 
-		printf(f"Hello, {final_var.title()}!")
+		print(f"Hello, {final_var.title()}!")
+
+		print(f"{{{10 * 2}}}") # two curly braces to print {
+			This will print {20} # with the curly braces
+
+		print(f"{1.2345:.3f}") # modifier after the colon
+			This will print 1.234
+
+		print(f"{1000:,}")
+			This will print 1,000
 
 # WHITESPACE
 	\t				: tab
