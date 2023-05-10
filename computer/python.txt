@@ -71,6 +71,8 @@ OPERATORS, TYPE CONVERSION, INPUT, VARIABLES IN STRINGS, LISTS
 	Converting from float to int truncates the fractional part
 
 # STRINGS
+	str
+
 	A data type
 	A series of characters
 	Can be denoted with single quotes or double quotes
