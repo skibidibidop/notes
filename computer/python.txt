@@ -42,6 +42,9 @@ SOURCES:
 # TESTS
 # PYGAME AND ALIEN INVASION
 
+///// REFRESHER /////
+OPERATORS, TYPE CONVERSION, VARIABLES IN STRINGS, LISTS
+
 ////////////////////////////////////////////////////////////////////////////////////////////////
 # VARIABLES
 	Variable names can only contain letters, numbers, and underscores
