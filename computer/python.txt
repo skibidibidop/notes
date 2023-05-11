@@ -548,10 +548,12 @@ OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES IN STRINGS, LIS
 			# a default value is given for variable2 only
 			# arguments without default values have to be placed first
 
-	To preven a function from modifying a passed list, a copy can be passed instead
+	To prevent a function from modifying a passed list, a copy can be passed instead
 		function_name(list[:])
 
-	To allow functions to take an arbitrary number of arguments:
+	To allow functions to take an arbitrary number of arguments through the unapcking
+		operator:
+
 		function_name(argument, *argument2, **argument3)
 			# the asterisk means that argument2 will be a tuple containing
 			# all the arguments received by the function
