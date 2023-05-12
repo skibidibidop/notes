@@ -361,7 +361,6 @@ RESERVED WORDS, OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES
 
 # CONDITIONAL EXPRESSIONS
 	<expression1> if <condition> else <expression2>
-	
 	x = y if y > z else z
 
 # AND, OR
