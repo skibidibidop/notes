@@ -4,6 +4,43 @@ SOURCE:
 * Introduction to Computation and Programming Using Python (3rd Edition)
 
 CONTENTS ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-*
+* BASIC CONCEPTS
 
 COMPUTER SCIENCE ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+* BASIC CONCEPTS
+	Declarative Knowledge
+		Statement of fact, no instructions contained
+		A computer will not be able to use this
+		
+	Imperative Knowledge
+		Contains instructions on how to do something (algorithms)
+		
+	Syntax
+		Defines which strings of characters and symbols are valid
+		
+	Static Semantics
+		Defines which syntactically valid strings have meaning
+		
+	Semantics
+		Associates a meaning with each syntactically correct string of symbols with no static semantic errors
+		
+	Interpreted
+		Code is executed directly by an interpreter
+		Usually easier to debug due to error messages that are easy to relate to the source code
+		
+	Compiled
+		Code is converted to machine code first
+		Usually faster and uses less space than interpreted
+		
+	Scalar objects
+		Some of the most basic building blocks of a language
+		Example: primitves
+		
+	Non-scalar objects
+		Objects that have internal structure which can be accessed further
+		Example: strings
+		
+	Expressions
+		Combinations of objects and operators
+		
+	
