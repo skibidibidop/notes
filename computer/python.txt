@@ -225,6 +225,10 @@ OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES IN STRINGS, LIS
 
 		listname = [<expression> <for loop>]
 
+		or
+
+		<variable> = [<expression> for <element> in <iterable> if <test>]
+
 # PARTS OF LISTS
 	Slice				: a specific part of a list
 
@@ -260,8 +264,9 @@ OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES IN STRINGS, LIS
 			# This creates a copy of the list
 
 # TUPLES
-	Immutable lists
+	Immutable ordered sequences of elements
 	Tuples can't be modified but they can be written over
+	Can contain elements with different types
 	Parentheses instead of square brackets
 
 	Tuples with only 1 element should be defined like so:
