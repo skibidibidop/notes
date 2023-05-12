@@ -229,6 +229,11 @@ OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES IN STRINGS, LIS
 
 		<variable> = [<expression> for <element> in <iterable> if <test>]
 
+	It is possible to have multiple for loops in a list comprehension
+		list = [(x, y)
+			for x in range(10) if x % 2 == 0
+			for y in range(10) if x % 3 == 0]
+
 # PARTS OF LISTS
 	Slice				: a specific part of a list
 
