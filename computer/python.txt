@@ -566,7 +566,15 @@ OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES IN STRINGS, LIS
 
 		function_name(**argument3)
 			# **argument3 is a dictionary instead of a tuple
-		
+
+	Lambda expression
+		Can be used to create anonymous functions
+
+		lambda sequence of variable names : expression
+
+		lambda x, y : x * y
+			# this returns a function that returns the product of x and y
+
 # CLASSES
 	Instantiation
 		Making an object from a class
