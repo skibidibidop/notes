@@ -26,6 +26,7 @@ SOURCES:
 # TUPLES
 # LOOPS
 # IF STATEMENTS
+# CONDITIONAL EXPRESSIONS
 # AND, OR
 # IN, NOT
 # DICTIONARIES
@@ -51,7 +52,7 @@ RESERVED WORDS, OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES
 # RESERVED WORDS
 	and, as, assert, async, await, break, class, continue, def, del, elif, else, except,
 	False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not,
-	or, pass, raise, return, True, try, while, with, yiel
+	or, pass, raise, turn, True, try, while, with, yiel
 	
 # VARIABLES
 	Variable names can only contain letters, numbers, and underscores
@@ -357,6 +358,11 @@ RESERVED WORDS, OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES
 		if listname:
 			# line/s of code here will be executed since listname has at
 				least one element
+
+# CONDITIONAL EXPRESSIONS
+	<expression1> if <condition> else <expression2>
+	
+	x = y if y > z else z
 
 # AND, OR
 	and
