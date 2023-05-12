@@ -526,10 +526,14 @@ OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES IN STRINGS, LIS
 			# line/s of code here
 			# line/s of code here
 
-		function_name()
-
 		docstring			: describes what the function does
 						: enclosed in triple quotes
+
+		Ideal usage
+			"""
+			Assumes that x is int, y is float # Assumptions
+			Returns (sample result), else 0 # Guarantees
+			"""
 	
 	Positional arguments			: need to be passed in the same order in the
 							function definition
