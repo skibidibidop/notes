@@ -457,10 +457,47 @@ RESERVED WORDS, OPERATORS, TYPE CONVERSION, CHARACTER ENCODING, INPUT, VARIABLES
 			# line/s of code here
 
 # SETS
-	List without duplicates
+	Unordered collection of elements without duplicates
 	Curly brackets
 
 	set_sample = {'sample1', 'sample2', 'sample3'}
+
+	Using .add(<individual element>) or .update(<list>) on sets includes the
+		arguments in the set in an undefined manner
+
+	.remove(<element>) raises an error if the element does not exist in the set
+
+	.discard(<element>) does not raise an error if the element doesn't exist in
+		the set
+
+	.union()
+		infix operator: |
+
+	.intersection()
+		infix operator: &
+
+	.difference()
+		infix operator: -
+
+	.subset()
+		infix operator: <=
+
+	.superset()
+		infix operator >=
+
+	All objects in a set must be hashable
+		A hashable object has a __hash__ method that maps the object of the type
+			to an int and the value returned by __hash__ does not change during
+			the lifetime of the object
+
+		A hashable object has an __eq__ method that is used to check for equaltiy
+			with other objects
+
+		All scalar immutable types ar hashable
+
+		All built-in mutable types are non-hashable
+
+		A non-scalar immutable type is hashable if all of its elements are hashable 
 
 # NESTING
 	Can store a data structure within a data structure
