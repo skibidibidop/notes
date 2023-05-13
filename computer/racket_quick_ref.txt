@@ -1,0 +1,18 @@
+RACKET QUICK REFERENCE
+
+SOURCE:
+* How to Design Programs (2nd edition): https://htdp.org/2023-5-12/Book/index.html
+
+CONTENTS ///////////////////
+
+# BEGINNING STUDENT LANGUAGE (BSL)
+	* 
+
+BEGINNING STUDENT LANGUAGE (BSL) ////////////////////////////////////
+
+	#i
+		Inexact number
+		DrRacket provides this output when it doesn't know the exact
+			number
+
+	
