@@ -1,6 +1,11 @@
 Add these to BSL in racket_quick_ref.txt
 
 USEFUL THINGS
+    some operators
+        +, -, *, /, abs, add1, ceiling, denominator, exact->inexact,
+        expt, floor, gcd, log, max, numerator, quotient, random,
+        remainder, sqr, tan
+        
     string-append
         Operator
         (string-append "hi" "there") // output: hithere
@@ -109,5 +114,8 @@ TEACHPACKS ENCOUNTERED
 REMINDERS
     #i // and the like
 
-    primtitive
+    primtitive (atomic data?)
         aka pre-defined, built-in
+
+    atomic data
+        numbers, strings, images, Boolean values
