@@ -2,9 +2,32 @@ PROGRAM DESIGN
 
 SOURCE:
 * How to Design Programs (2nd edition): https://htdp.org/2022-8-7/Book/index.html
+* Videos: https://www.youtube.com/@systematicprogramdesign7962/playlists
 
 CONTENT ////////////////////////////////////////////////////////////////////////////////////////////////////
-*
+* SYSTEMATIC PROGRAM DESIGN RECIPE
 
 PROGRAM DESIGN /////////////////////////////////////////////////////////////////////////////////////////////
-
+# SYSTEMATIC PROGRAM DESIGN RECIPE
+	Recipe: Function Design
+		Signature
+		Purpose Statement
+		Examples/tests
+		Stub
+		Template
+		Function body
+		Testing and debugging
+		
+		Example:
+		
+		; Number -> Number			; Signature
+		; Produce 2 times the given number	; Purpose Statement
+		(check-expect (double 2) 4)		; Examples/tests
+		(check-expect (double 4.2) 8.4)
+		
+		; (define (double n) 0)			; Stub
+		; (define (double n)			; Template
+		;	(... n))
+		
+		(define (double n)			; Function body
+			(* 2 n))
