@@ -20,14 +20,43 @@ PROGRAM DESIGN /////////////////////////////////////////////////////////////////
 		
 		Example:
 		
-		; Number -> Number			; Signature
-		; Produce 2 times the given number	; Purpose Statement
-		(check-expect (double 2) 4)		; Examples/tests
-		(check-expect (double 4.2) 8.4)
+			; Number -> Number			; Signature
+			; Produce 2 times the given number	; Purpose Statement
+			(check-expect (double 2) 4)		; Examples/tests
+			(check-expect (double 4.2) 8.4)
 		
-		; (define (double n) 0)			; Stub
-		; (define (double n)			; Template
-		;	(... n))
+			; (define (double n) 0)				; Stub
+			; (define (double n)				; Template
+			;	(... n))
 		
-		(define (double n)			; Function body
-			(* 2 n))
+			(define (double n)				; Function body
+				(* 2 n))
+	
+	Recipe: Data definition
+		Type comment
+		Show how to form data
+		Interpretation
+			Establish information/data correspondence
+		Examples
+		Template for one argument function that uses the defined data
+		
+		; tlcolor is one of:
+		; - 0
+		; - 1
+		; - 2
+		; Interpretation: color of a traffic light - 0 red, 1 yellow, 2 green
+		(define (fn_for_tlcolor c)
+			(cond[(= c 0) (...)]
+			     [(= c 1) (...)]
+			     [(= c 2) (...)]))
+			     
+		Example for Atomic Data:
+		
+			; cityname is String				; Type comment
+			; Interpretation: the name of a city		; Interpretation
+			(define cityname1 "Manila")			; Examples
+			(define cityname2 "Roxas")
+			#;						; #; will comment out the following expression or 
+			<there should be no space here>			; 	function definition
+			(define (fn_for_cityname cn)			; Template
+				(...cn))
