@@ -34,7 +34,7 @@ PROGRAM DESIGN /////////////////////////////////////////////////////////////////
 	
 	Recipe: Data definition
 		Type comment
-		Show how to form data
+			Show how to form data
 		Interpretation
 			Establish information/data correspondence
 		Examples
@@ -45,6 +45,7 @@ PROGRAM DESIGN /////////////////////////////////////////////////////////////////
 		; - 1
 		; - 2
 		; Interpretation: color of a traffic light - 0 red, 1 yellow, 2 green
+		<examples are redundant for enumerations>
 		(define (fn_for_tlcolor c)
 			(cond[(= c 0) (...)]
 			     [(= c 1) (...)]
@@ -60,3 +61,39 @@ PROGRAM DESIGN /////////////////////////////////////////////////////////////////
 			<there should be no space here>			; 	function definition
 			(define (fn_for_cityname cn)			; Template
 				(...cn))
+				
+		Example for Intervals:
+		
+			; seats is Natural[1, 10]
+			; Interpretation: seat numbers in a row, 1 & 10 are aisle seats
+			(define seat1 1) ; aisle
+			(define seat2 5) ; middle
+			(define seat3 10) ; aisle
+			#;
+			(define (fn_for_seats seatn)
+				(...seatn))
+				
+		Example for Enumerations: refer to the traffic light example above
+		
+		Example for Itemizations:
+
+			; countdown is one of:
+			; - #false
+			; - Natural[1, 10]
+			; - "complete"
+			; Interpretation:
+			;	#false 		- countdown not yet started
+			;	Natural[1,10] 	- indicates how many seconds left in countdown
+			;	"complete" 	- countdown finished
+			(define CD1 #false)
+			(define CD2 10) ; countdown just started
+			(define CD3 5) ; middle of countdown
+			(define CD4 1) ; countdown almost over
+			(define CD5 "complete")
+			#;
+			(define (fn_for_countdown cd)
+				(cond[(false? cd) (...)]
+				     [(and (number? (<= 1 c 10))) (...)]
+				     [else (...)]))
+					
+			
