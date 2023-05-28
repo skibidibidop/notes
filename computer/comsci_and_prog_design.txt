@@ -95,3 +95,17 @@ PROGRAM DESIGN /////////////////////////////////////////////////////////////////
 				(cond[(false? cd) (...)]
 				     [(and (number? (<= 1 c) (<= c 10))) (...)]
 				     [else (...)]))
+
+		Example for Structures:
+
+			; (define-struct player [fn ln])
+			; player is a structure
+			; (make-player String String)
+			; Interpretation: (make-player fn ln) is a hockey player with
+			; first name (fn) and last name (ln)
+			(define player1 (make-player "Sample1" "Name"))
+			(define player2 (make-player "Sample2" "Nema"))
+			#;
+			(define (fn_for_player pl)
+				(...	(player-fn pl)
+					(player-ln pl)))
