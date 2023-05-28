@@ -93,7 +93,5 @@ PROGRAM DESIGN /////////////////////////////////////////////////////////////////
 			#;
 			(define (fn_for_countdown cd)
 				(cond[(false? cd) (...)]
-				     [(and (number? (<= 1 c 10))) (...)]
+				     [(and (number? (<= 1 c) (<= c 10))) (...)]
 				     [else (...)]))
-					
-			
